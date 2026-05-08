@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OG Card</title>
+<style>
+  html, body { margin:0; padding:0; background:#1a1d24; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: radial-gradient(circle at 75% 30%, #1a2235 0%, #0b0e14 60%);
+    color: #e6e9ef;
+    padding: 56px 64px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 6px;
+    background: linear-gradient(90deg, #ff6b6b 0%, #fab005 22%, #4dabf7 45%, #69db7c 70%, #9775fa 100%);
+  }
+  .label {
+    color: #ff8c42;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1.8px;
+    line-height: 1.04;
+    margin: 0 0 18px;
+    color: #ffffff;
+  }
+  h1 .accent { color: #ff8c42; }
+  .subtitle {
+    color: #a8b0c2;
+    font-size: 21px;
+    line-height: 1.45;
+    margin-bottom: 38px;
+    max-width: 920px;
+    font-weight: 400;
+  }
+  .stats {
+    display: flex;
+    gap: 56px;
+    margin-bottom: 38px;
+  }
+  .stat .num {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    color: #4dabf7;
+  }
+  .stat:nth-child(2) .num { color: #ff6b6b; }
+  .stat:nth-child(3) .num { color: #69db7c; }
+  .stat .lbl {
+    color: #8a93a6;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  .flow {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .flow .col {
+    color: #e6e9ef;
+    padding: 10px 22px;
+    border: 1px solid #2c3447;
+    border-radius: 30px;
+    background: rgba(77,171,247,0.06);
+  }
+  .flow .col.mid { background: rgba(255,140,66,0.10); border-color: #ff8c42; color: #ffd1b3; }
+  .flow .col.right { background: rgba(105,219,124,0.06); border-color: #2c3447; }
+  .flow .arrow { color: #ff8c42; font-size: 22px; font-weight: 700; }
+  .footer {
+    position: absolute;
+    bottom: 42px;
+    left: 64px;
+    right: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #6c7384;
+  }
+  .footer .years {
+    color: #ff8c42;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .footer .url {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    color: #8a93a6;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">Interactive Sankey · 2023 — 2029</div>
+  <h1>Hyperscaler AI CapEx<br>Flow <span class="accent">Down the Stack</span></h1>
+  <p class="subtitle">Where the dollars actually go — from MSFT, AMZN, GOOGL, META and the AI-natives, into the segments and suppliers that build the racks.</p>
+  <div class="stats">
+    <div class="stat"><div class="num">$848B</div><div class="lbl">2026 total CapEx</div></div>
+    <div class="stat"><div class="num">~34%</div><div class="lbl">spent on GPUs</div></div>
+    <div class="stat"><div class="num">8</div><div class="lbl">spenders tracked</div></div>
+  </div>
+  <div class="flow">
+    <span class="col">Spenders</span>
+    <span class="arrow">→</span>
+    <span class="col mid">13 Segments</span>
+    <span class="arrow">→</span>
+    <span class="col right">50+ Suppliers</span>
+  </div>
+  <div class="footer">
+    <span><span class="years">drag · play · filter · hover</span></span>
+    <span class="url">michaelpjob.github.io/aiCAPEX</span>
+  </div>
+</div>
+</body>
+</html>
