@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hyperscaler AI CapEx Flow 2023-2029</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3"></script>
+<style>
+  :root {
+    --bg: #0b0e14;
+    --panel: #131722;
+    --border: #1f2533;
+    --text: #e6e9ef;
+    --muted: #8a93a6;
+    --accent: #ff8c42;
+    --accent-2: #4dabf7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 900px;
+  }
+  .controls {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .year-display {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 100px;
+    font-variant-numeric: tabular-nums;
+  }
+  .total-display {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .total-display strong {
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    margin-top: 2px;
+  }
+  .slider-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  input[type="range"] {
+    flex: 1;
+    height: 6px;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #2c3447 0%, #2c3447 100%);
+    border-radius: 3px;
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+  .play-btn {
+    background: var(--accent);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s;
+  }
+  .play-btn:hover { transform: scale(1.05); }
+  .year-marks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+    padding: 0 2px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 16px;
+  }
+  .chart-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    overflow: hidden;
+  }
+  .side-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+    height: fit-content;
+    max-height: 800px;
+    overflow-y: auto;
+  }
+  .side-panel h3 {
+    font-size: 13px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    margin-top: 14px;
+  }
+  .side-panel h3:first-child { margin-top: 0; }
+  .side-panel p {
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .side-panel .muted {
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin-bottom: 12px;
+    font-size: 11px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--muted);
+  }
+  .legend-swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+  }
+  .filter-bar {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .filter-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 11px;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.02);
+    color: var(--muted);
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .filter-chip:hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--text);
+  }
+  .filter-chip.active {
+    color: var(--text);
+    background: rgba(255,255,255,0.08);
+    border-color: transparent;
+  }
+  .filter-chip .chip-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.4;
+  }
+  .filter-chip.active .chip-dot { opacity: 1; }
+  .filter-control {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 5px 11px;
+    border-radius: 16px;
+    font-size: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+  }
+  .filter-control:hover {
+    color: var(--text);
+    border-color: var(--accent);
+  }
+  .filter-control.solo-mode {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+  svg { display: block; }
+  .node rect {
+    cursor: pointer;
+    stroke-opacity: 0.4;
+    transition: opacity 0.2s;
+  }
+  .node text {
+    font-size: 11px;
+    fill: var(--text);
+    pointer-events: none;
+  }
+  .node.dim rect, .node.dim text { opacity: 0.25; }
+  .link {
+    fill: none;
+    transition: opacity 0.2s;
+    cursor: pointer;
+  }
+  .link.dim { opacity: 0.1 !important; }
+  .tooltip {
+    position: absolute;
+    background: rgba(20, 24, 36, 0.96);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    max-width: 260px;
+  }
+  .tooltip strong { color: var(--accent); display: block; margin-bottom: 3px; }
+  .tooltip .small { color: var(--muted); font-size: 11px; }
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-row .num { font-variant-numeric: tabular-nums; color: var(--accent-2); font-weight: 600; }
+  .badge-confirmed { color: #51cf66; font-size: 10px; }
+  .badge-inferred { color: #ffd43b; font-size: 10px; }
+  .source-list {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+  .source-list a {
+    color: var(--accent-2);
+    text-decoration: none;
+  }
+  .source-list a:hover { text-decoration: underline; }
+  .col-headers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+  .col-headers div:nth-child(2) { text-align: center; }
+  .col-headers div:nth-child(3) { text-align: right; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Hyperscaler AI CapEx Flow Down the Stack</h1>
+    <p class="subtitle">
+      How AI infrastructure dollars flow from spenders → segments → suppliers, 2023 to 2029.
+      Drag the year slider, hit play, or click chips to filter segments — <span style="color:var(--muted)">shift-click a chip to solo it, ctrl/cmd-click to invert</span>.
+      Hover any flow or node for detail.
+    </p>
+  </header>
+
+  <div class="controls">
+    <div>
+      <div class="total-display">Year</div>
+      <div class="year-display" id="yearDisplay">2026</div>
+    </div>
+    <div class="slider-wrap">
+      <button class="play-btn" id="playBtn">▶</button>
+      <div style="flex:1">
+        <input type="range" id="yearSlider" min="2023" max="2029" step="1" value="2026">
+        <div class="year-marks">
+          <span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+          <span>2027</span><span>2028</span><span>2029</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: right;">
+      <div class="total-display"><span id="totalLabel">Total CapEx</span><strong id="totalDisplay">$848B</strong></div>
+    </div>
+  </div>
+
+  <div class="filter-bar" id="filterBar">
+    <span class="filter-label">Filter segments:</span>
+    <span id="filterChips" style="display:flex; flex-wrap:wrap; gap:6px; flex:1;"></span>
+    <button class="filter-control" id="showAllBtn">All</button>
+    <button class="filter-control" id="invertBtn">Invert</button>
+  </div>
+
+  <div class="layout">
+    <div class="chart-panel">
+      <div class="col-headers">
+        <div>Spenders</div>
+        <div>Spending Segments</div>
+        <div>Suppliers</div>
+      </div>
+      <div id="chart"></div>
+      <div class="legend" id="legend" style="margin-top:12px; display:none;"></div>
+    </div>
+    <div class="side-panel">
+      <h3>Year Snapshot</h3>
+      <div id="yearStats"></div>
+
+      <h3>What Changed vs the Source Article</h3>
+      <p class="muted" id="changeNotes">
+        The article was missing Alphabet's 2026 guide. Actual: <strong style="color:var(--text)">$180-190B</strong>, not "n/d". This pushes Big 5 2026 total to ~$760B (article had $565-585B). Memory share also bumped above 6% in 2026 due to HBM/DRAM shortage — Microsoft attributes ~$25B of its $190B guide to higher component prices.
+      </p>
+
+      <h3>Confidence Levels</h3>
+      <p class="muted">
+        <span class="badge-confirmed">● CONFIRMED</span> 2026 CapEx guides for MSFT, AMZN, GOOGL, META, ORCL.<br>
+        <span class="badge-inferred">● MIXED</span> Waterfall % (article estimate, validated against Dell'Oro/SemiAnalysis: GPU ~33%, MEP ~50% of construction).<br>
+        <span class="badge-inferred">● INFERRED</span> Supplier shares within each segment. Public market-share data exists for the top tier (NVIDIA 80%, SK Hynix 55%+ of HBM, Schneider+Vertiv ~tied in power) but project-level awards are mostly private.
+      </p>
+
+      <h3>Sources</h3>
+      <div class="source-list">
+        Microsoft FY26 Q3 earnings (Apr 2026) · Amazon shareholder letter (Apr 2026) · Alphabet Q1 2026 (CFO updated guide to $180-190B) · Meta Q1 2026 (raised to $125-145B) · Oracle FY26 guide ($50B) · CoreWeave Q1 2026 ($31-35B) · xAI Mississippi $20B announcement · Stargate ($400B/3yr platform; mostly overlaps Oracle/CoreWeave) · Dell'Oro Group hyperscaler tracker · IDC Ethernet Switch Tracker · Cignal AI optics
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip" style="display:none;"></div>
+
+<script>
+// ============================================================
+// DATA MODEL
+// ============================================================
+
+// Spender CapEx by year ($B). 2023-2025 are reported; 2026 is current guidance; 2027-2029 are projections.
+const spenderCapex = {
+  Microsoft:  [28.1, 44.5, 64.6, 190, 225, 250, 270],
+  Amazon:     [48.3, 85.8, 142.4, 200, 220, 240, 255],
+  Alphabet:   [32.3, 52.5, 91.4, 185, 230, 260, 285],
+  Meta:       [28.1, 39.2, 72.2, 135, 165, 185, 195],
+  Oracle:     [8.7,  6.9,  21.2, 50,  75,  90,  100],
+  CoreWeave:  [0.5,  4,    14,   33,  50,  65,  75],
+  xAI:        [0,    1,    8,    20,  32,  40,  45],
+  Stargate:   [0,    0,    0,    35,  60,  45,  30]   // incremental non-overlapping with Oracle/CoreWeave
+};
+
+const years = [2023, 2024, 2025, 2026, 2027, 2028, 2029];
+
+// Spending waterfall (% per year) — silicon-heavy shift over time
+// 2023-2024 had less GPU concentration; 2025+ goes silicon-heavy per MSFT/META disclosures
+const waterfall = {
+  2023: { Land:3, "Utility/Grid":4, "Power Gen":3, Electrical:12, Cooling:9, Shell:13, Networking:7, Servers:12, GPUs:22, Memory:5, DCIM:2, Water:4, Commission:4 },
+  2024: { Land:3, "Utility/Grid":5, "Power Gen":3, Electrical:11, Cooling:9, Shell:11, Networking:7, Servers:11, GPUs:28, Memory:5, DCIM:2, Water:3, Commission:2 },
+  2025: { Land:2, "Utility/Grid":5, "Power Gen":4, Electrical:11, Cooling:9, Shell:9,  Networking:7, Servers:10, GPUs:32, Memory:6, DCIM:2, Water:3, Commission:0 },
+  2026: { Land:2, "Utility/Grid":5, "Power Gen":4, Electrical:10, Cooling:8, Shell:7,  Networking:7, Servers:10, GPUs:34, Memory:8, DCIM:2, Water:3, Commission:0 },
+  2027: { Land:2, "Utility/Grid":6, "Power Gen":4, Electrical:10, Cooling:9, Shell:6,  Networking:7, Servers:10, GPUs:35, Memory:7, DCIM:2, Water:3, Commission:0 },
+  2028: { Land:2, "Utility/Grid":6, "Power Gen":5, Electrical:10, Cooling:9, Shell:5,  Networking:8, Servers:10, GPUs:35, Memory:7, DCIM:2, Water:3, Commission:0 },
+  2029: { Land:2, "Utility/Grid":6, "Power Gen":5, Electrical:10, Cooling:9, Shell:5,  Networking:8, Servers:10, GPUs:34, Memory:7, DCIM:2, Water:3, Commission:1 }
+};
+
+// Supplier shares per segment (within-segment %). Slight evolution year-over-year.
+// Source: Dell'Oro, IDC Ethernet Tracker, market research synthesis. NVIDIA share declines as custom ASICs scale.
+function shares(year) {
+  const t = (year - 2023) / 6; // 0..1 trajectory
+  return {
+    GPUs: {
+      "NVIDIA":      lerp(0.92, 0.68, t),
+      "AMD":         lerp(0.04, 0.13, t),
+      "Custom ASIC (Broadcom et al.)": lerp(0.02, 0.13, t),
+      "Intel/Other": lerp(0.02, 0.06, t)
+    },
+    Memory: {
+      "SK Hynix":  lerp(0.50, 0.55, t),
+      "Samsung":   lerp(0.35, 0.20, t),
+      "Micron":    lerp(0.15, 0.25, t)
+    },
+    Networking: {
+      "Arista":           0.20,
+      "Cisco":            lerp(0.30, 0.18, t),
+      "NVIDIA Networking":lerp(0.05, 0.30, t),
+      "Broadcom":         0.13,
+      "Coherent":         0.06,
+      "Lumentum":         0.04,
+      "Innolight":        0.05,
+      "Other Optics":     lerp(0.17, 0.04, t)
+    },
+    Servers: {
+      "Quanta (ODM)": 0.27,
+      "Dell":         0.20,
+      "Wiwynn":       0.14,
+      "Foxconn":      0.12,
+      "Supermicro":   0.08,
+      "HPE":          0.06,
+      "Inspur":       0.07,
+      "Other ODM":    0.06
+    },
+    Electrical: {
+      "Schneider Electric": 0.20,
+      "Vertiv":             0.18,
+      "Eaton":              0.16,
+      "ABB":                0.12,
+      "Siemens":            0.10,
+      "Legrand/Hubbell":    0.08,
+      "Other Electrical":   0.16
+    },
+    Cooling: {
+      "Vertiv":           0.18,
+      "Schneider Electric":0.18,
+      "Johnson Controls": 0.12,
+      "Trane":            0.10,
+      "Carrier":          0.08,
+      "Modine":           0.05,
+      "CoolIT/Asetek":    0.06,
+      "Other Thermal":    0.23
+    },
+    "Power Gen": {
+      "Caterpillar":   0.30,
+      "Cummins":       0.25,
+      "GE Vernova":    0.20,
+      "Rolls-Royce":   0.08,
+      "Other Gen":     0.17
+    },
+    "Utility/Grid": {
+      "GE Vernova":      0.22,
+      "Quanta Services": 0.18,
+      "Siemens Energy":  0.15,
+      "MYR/MasTec":      0.10,
+      "Hubbell":         0.07,
+      "Utilities (Constellation, NextEra, etc.)": 0.28
+    },
+    Shell: {
+      "Turner":         0.18,
+      "DPR":            0.12,
+      "Mortenson":      0.10,
+      "AECOM":          0.08,
+      "Fluor":          0.06,
+      "Holder":         0.05,
+      "Whiting-Turner": 0.05,
+      "Jacobs":         0.04,
+      "EMCOR/Comfort Sys": 0.10,
+      "Other Builders": 0.22
+    },
+    Water: {
+      "Xylem":     0.22,
+      "Flowserve": 0.14,
+      "Pentair":   0.10,
+      "Watts":     0.06,
+      "Mueller":   0.06,
+      "Ferguson":  0.10,
+      "Other Fluid": 0.32
+    },
+    DCIM: {
+      "Schneider Electric": 0.25,
+      "Honeywell":          0.18,
+      "Johnson Controls":   0.12,
+      "Other DCIM":         0.45
+    },
+    Land: {
+      "Land Developers": 1.00
+    },
+    Commission: {
+      "Commissioning Firms": 1.00
+    }
+  };
+}
+
+function lerp(a, b, t) { return a + (b - a) * Math.max(0, Math.min(1, t)); }
+
+// Color palette per segment
+const segmentColor = {
+  GPUs:           "#ff6b6b",
+  Memory:         "#fa5252",
+  Servers:        "#fab005",
+  Networking:     "#4dabf7",
+  Electrical:     "#ffd43b",
+  Cooling:        "#74c0fc",
+  "Power Gen":    "#ffa94d",
+  "Utility/Grid": "#9775fa",
+  Shell:          "#69db7c",
+  Water:          "#3bc9db",
+  DCIM:           "#e599f7",
+  Land:           "#868e96",
+  Commission:     "#adb5bd"
+};
+
+const spenderColor = {
+  Microsoft: "#00bcf2",
+  Amazon:    "#ff9900",
+  Alphabet:  "#34a853",
+  Meta:      "#1877f2",
+  Oracle:    "#f80000",
+  CoreWeave: "#ff5e2b",
+  xAI:       "#ffffff",
+  Stargate:  "#a78bfa"
+};
+
+// ============================================================
+// BUILD SANKEY DATA FOR A YEAR (with optional segment filter)
+// ============================================================
+function buildData(year, activeSegments) {
+  const yi = years.indexOf(year);
+  const w = waterfall[year];
+  const sh = shares(year);
+
+  const allSegments = Object.keys(w);
+  const segments = activeSegments
+    ? allSegments.filter(s => activeSegments.has(s))
+    : allSegments;
+
+  const spenderTotals = {};
+  Object.keys(spenderCapex).forEach(s => spenderTotals[s] = spenderCapex[s][yi]);
+
+  // True total CapEx (unfiltered) for percent-of-total displays
+  const grandTotal = Object.values(spenderTotals).reduce((a,b) => a+b, 0);
+
+  // Filtered total: sum of capex routed through active segments only
+  let filteredTotal = 0;
+  Object.keys(spenderCapex).forEach(s => {
+    if (spenderTotals[s] <= 0) return;
+    segments.forEach(seg => {
+      filteredTotal += spenderTotals[s] * (w[seg] / 100);
+    });
+  });
+
+  // Compute filtered spender amounts (how much of each spender's capex flows into active segments)
+  const filteredSpenderAmounts = {};
+  Object.keys(spenderCapex).forEach(s => {
+    if (spenderTotals[s] <= 0) { filteredSpenderAmounts[s] = 0; return; }
+    let sum = 0;
+    segments.forEach(seg => { sum += spenderTotals[s] * (w[seg] / 100); });
+    filteredSpenderAmounts[s] = sum;
+  });
+
+  const nodes = [];
+  const links = [];
+  const nodeIndex = {};
+
+  function addNode(name, type) {
+    if (nodeIndex[name] === undefined) {
+      nodeIndex[name] = nodes.length;
+      nodes.push({ name, type });
+    }
+    return nodeIndex[name];
+  }
+
+  // Add spenders (left column) — only those with non-zero filtered flow
+  Object.keys(spenderCapex).forEach(s => {
+    if (filteredSpenderAmounts[s] > 0.05) addNode(s, 'spender');
+  });
+
+  // Add segments (middle column) — only active ones
+  segments.forEach(seg => {
+    if (w[seg] > 0) addNode(seg, 'segment');
+  });
+
+  // Add suppliers (right column) — only those connected to active segments
+  segments.forEach(seg => {
+    if (w[seg] > 0 && sh[seg]) {
+      Object.keys(sh[seg]).forEach(supplier => {
+        if (sh[seg][supplier] > 0.001) addNode(supplier, 'supplier');
+      });
+    }
+  });
+
+  // Build spender → segment links (only for active segments)
+  Object.keys(spenderCapex).forEach(s => {
+    if (spenderTotals[s] <= 0) return;
+    segments.forEach(seg => {
+      const v = spenderTotals[s] * (w[seg] / 100);
+      if (v > 0.05) {
+        links.push({
+          source: nodeIndex[s],
+          target: nodeIndex[seg],
+          value: v,
+          type: 'spender-segment',
+          spender: s,
+          segment: seg
+        });
+      }
+    });
+  });
+
+  // Build segment → supplier links (only for active segments, using grandTotal so absolute values stay correct)
+  segments.forEach(seg => {
+    if (w[seg] <= 0 || !sh[seg]) return;
+    const segTotal = grandTotal * (w[seg] / 100);
+    Object.keys(sh[seg]).forEach(supplier => {
+      const v = segTotal * sh[seg][supplier];
+      if (v > 0.05) {
+        links.push({
+          source: nodeIndex[seg],
+          target: nodeIndex[supplier],
+          value: v,
+          type: 'segment-supplier',
+          segment: seg,
+          supplier: supplier
+        });
+      }
+    });
+  });
+
+  return {
+    nodes,
+    links,
+    total: filteredTotal,
+    grandTotal,
+    spenderTotals,
+    filteredSpenderAmounts
+  };
+}
+
+// ============================================================
+// RENDER SANKEY
+// ============================================================
+const width = 1180;
+const height = 760;
+const margin = { top: 8, right: 150, bottom: 8, left: 170 };
+
+const svg = d3.select("#chart")
+  .append("svg")
+  .attr("viewBox", `0 0 ${width} ${height}`)
+  .attr("preserveAspectRatio", "xMidYMid meet")
+  .style("width", "100%")
+  .style("height", "auto");
+
+const sankeyGen = d3.sankey()
+  .nodeWidth(14)
+  .nodePadding(7)
+  .nodeAlign(d3.sankeyJustify)
+  .extent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]]);
+
+const linkGroup = svg.append("g").attr("class", "links").attr("fill", "none");
+const nodeGroup = svg.append("g").attr("class", "nodes");
+
+const tooltip = d3.select("#tooltip");
+
+function fmt(v) {
+  if (v >= 1) return "$" + v.toFixed(1) + "B";
+  return "$" + (v * 1000).toFixed(0) + "M";
+}
+
+function fmtTotal(v) {
+  if (v >= 1000) return "$" + (v / 1000).toFixed(2) + "T";
+  return "$" + Math.round(v) + "B";
+}
+
+function colorFor(d) {
+  if (d.type === 'spender') return spenderColor[d.name] || "#888";
+  if (d.type === 'segment') return segmentColor[d.name] || "#888";
+  // supplier: inherit segment color from parent link
+  return d._color || "#aaa";
+}
+
+let currentYear = 2026;
+const allSegmentNames = Object.keys(segmentColor);
+let activeSegments = new Set(allSegmentNames);
+
+function render(year) {
+  currentYear = year;
+  const { nodes, links, total, grandTotal, spenderTotals, filteredSpenderAmounts } = buildData(year, activeSegments);
+
+  // Layout
+  const sankeyData = sankeyGen({
+    nodes: nodes.map(d => ({ ...d })),
+    links: links.map(d => ({ ...d }))
+  });
+
+  // Tag suppliers with their dominant segment color
+  sankeyData.nodes.forEach(n => {
+    if (n.type === 'supplier') {
+      const inLinks = sankeyData.links.filter(l => l.target === n);
+      if (inLinks.length) {
+        const top = inLinks.reduce((a,b) => a.value > b.value ? a : b);
+        n._color = segmentColor[top.segment] || "#888";
+      }
+    }
+  });
+
+  // LINKS
+  const link = linkGroup.selectAll("path")
+    .data(sankeyData.links, d => `${d.source.name}-${d.target.name}`);
+
+  link.exit().transition().duration(400).style("opacity", 0).remove();
+
+  const linkEnter = link.enter()
+    .append("path")
+    .attr("class", "link")
+    .attr("d", d3.sankeyLinkHorizontal())
+    .attr("stroke", d => {
+      if (d.type === 'spender-segment') return segmentColor[d.segment] || "#888";
+      return segmentColor[d.segment] || "#888";
+    })
+    .attr("stroke-width", d => Math.max(0.5, d.width))
+    .style("stroke-opacity", 0)
+    .style("mix-blend-mode", "screen");
+
+  linkEnter.merge(link).transition().duration(500)
+    .attr("d", d3.sankeyLinkHorizontal())
+    .attr("stroke", d => segmentColor[d.segment] || "#888")
+    .attr("stroke-width", d => Math.max(0.5, d.width))
+    .style("stroke-opacity", 0.35);
+
+  linkGroup.selectAll("path")
+    .on("mouseover", function(e, d) {
+      d3.select(this).style("stroke-opacity", 0.7);
+      const segLabel = d.segment;
+      const html = d.type === 'spender-segment'
+        ? `<strong>${d.source.name} → ${d.target.name}</strong>${fmt(d.value)}<div class="small">${(d.value/total*100).toFixed(1)}% of total ${year} CapEx</div>`
+        : `<strong>${d.source.name} → ${d.target.name}</strong>${fmt(d.value)}<div class="small">From all spenders, ${(d.value/total*100).toFixed(1)}% of ${year} total</div>`;
+      tooltip.html(html).style("display", "block");
+    })
+    .on("mousemove", function(e) {
+      tooltip.style("left", (e.pageX + 12) + "px").style("top", (e.pageY - 10) + "px");
+    })
+    .on("mouseout", function() {
+      d3.select(this).style("stroke-opacity", 0.35);
+      tooltip.style("display", "none");
+    });
+
+  // NODES
+  const node = nodeGroup.selectAll("g.node")
+    .data(sankeyData.nodes, d => d.name);
+
+  node.exit().transition().duration(400).style("opacity", 0).remove();
+
+  const nodeEnter = node.enter()
+    .append("g")
+    .attr("class", "node");
+
+  nodeEnter.append("rect")
+    .attr("rx", 2);
+
+  nodeEnter.append("text")
+    .attr("dy", "0.35em");
+
+  const nodeMerge = nodeEnter.merge(node);
+
+  nodeMerge.transition().duration(500)
+    .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+  nodeMerge.select("rect")
+    .transition().duration(500)
+    .attr("width", d => d.x1 - d.x0)
+    .attr("height", d => Math.max(1, d.y1 - d.y0))
+    .attr("fill", d => colorFor(d))
+    .attr("stroke", d => d3.color(colorFor(d)).darker(0.5));
+
+  nodeMerge.select("text")
+    .transition().duration(500)
+    .attr("x", d => d.type === 'supplier' ? (d.x1 - d.x0 + 6) : (d.type === 'spender' ? -6 : (d.x1 - d.x0 + 6)))
+    .attr("y", d => (d.y1 - d.y0) / 2)
+    .attr("text-anchor", d => d.type === 'spender' ? "end" : "start")
+    .text(d => {
+      const value = d.value;
+      const label = d.name;
+      if (d.type === 'spender') {
+        return `${label}  ${fmt(value)}`;
+      } else if (d.type === 'segment') {
+        return `${label} ${fmt(value)}`;
+      } else {
+        if (d.y1 - d.y0 > 8) return label + " " + fmt(value);
+        if (d.y1 - d.y0 > 4) return label;
+        return "";
+      }
+    })
+    .style("fill", d => d.type === 'segment' ? '#0b0e14' : '#e6e9ef')
+    .style("font-weight", d => d.type === 'segment' ? 600 : 400)
+    .style("font-size", d => d.type === 'spender' ? '12px' : '11px');
+
+  nodeMerge
+    .on("mouseover", function(e, d) {
+      const inSum = sankeyData.links.filter(l => l.target === d).reduce((a,b)=>a+b.value, 0);
+      const outSum = sankeyData.links.filter(l => l.source === d).reduce((a,b)=>a+b.value, 0);
+      const v = inSum > 0 ? inSum : outSum;
+      const pct = (v / total * 100).toFixed(1);
+      let extra = '';
+      if (d.type === 'segment') {
+        const w_pct = waterfall[year][d.name];
+        extra = `<div class="small">${w_pct}% of total CapEx waterfall</div>`;
+      }
+      if (d.type === 'spender') {
+        extra = `<div class="small">${pct}% of all 2026 hyperscaler+AI-native CapEx</div>`;
+      }
+      tooltip.html(`<strong>${d.name}</strong>${fmt(v)} (${pct}% of total)${extra}`)
+        .style("display", "block");
+
+      // Dim non-connected
+      const connectedLinks = new Set(sankeyData.links.filter(l => l.source === d || l.target === d));
+      const connectedNodes = new Set([d]);
+      connectedLinks.forEach(l => { connectedNodes.add(l.source); connectedNodes.add(l.target); });
+      // Walk further: expand connected for path tracing
+      sankeyData.links.forEach(l => {
+        if (connectedNodes.has(l.source) && (l.source === d || l.target === d || connectedLinks.has(l))) {
+          connectedLinks.add(l);
+          connectedNodes.add(l.target);
+        }
+        if (connectedNodes.has(l.target) && (l.source === d || l.target === d || connectedLinks.has(l))) {
+          connectedLinks.add(l);
+          connectedNodes.add(l.source);
+        }
+      });
+      // Two-pass: trace forward and backward fully
+      let changed = true;
+      while (changed) {
+        changed = false;
+        sankeyData.links.forEach(l => {
+          if (connectedNodes.has(l.source) || connectedNodes.has(l.target)) {
+            if (!connectedLinks.has(l)) {
+              if ((connectedNodes.has(l.source) && (l.target.type === 'segment' || l.target.type === 'supplier')) ||
+                  (connectedNodes.has(l.target) && (l.source.type === 'spender' || l.source.type === 'segment'))) {
+                connectedLinks.add(l);
+                connectedNodes.add(l.source);
+                connectedNodes.add(l.target);
+                changed = true;
+              }
+            }
+          }
+        });
+      }
+
+      linkGroup.selectAll("path").classed("dim", l => !connectedLinks.has(l));
+      nodeGroup.selectAll("g.node").classed("dim", n => !connectedNodes.has(n));
+    })
+    .on("mousemove", function(e) {
+      tooltip.style("left", (e.pageX + 12) + "px").style("top", (e.pageY - 10) + "px");
+    })
+    .on("mouseout", function() {
+      tooltip.style("display", "none");
+      linkGroup.selectAll("path").classed("dim", false);
+      nodeGroup.selectAll("g.node").classed("dim", false);
+    });
+
+  // Update side panel stats
+  d3.select("#yearDisplay").text(year);
+  const isFiltered = activeSegments.size < allSegmentNames.length;
+  d3.select("#totalDisplay").text(fmtTotal(isFiltered ? total : grandTotal));
+
+  // Update header total label to indicate filter state
+  d3.select("#totalLabel").text(isFiltered ? `Filtered CapEx (${activeSegments.size}/${allSegmentNames.length} segments)` : "Total CapEx");
+
+  // YoY based on grand total (unfiltered) for stable trend comparison
+  const yoy = year > 2023 ? ((grandTotal / Object.keys(spenderCapex).reduce((a,s) => a + spenderCapex[s][years.indexOf(year)-1], 0) - 1) * 100).toFixed(0) : null;
+
+  let statsHtml = '';
+  Object.keys(spenderCapex).forEach(s => {
+    const v = isFiltered ? filteredSpenderAmounts[s] : spenderCapex[s][years.indexOf(year)];
+    const fullV = spenderCapex[s][years.indexOf(year)];
+    if (fullV > 0) {
+      const tail = isFiltered && fullV > 0 ? ` <span class="muted" style="font-size:10px">/ ${fmt(fullV)}</span>` : '';
+      statsHtml += `<div class="stat-row"><span style="color:${spenderColor[s]}">●</span> <span>${s}</span><span class="num">${fmt(v)}${tail}</span></div>`;
+    }
+  });
+  const totalShown = isFiltered ? total : grandTotal;
+  statsHtml += `<div class="stat-row" style="margin-top:8px; padding-top:10px; border-top: 2px solid var(--border);"><strong>${isFiltered ? 'Filtered Total' : 'Total'}</strong><span class="num">${fmtTotal(totalShown)}</span></div>`;
+  if (isFiltered) {
+    statsHtml += `<div class="stat-row"><span class="muted">% of full CapEx</span><span class="num">${(total/grandTotal*100).toFixed(1)}%</span></div>`;
+  }
+  if (yoy !== null) {
+    statsHtml += `<div class="stat-row"><span class="muted">YoY change (full)</span><span class="num">${yoy >= 0 ? '+' : ''}${yoy}%</span></div>`;
+  }
+  d3.select("#yearStats").html(statsHtml);
+}
+
+// ============================================================
+// LEGEND (kept hidden — replaced by filter chips)
+// ============================================================
+const legendData = Object.keys(segmentColor);
+
+// ============================================================
+// FILTER CHIPS
+// ============================================================
+const chipsContainer = d3.select("#filterChips");
+
+function renderChips() {
+  chipsContainer.selectAll(".filter-chip").remove();
+  legendData.forEach(seg => {
+    const isActive = activeSegments.has(seg);
+    const chip = chipsContainer.append("div")
+      .attr("class", "filter-chip" + (isActive ? " active" : ""))
+      .style("color", isActive ? segmentColor[seg] : null)
+      .style("border-color", isActive ? segmentColor[seg] : null)
+      .style("background", isActive ? `${segmentColor[seg]}22` : null);
+    chip.append("span").attr("class", "chip-dot").style("background", segmentColor[seg]);
+    chip.append("span").text(seg).style("color", isActive ? 'var(--text)' : 'var(--muted)');
+
+    chip.on("click", function(e) {
+      if (e.shiftKey) {
+        // Shift-click = solo (only this segment active)
+        activeSegments = new Set([seg]);
+      } else if (e.altKey || e.metaKey || e.ctrlKey) {
+        // Ctrl/Cmd/Alt-click = invert (all except this)
+        activeSegments = new Set(legendData.filter(s => s !== seg));
+      } else {
+        // Regular click = toggle
+        if (activeSegments.has(seg)) {
+          if (activeSegments.size === 1) {
+            // Don't allow zero segments — switch to "all"
+            activeSegments = new Set(legendData);
+          } else {
+            activeSegments.delete(seg);
+          }
+        } else {
+          activeSegments.add(seg);
+        }
+      }
+      renderChips();
+      render(currentYear);
+    });
+  });
+}
+renderChips();
+
+d3.select("#showAllBtn").on("click", () => {
+  activeSegments = new Set(legendData);
+  renderChips();
+  render(currentYear);
+});
+d3.select("#invertBtn").on("click", () => {
+  const newSet = new Set(legendData.filter(s => !activeSegments.has(s)));
+  if (newSet.size === 0) newSet.add(legendData[0]); // never zero
+  activeSegments = newSet;
+  renderChips();
+  render(currentYear);
+});
+
+// ============================================================
+// CONTROLS
+// ============================================================
+const slider = d3.select("#yearSlider");
+slider.on("input", function() {
+  render(+this.value);
+});
+
+let playInterval = null;
+const playBtn = d3.select("#playBtn");
+playBtn.on("click", function() {
+  if (playInterval) {
+    clearInterval(playInterval);
+    playInterval = null;
+    playBtn.text("▶");
+    return;
+  }
+  playBtn.text("⏸");
+  let y = +slider.property("value");
+  if (y >= 2029) y = 2023;
+  playInterval = setInterval(() => {
+    y++;
+    if (y > 2029) {
+      clearInterval(playInterval);
+      playInterval = null;
+      playBtn.text("▶");
+      return;
+    }
+    slider.property("value", y);
+    render(y);
+  }, 1200);
+});
+
+// Initial render
+render(2026);
+
+</script>
+</body>
+</html>
