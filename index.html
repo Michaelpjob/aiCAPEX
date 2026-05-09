@@ -302,19 +302,6 @@
   }
   .stat-row:last-child { border-bottom: none; }
   .stat-row .num { font-variant-numeric: tabular-nums; color: var(--accent-2); font-weight: 600; }
-  .badge-confirmed { color: #51cf66; font-size: 10px; }
-  .badge-inferred { color: #ffd43b; font-size: 10px; }
-  .source-list {
-    font-size: 11px;
-    color: var(--muted);
-    line-height: 1.6;
-    margin-top: 8px;
-  }
-  .source-list a {
-    color: var(--accent-2);
-    text-decoration: none;
-  }
-  .source-list a:hover { text-decoration: underline; }
   .col-headers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -328,6 +315,124 @@
   }
   .col-headers div:nth-child(2) { text-align: center; }
   .col-headers div:nth-child(3) { text-align: right; }
+
+  /* Lead block above the fold */
+  .lead {
+    background: linear-gradient(135deg, rgba(255,140,66,0.06), rgba(77,171,247,0.05));
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 16px 22px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--text);
+    max-width: 1100px;
+  }
+  .lead strong { color: var(--accent); font-weight: 700; }
+
+  /* Reader-friendly confidence badges */
+  .badge-reported  { color: #51cf66; font-size: 10px; font-weight: 700; }
+  .badge-validated { color: #4dabf7; font-size: 10px; font-weight: 700; }
+  .badge-projection{ color: #ffd43b; font-size: 10px; font-weight: 700; }
+
+  /* Grouped sources list */
+  .src-group {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    margin: 12px 0 6px;
+  }
+  .src-list {
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  .src-list li {
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text);
+  }
+  .src-list li:last-child { border-bottom: none; }
+  .src-list a {
+    color: var(--accent-2);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .src-list a:hover { text-decoration: underline; color: var(--accent); }
+  .src-meta { color: var(--muted); font-size: 11px; }
+
+  /* Page footer */
+  .page-footer {
+    margin-top: 28px;
+    padding: 18px 22px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .page-footer .footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 10px;
+  }
+  .page-footer strong { color: var(--text); font-weight: 600; }
+  .page-footer a {
+    color: var(--accent-2);
+    text-decoration: none;
+  }
+  .page-footer a:hover { color: var(--accent); text-decoration: underline; }
+  .page-footer .sep { color: var(--border); }
+  .footer-right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px; height: 34px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s;
+    text-decoration: none;
+    padding: 0;
+    font: inherit;
+  }
+  .share-btn:hover {
+    background: rgba(255,140,66,0.10);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+  .share-btn.copied {
+    background: rgba(81,207,102,0.12);
+    border-color: #51cf66;
+    color: #51cf66;
+  }
+  .copy-feedback {
+    font-size: 11px;
+    color: #51cf66;
+    margin-left: 8px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .copy-feedback.show { opacity: 1; }
 </style>
 </head>
 <body>
@@ -340,6 +445,10 @@
       Hover any flow or node for detail.
     </p>
   </header>
+
+  <div class="lead">
+    Big 5 hyperscalers + AI-natives are spending <strong>$848B</strong> on AI infrastructure in 2026 — about <strong>2× 2025</strong> and <strong>~5× 2023</strong>. Roughly a third goes to GPUs alone. The Sankey below traces every dollar from spender to supplier.
+  </div>
 
   <div class="controls">
     <div>
@@ -382,24 +491,60 @@
       <h3>Year Snapshot</h3>
       <div id="yearStats"></div>
 
-      <h3>What Changed vs the Source Article</h3>
-      <p class="muted" id="changeNotes">
-        The article was missing Alphabet's 2026 guide. Actual: <strong style="color:var(--text)">$180-190B</strong>, not "n/d". This pushes Big 5 2026 total to ~$760B (article had $565-585B). Memory share also bumped above 6% in 2026 due to HBM/DRAM shortage — Microsoft attributes ~$25B of its $190B guide to higher component prices.
-      </p>
-
-      <h3>Confidence Levels</h3>
+      <h3>Headline finding</h3>
       <p class="muted">
-        <span class="badge-confirmed">● CONFIRMED</span> 2026 CapEx guides for MSFT, AMZN, GOOGL, META, ORCL.<br>
-        <span class="badge-inferred">● MIXED</span> Waterfall % (article estimate, validated against Dell'Oro/SemiAnalysis: GPU ~33%, MEP ~50% of construction).<br>
-        <span class="badge-inferred">● INFERRED</span> Supplier shares within each segment. Public market-share data exists for the top tier (NVIDIA 80%, SK Hynix 55%+ of HBM, Schneider+Vertiv ~tied in power) but project-level awards are mostly private.
+        At <strong style="color:var(--text)">$848B</strong> in 2026, the Big 5 hyperscalers plus AI-natives (CoreWeave, xAI, Stargate) are spending roughly <strong style="color:var(--text)">2× 2025</strong> and <strong style="color:var(--text)">5× 2023</strong>. About a third — ~$290B — flows to GPUs alone, making accelerator silicon a larger line item than land, shell, electrical, cooling and grid combined. HBM/DRAM tightness adds an estimated $25B to Microsoft's 2026 plan.
       </p>
 
-      <h3>Sources</h3>
-      <div class="source-list">
-        Microsoft FY26 Q3 earnings (Apr 2026) · Amazon shareholder letter (Apr 2026) · Alphabet Q1 2026 (CFO updated guide to $180-190B) · Meta Q1 2026 (raised to $125-145B) · Oracle FY26 guide ($50B) · CoreWeave Q1 2026 ($31-35B) · xAI Mississippi $20B announcement · Stargate ($400B/3yr platform; mostly overlaps Oracle/CoreWeave) · Dell'Oro Group hyperscaler tracker · IDC Ethernet Switch Tracker · Cignal AI optics
-      </div>
+      <h3>What's measured, what's estimated</h3>
+      <p class="muted">
+        <span class="badge-reported">● Reported</span> 2026 CapEx guides from Q1 2026 / FY26 Q3 earnings (MSFT, AMZN, GOOGL, META, ORCL, CRWV).<br>
+        <span class="badge-validated">● Validated estimate</span> Spending waterfall %: author estimate, cross-checked against Dell'Oro Group (GPU ~33%, electrical+mechanical ~50% of construction) and SemiAnalysis.<br>
+        <span class="badge-projection">● Author projection</span> 2027–2029 spender CapEx and within-segment supplier shares. Top-tier shares are public (NVIDIA ~80% of GPU, SK Hynix 55%+ of HBM, Schneider/Vertiv tied in power); project-level awards are not.
+      </p>
+
+      <h3 id="methodology">Methodology &amp; sources</h3>
+      <h4 class="src-group">Spender disclosures</h4>
+      <ul class="src-list">
+        <li><a href="https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast" target="_blank" rel="noopener">Microsoft FY26 Q3 earnings</a> <span class="src-meta">(Apr 29, 2026) · $190B 2026 capex</span></li>
+        <li><a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-First-Quarter-Results/" target="_blank" rel="noopener">Amazon Q1 2026</a> <span class="src-meta">(Apr 29, 2026) · ~$200B 2026 capex</span></li>
+        <li><a href="https://abc.xyz/investor/" target="_blank" rel="noopener">Alphabet Q1 2026</a> <span class="src-meta">(Apr 29, 2026) · $180–190B 2026 capex guide</span></li>
+        <li><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx" target="_blank" rel="noopener">Meta Q1 2026</a> <span class="src-meta">(Apr 29, 2026) · $125–145B 2026 capex guide</span></li>
+        <li><a href="https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx" target="_blank" rel="noopener">Oracle FY26 Q3</a> <span class="src-meta">(Mar 10, 2026) · $50B FY26 capex</span></li>
+        <li><a href="https://investors.coreweave.com/financials/quarterly-results/default.aspx" target="_blank" rel="noopener">CoreWeave Q1 2026</a> <span class="src-meta">(May 7, 2026) · $31–35B 2026 capex guide</span></li>
+      </ul>
+      <h4 class="src-group">Industry data</h4>
+      <ul class="src-list">
+        <li><a href="https://www.delloro.com/market-research/data-center-infrastructure/data-center-capex/" target="_blank" rel="noopener">Dell'Oro Group — Data Center Capex tracker</a> <span class="src-meta">· segment mix benchmark</span></li>
+        <li><a href="https://my.idc.com/getdoc.jsp?containerId=prUS54033525" target="_blank" rel="noopener">IDC — Worldwide Quarterly Ethernet Switch Tracker</a> <span class="src-meta">· networking shares</span></li>
+        <li><a href="https://news.skhynix.com/2026-market-outlook-focus-on-the-hbm-led-memory-supercycle/" target="_blank" rel="noopener">SK Hynix — HBM market outlook &amp; Q1 2026</a> <span class="src-meta">· memory shares</span></li>
+      </ul>
     </div>
   </div>
+
+  <footer class="page-footer" id="footer">
+    <div class="footer-left">
+      <span>By <strong>Michael Job</strong></span>
+      <span class="sep">·</span>
+      <span>Last updated <span id="lastUpdated">May 2026</span></span>
+      <span class="sep">·</span>
+      <a href="#methodology">Methodology</a>
+      <span class="sep">·</span>
+      <a href="https://github.com/Michaelpjob/aiCAPEX" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+    <div class="footer-right">
+      <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmichaelpjob.github.io%2FaiCAPEX%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+      </a>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmichaelpjob.github.io%2FaiCAPEX%2F&text=Hyperscaler%20AI%20CapEx%20Flow%20Down%20the%20Stack%20%E2%80%94%20interactive%20Sankey%202023%E2%80%932029" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <button class="share-btn" id="copyLinkBtn" aria-label="Copy link" title="Copy link" type="button">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+      </button>
+      <span class="copy-feedback" id="copyFeedback">Copied!</span>
+    </div>
+  </footer>
 </div>
 
 <div class="tooltip" id="tooltip" style="display:none;"></div>
@@ -1035,6 +1180,42 @@ playBtn.on("click", function() {
 
 // Initial render
 render(2026);
+
+// ============================================================
+// PAGE METADATA + SHARE
+// ============================================================
+const LAST_UPDATED = "May 2026";
+document.getElementById('lastUpdated').textContent = LAST_UPDATED;
+
+(function setupCopyLink() {
+  const btn = document.getElementById('copyLinkBtn');
+  const fb = document.getElementById('copyFeedback');
+  if (!btn) return;
+  function flash() {
+    btn.classList.add('copied');
+    fb.classList.add('show');
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      fb.classList.remove('show');
+    }, 1800);
+  }
+  btn.addEventListener('click', async () => {
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+      flash();
+    } catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); flash(); } catch (e2) {}
+      document.body.removeChild(ta);
+    }
+  });
+})();
 
 </script>
 </body>
