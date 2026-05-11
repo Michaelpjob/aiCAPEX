@@ -502,8 +502,23 @@
       "segment_exposures": [
         {"segment": "Electrical", "share_2026": 0.12, "note": "MV / LV switchgear + automation. Strong in EU data center buildouts"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 82,
+        "price_12mo_ago_usd": 55,
+        "market_cap_b": 175,
+        "ttm_revenue_b": 33,
+        "fwd_revenue_2026_b": 36,
+        "fwd_pe": 28,
+        "as_of": "2026-05-09",
+        "notes": "Native CHF on ABBN.SW. Electrification segment +44% growth; 2026 revenue guide raised to 9%."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "ABB's 12% electrical segment share gives ~$10.2B of theoretical flow against ~$3B implied revenue growth — FCR around 3.4, comfortably Higher conviction. The Electrification segment is growing 40%+ but is only a third of total ABB revenue, so the FCR signal under-states the diversified industrial drag. The clean read is on Electrification standalone, which would screen even better.",
+        "risks": "EU industrial cyclicality on non-DC segments; CHF strength dragging USD-reported growth; Motion/Robotics drag during cyclical troughs.",
+        "status": "draft"
+      }
     },
     "SIEGY": {
       "name": "Siemens",
@@ -514,8 +529,23 @@
       "segment_exposures": [
         {"segment": "Electrical", "share_2026": 0.10, "note": "Sivacon + Sentron LV gear; complemented by Siemens Energy on HV side"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 269,
+        "price_12mo_ago_usd": 210,
+        "market_cap_b": 240,
+        "ttm_revenue_b": 85,
+        "fwd_revenue_2026_b": 89,
+        "fwd_pe": 22,
+        "as_of": "2026-05-11",
+        "notes": "Native EUR on SIE.DE. Q1 2026 revenue €19.1B (+4.3% YoY); FY26 guide upper half of 6-8% range."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Siemens captures ~$8.5B of theoretical 2026 electrical flow against ~$4B implied revenue growth — FCR ~2.1, Higher conviction by auto-derivation. As with ABB, the total-company diluted growth understates Smart Infrastructure's data center exposure. Siemens Energy spinoff at HV is a separate ticker; this card is purely the parent Siemens AG core industrial + electrification stack.",
+        "risks": "Industrial automation cyclicality on Digital Industries; EUR strength; long-cycle backlog conversion timing.",
+        "status": "draft"
+      }
     },
     "HUBB": {
       "name": "Hubbell",
@@ -526,8 +556,23 @@
         {"segment": "Electrical", "share_2026": 0.04, "note": "Wiring devices + lighting (Legrand-adjacent share)"},
         {"segment": "Utility/Grid", "share_2026": 0.07, "note": "Transmission/distribution components — direct utility-side spend"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 508,
+        "price_12mo_ago_usd": 380,
+        "market_cap_b": 27,
+        "ttm_revenue_b": 6.45,
+        "fwd_revenue_2026_b": 6.80,
+        "fwd_pe": 26,
+        "as_of": "2026-05-01",
+        "notes": "FY26 guide raised to 8-11% growth; Q1 2026 sales +11.1% YoY to $1.52B driven by Electrical Solutions and grid infrastructure."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Hubbell sits in a sweet spot: ~$6.3B of theoretical flow across Electrical + Utility/Grid against just ~$0.35B implied revenue growth. FCR around 18 — the highest in the universe — reflects how much hyperscaler + utility transmission spend the flow model attributes to Hubbell relative to its modest topline. Likely overstated because the 7% utility share lumps Hubbell with the entire investor-owned utility transmission spend, but even with a haircut the FCR remains structurally underpriced.",
+        "risks": "Share concentration in mid-size utility T&D; potential FCR overstatement due to lumped utility share; margin pressure from copper/steel input costs.",
+        "status": "draft"
+      }
     },
     "LGRDY": {
       "name": "Legrand",
@@ -538,8 +583,23 @@
       "segment_exposures": [
         {"segment": "Electrical", "share_2026": 0.04, "note": "Cable management + PDUs + Raritan + Server Tech. Rack-level electrical"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 157,
+        "price_12mo_ago_usd": 110,
+        "market_cap_b": 50,
+        "ttm_revenue_b": 9,
+        "fwd_revenue_2026_b": 10.3,
+        "fwd_pe": 28,
+        "as_of": "2026-05-10",
+        "notes": "Native EUR on LR.PA. 2026 guide 10-15% sales growth; data centers now 20% of sales, 15% of organic growth. ADR LGRDY thinly traded on OTC."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium-high",
+        "short": "Legrand's PDU + rack-level electrical franchise (Raritan + Server Tech) is the closest pure-play on intra-rack power distribution. 4% electrical share generates ~$3.4B of theoretical 2026 flow against ~$1.3B implied revenue growth — FCR around 2.6, Higher conviction. The 20%-of-sales data center mix is small enough to compound for years before maturing.",
+        "risks": "Construction/EU residential drag on the non-DC half of the business; FX (EUR); commoditization pressure on basic PDUs.",
+        "status": "draft"
+      }
     },
 
     "JCI": {
@@ -551,8 +611,23 @@
         {"segment": "Cooling", "share_2026": 0.12, "note": "YORK chillers + air-side units. Post-Tyco simplification refocus on buildings"},
         {"segment": "DCIM", "share_2026": 0.12, "note": "Metasys / OpenBlue building automation"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 140,
+        "price_12mo_ago_usd": 80,
+        "market_cap_b": 93,
+        "ttm_revenue_b": 26,
+        "fwd_revenue_2026_b": 28,
+        "fwd_pe": 28,
+        "as_of": "2026-05-08",
+        "notes": "Q2 2026 revenue $6.14B (beat $6.08B); orders +30% (on top of ~40% prior); backlog $20B record (70% converts in 12mo). FY26 EPS guide $4.85."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "JCI captures ~$10.2B of theoretical 2026 flow across Cooling (YORK chillers, 12% share) and DCIM (Metasys/OpenBlue, 12% share). Implied revenue growth at $2B yields FCR ~5.1 — clear Higher conviction. The $20B record backlog and +30% orders pace (on top of ~40% the prior quarter) line up with the segment math. Post-Tyco focus has produced a cleaner data center story than legacy holders give the multiple credit for.",
+        "risks": "Project timing in long-lead chiller orders; competition from Carrier + Trane on commercial HVAC; OpenBlue software adoption pace.",
+        "status": "draft"
+      }
     },
     "TT": {
       "name": "Trane Technologies",
@@ -560,10 +635,25 @@
       "currency": "USD",
       "primary_segment": "Cooling",
       "segment_exposures": [
-        {"segment": "Cooling", "share_2026": 0.10, "note": "Trane chillers; growing data-center mix"}
+        {"segment": "Cooling", "share_2026": 0.10, "note": "Trane chillers; growing data-center mix. Stellar + LiquidStack acquisitions add liquid-cooling capability"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 421,
+        "price_12mo_ago_usd": 340,
+        "market_cap_b": 95,
+        "ttm_revenue_b": 22,
+        "fwd_revenue_2026_b": 24,
+        "fwd_pe": 30,
+        "as_of": "2026-05-10",
+        "notes": "Q1 2026 revenue $4.97B (+6%); 2026 guide 8.5-9.5% growth; LiquidStack + Stellar acquisitions expand AI cooling exposure. Stock +18% YTD."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium-high",
+        "short": "Trane's 10% segment share yields ~$6.8B of theoretical 2026 cooling flow against ~$2B implied growth — FCR ~3.4, Higher conviction. The Stellar + LiquidStack tuck-ins fill the liquid-cooling gap that left JCI and Carrier ahead on data center mix. Commercial HVAC core remains the stable base while data center contributes the incremental tilt.",
+        "risks": "Liquid cooling ramp execution; competition from JCI on chillers; commercial real-estate cyclicality on non-DC business.",
+        "status": "draft"
+      }
     },
     "CARR": {
       "name": "Carrier Global",
@@ -573,8 +663,23 @@
       "segment_exposures": [
         {"segment": "Cooling", "share_2026": 0.08, "note": "Quantum + AquaForce chillers. Post-Viessmann pivot toward climate solutions"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 66,
+        "price_12mo_ago_usd": 70,
+        "market_cap_b": 55,
+        "ttm_revenue_b": 21,
+        "fwd_revenue_2026_b": 22,
+        "fwd_pe": 22,
+        "as_of": "2026-05-11",
+        "notes": "Q1 2026 revenue $5.34B (+2.4%); FY26 guide ~$22B (flat-low single digit). Data center orders +500% in Q1; DC backlog $1B → $1.5B target."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium-high",
+        "short": "Carrier looks like an FCR outlier: 8% cooling share → ~$5.4B theoretical flow vs. ~$1B implied growth → FCR ~5.4, Higher conviction. The flat overall revenue guide reflects the legacy residential/commercial drag; the data center line is masked at 5x order growth and on a path to $1.5B in 2026 alone. Stock has lagged peers (CARR -6% TTM vs TT +20%, JCI +75%) precisely because the DC story is buried in the consolidated guide.",
+        "risks": "Residential HVAC weakness offsetting DC orders longer than expected; Viessmann integration drag continues; share defense vs Trane LiquidStack.",
+        "status": "draft"
+      }
     },
     "MOD": {
       "name": "Modine",
