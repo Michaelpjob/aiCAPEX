@@ -38,8 +38,23 @@
       "segment_exposures": [
         {"segment": "GPUs", "share_2026": 0.085, "note": "MI355X / MI400X scaling. Second-source share with Microsoft, Meta, Oracle"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 385,
+        "price_12mo_ago_usd": 120,
+        "market_cap_b": 625,
+        "ttm_revenue_b": 35,
+        "fwd_revenue_2026_b": 52,
+        "fwd_pe": 38,
+        "as_of": "2026-05-06",
+        "notes": "Q1 2026 revenue $10.25B (beat $9.89B); data center $5.8B (+57% YoY); stock +66% YTD 2026; Lisa Su doubled long-term forecast."
+      },
+      "thesis": {
+        "call": "priced",
+        "confidence": "medium",
+        "short": "The MI300/350 ramp and CPU pull-through from Intel's structural weakness lift AMD's hyperscaler-attributable flow to ~$24.5B for 2026. Consensus already models $17B of revenue growth, so FCR sits around 1.4 — just below the Higher conviction threshold. The story is real but execution-dependent: every quarter that data center revenue prints at or above guidance compounds the multiple, every miss compresses it.",
+        "risks": "Hyperscaler second-source slot durability vs. NVIDIA's Blackwell/Rubin cadence; foundry capacity allocation at TSMC competing with Apple/NVIDIA/Broadcom; macro CPU demand stickiness as EPYC matures.",
+        "status": "draft"
+      }
     },
     "AVGO": {
       "name": "Broadcom",
@@ -50,8 +65,23 @@
         {"segment": "GPUs", "share_2026": 0.075, "note": "Custom ASIC design partner (Google TPU, Meta MTIA — counted as design IP share, not full bill)"},
         {"segment": "Networking", "share_2026": 0.13, "note": "Tomahawk + Jericho switch silicon — most hyperscaler whitebox switches use Broadcom"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 430,
+        "price_12mo_ago_usd": 165,
+        "market_cap_b": 2040,
+        "ttm_revenue_b": 60,
+        "fwd_revenue_2026_b": 85,
+        "fwd_pe": 35,
+        "as_of": "2026-05-10",
+        "notes": "Q1 FY26 revenue $19.3B (+29% YoY); AI semiconductors $8.4B (+106%); Q2 guide $22B; FY26 implied $85B; mgmt envisions AI chip rev >$100B by FY27 backed by $73B backlog."
+      },
+      "thesis": {
+        "call": "priced",
+        "confidence": "medium",
+        "short": "The flagship custom-ASIC franchise (Google TPU + Meta MTIA + emerging AWS/Microsoft engagements) plus Tomahawk switching silicon gives Broadcom ~$29B of theoretical 2026 flow. Consensus already models $25B of revenue growth. FCR around 1.2 sits squarely in Priced. The bull case (AI revenue >$100B by FY27) is partly built into the 35x multiple; the bear case is that custom-ASIC wins are lumpy and a single hyperscaler reverting to NVIDIA could compress estimates fast.",
+        "risks": "Customer concentration in custom-ASIC business; potential NVDA share defense via Spectrum-X eroding Tomahawk's whitebox advantage; VMware integration drag on operating leverage.",
+        "status": "draft"
+      }
     },
     "INTC": {
       "name": "Intel",
@@ -73,8 +103,23 @@
       "segment_exposures": [
         {"segment": "Memory", "share_2026": 0.20, "note": "HBM3E shipping at scale; HBM4 sampling. US-domestic supply premium"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 804,
+        "price_12mo_ago_usd": 115,
+        "market_cap_b": 907,
+        "ttm_revenue_b": 50,
+        "fwd_revenue_2026_b": 76,
+        "fwd_pe": 35,
+        "as_of": "2026-05-11",
+        "notes": "Stock +124% YTD 2026, +700% over past year. Q1 FY26 record $13.64B; Q2 guide $18.7B at 68% GM; FY26 consensus ~$76B; 2026 HBM supply sold out."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "The HBM supercycle is real and Micron's 20% segment share is structural (US-domestic supply premium matters under CHIPS Act and export-control regimes). But consensus already models a $26B revenue jump while the hyperscaler-attributable memory flow only accounts for ~$13.6B at Micron's share. FCR around 0.5 says the market is paying for more growth than the hyperscaler capex line can supply by itself. Auto-FCR Lower conviction; bull counter is that HBM TAM and DRAM blended ASPs lift all boats.",
+        "risks": "Cycle peak ASP normalization; HBM4 yield ramp at Boise/Singapore; consensus revision risk if any quarter prints below the parabolic curve.",
+        "status": "draft"
+      }
     },
     "HXSCL": {
       "name": "SK Hynix",
@@ -85,8 +130,23 @@
       "segment_exposures": [
         {"segment": "Memory", "share_2026": 0.525, "note": "HBM3E dominant; HBM4 capacity allocated through 2028. The single most supply-critical AI input"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 1140,
+        "price_12mo_ago_usd": 120,
+        "market_cap_b": 900,
+        "ttm_revenue_b": 68,
+        "fwd_revenue_2026_b": 150,
+        "fwd_pe": 12,
+        "as_of": "2026-05-11",
+        "notes": "Native KRX listing 000660.KS at ~1.95M won ATH. OTC ADR price approximate. Q1 2026 revenue 52.58T KRW (+198% YoY); 2026 capacity sold out; MSFT 3-year DDR5 deal."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "HBM monopoly with capacity sold out through 2026 and HBM4 allocated through 2028. Theoretical 2026 memory flow ($36B at 53% share) is meaningful but consensus already prices in $82B of revenue growth ($68B TTM → $150B FWD) thanks to a 700%+ stock run. FCR around 0.4 says the market is paying for more growth than the hyperscaler-attributable memory line alone can supply. Auto-FCR flags Lower conviction; the flip-side argument is that HBM TAM extends well beyond hyperscaler capex (enterprise AI, smartphones, autos).",
+        "risks": "Cycle peak risk if HBM ASPs normalize 2027+; Samsung HBM3E/4 qualification at NVDA closing the share gap; geopolitical exposure (KRW/USD, Korea-China relations).",
+        "status": "draft"
+      }
     },
     "SSNLF": {
       "name": "Samsung Electronics",
@@ -109,8 +169,23 @@
       "segment_exposures": [
         {"segment": "Networking", "share_2026": 0.20, "note": "Whitebox-style 7800R / 7060X with Broadcom Tomahawk. Meta + Microsoft are anchor customers"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 142,
+        "price_12mo_ago_usd": 80,
+        "market_cap_b": 214,
+        "ttm_revenue_b": 9.0,
+        "fwd_revenue_2026_b": 11.5,
+        "fwd_pe": 45,
+        "as_of": "2026-05-08",
+        "notes": "2026 guide raised to $11.5B revenue + $3.5B AI; Q1 revenue $2.71B; Q2 guide $2.8B; analyst targets $181-200."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Arista captures ~$11.8B of theoretical 2026 networking flow against just ~$2.5B implied revenue growth — FCR around 4.7, comfortably Higher conviction. The Meta + Microsoft anchor relationships are sticky (custom EOS firmware integration is a 12-18 month switching cost), and the $3.5B AI line item the company called out is conservative versus the modelled flow. Multiple at 45x looks high but consensus will likely revise up.",
+        "risks": "Hyperscaler whitebox encroachment (especially NVIDIA Spectrum-X); customer concentration (~50% revenue from Meta + Microsoft); pricing pressure if Broadcom Tomahawk silicon becomes more commoditized at top-of-rack.",
+        "status": "draft"
+      }
     },
     "CSCO": {
       "name": "Cisco",
@@ -225,8 +300,23 @@
         {"segment": "Electrical", "share_2026": 0.18, "note": "UPS + busway + Liebert. Hyperscaler reference vendor in power chain"},
         {"segment": "Cooling", "share_2026": 0.18, "note": "Liquid cooling acquisition (CoolTera) + Liebert thermal. Dual-segment leverage"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 369,
+        "price_12mo_ago_usd": 120,
+        "market_cap_b": 142,
+        "ttm_revenue_b": 10.8,
+        "fwd_revenue_2026_b": 14.5,
+        "fwd_pe": 50,
+        "as_of": "2026-05-11",
+        "notes": "ATH $358.92 on May 6, intraday $372 May 11. Citi target raised to $414. TTM revenue $10.84B."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium-high",
+        "short": "Dual-segment Electrical + Cooling exposure produces ~$27.5B of theoretical 2026 flow, vs. just ~$3.7B implied growth. FCR around 7.4 puts this firmly in Higher conviction even after the 200%+ YoY stock run. The reference-vendor status with Microsoft, Meta, and Oracle on UPS/busway plus the CoolTera liquid cooling acquisition is the structural moat. Valuation isn't cheap (50x fwd) but the flow gap supports the multiple even as estimates catch up.",
+        "risks": "Margin compression from liquid-cooling ramp; share defense from Schneider Motivair + Johnson Controls; multiple re-rate risk if hyperscaler capex cadence wobbles.",
+        "status": "draft"
+      }
     },
     "ETN": {
       "name": "Eaton",
@@ -236,8 +326,23 @@
       "segment_exposures": [
         {"segment": "Electrical", "share_2026": 0.16, "note": "Switchgear + transformers + busway. Long-cycle backlog, multi-year visibility"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 402,
+        "price_12mo_ago_usd": 310,
+        "market_cap_b": 139,
+        "ttm_revenue_b": 27.5,
+        "fwd_revenue_2026_b": 30.9,
+        "fwd_pe": 34,
+        "as_of": "2026-05-09",
+        "notes": "Q1 2026 sales $7.45B record; FY26 estimate $30.94B (+12.7%); avg analyst target $445."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Eaton's ~$13.6B of theoretical 2026 electrical flow vs. ~$3.4B implied revenue growth yields FCR around 4 — solid Higher conviction. The backlog is long-cycle (switchgear and transformer lead times measured in 60-100 weeks), so revenue conversion is visible. Consensus models a normalization that the backlog won't accommodate; either Eaton ships more than guided or the backlog extends further, both bullish.",
+        "risks": "Copper and steel cost pass-through lag; share loss to Schneider/Vertiv on switchgear at margin; non-DC industrial cyclicality.",
+        "status": "draft"
+      }
     },
     "SBGSY": {
       "name": "Schneider Electric",
@@ -250,8 +355,23 @@
         {"segment": "Cooling", "share_2026": 0.18, "note": "Motivair acquisition for high-density liquid cooling"},
         {"segment": "DCIM", "share_2026": 0.25, "note": "EcoStruxure IT — embedded controls layer"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 64,
+        "price_12mo_ago_usd": 50,
+        "market_cap_b": 175,
+        "ttm_revenue_b": 43,
+        "fwd_revenue_2026_b": 47,
+        "fwd_pe": 28,
+        "as_of": "2026-05-07",
+        "notes": "OTC ADR price. Native SU.PA €272.95. FY26 guide 7-10% organic growth + 10-15% adj EBITDA growth; Q1 2026 revenue +11% to €10B."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "The three-segment exposure (Electrical, Cooling, DCIM) gives Schneider ~$33B of theoretical 2026 flow — comparable to ~75% of total company revenue. Consensus only models ~10% revenue growth ($4B implied). FCR around 8 makes this the cleanest 'flow vs. priced-in growth' gap in the entire universe. The market still values Schneider as a diversified industrial conglomerate rather than a pure-play data center electrification beneficiary.",
+        "risks": "Multi-segment also means slow re-rating: not all of Schneider's revenue is data center, and the 'industrial' multiple drag is real. EU exposure + EUR/USD. Competition from Vertiv in DCIM and Eaton in switchgear at margin.",
+        "status": "draft"
+      }
     },
     "ABBNY": {
       "name": "ABB",
