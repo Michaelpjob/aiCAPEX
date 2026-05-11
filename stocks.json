@@ -12,8 +12,23 @@
         {"segment": "GPUs", "share_2026": 0.80, "note": "Decaying to ~70% by 2029 as custom ASICs scale"},
         {"segment": "Networking", "share_2026": 0.175, "note": "Spectrum-X — 0 to ~18% DC share in ~24 months"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 220.00,
+        "price_12mo_ago_usd": 135.00,
+        "market_cap_b": 5400,
+        "ttm_revenue_b": 215.9,
+        "fwd_revenue_2026_b": 366.8,
+        "fwd_pe": 32,
+        "as_of": "2026-05-08",
+        "notes": "TTM = fiscal year ended Jan 31 2026. Fwd = analyst consensus FY27 (calendar 2026). Price as of May 8 2026 ATH."
+      },
+      "thesis": {
+        "call": "priced",
+        "confidence": "medium",
+        "short": "NVIDIA captures ~$241B of theoretical 2026 flow across GPUs (~80% share) and Spectrum-X networking. Consensus already models 70%+ revenue growth, so FCR sits around 1.6 — flow technically exceeds the implied jump. Priced rather than higher-conviction because the 92%→68% share decay through 2029 is real: Broadcom-designed ASICs (Google TPU, Meta MTIA, AWS Trainium) and AMD MI355X are taking second-source slots, and the market is already paying for whatever durability emerges.",
+        "risks": "Custom-ASIC share erosion in accelerators; HBM4 supply allocation timing; export-control shocks; multiple compression on any single guide miss.",
+        "status": "draft"
+      }
     },
     "AMD": {
       "name": "AMD",
@@ -327,10 +342,25 @@
       "currency": "USD",
       "primary_segment": "Cooling",
       "segment_exposures": [
-        {"segment": "Cooling", "share_2026": 0.05, "note": "Airedale acquisition: precision cooling + CDUs. Data center segment ~35% of revenue"}
+        {"segment": "Cooling", "share_2026": 0.05, "note": "Airedale acquisition: precision cooling + CDUs. Data center segment ~25% of revenue and rising fast"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 268.00,
+        "price_12mo_ago_usd": 100.00,
+        "market_cap_b": 14,
+        "ttm_revenue_b": 3.0,
+        "fwd_revenue_2026_b": 3.6,
+        "fwd_pe": 35,
+        "as_of": "2026-05-06",
+        "notes": "FY26 guide implies 20-25% sales growth. DC sales +78% YoY in Q3 FY26."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium-high",
+        "short": "Theoretical 2026 cooling flow attributable to Modine (~$3.4B at 5% share) is comparable to total company revenue. Data center segment went from 4% to 25%+ of sales in two years and analyst DC revenue estimates run to $1.6B FY27 / $2.6B FY28. FCR around 6.8 says the consensus revenue ramp ($3.0B TTM → $3.6B FWD) is still well under what the segment math implies, even after the 170% YoY stock run.",
+        "risks": "Share loss to Vertiv/Schneider in high-density liquid cooling; valuation re-rate already partially complete (industrial → AI-cooling multiple); macro pullback in legacy automotive segment masks DC growth.",
+        "status": "draft"
+      }
     },
 
     "CAT": {
