@@ -716,8 +716,23 @@
       "segment_exposures": [
         {"segment": "Power Gen", "share_2026": 0.30, "note": "Diesel + gas gensets, large-frame. Backup power leader"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 750,
+        "price_12mo_ago_usd": 350,
+        "market_cap_b": 370,
+        "ttm_revenue_b": 63,
+        "fwd_revenue_2026_b": 67,
+        "fwd_pe": 24,
+        "as_of": "2026-05-05",
+        "notes": "Q1 2026 revenue $17.4B; Power Gen revenue +41% YoY; backlog $63B exiting Q1 (vs $51B end-2025). Stock +32% YTD."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "CAT captures ~$10.2B of theoretical 2026 Power Gen flow at 30% segment share. Implied total revenue growth ~$4B yields FCR ~2.5, Higher conviction. The diluted FCR understates the Power Gen segment specifically (revenue +41% YoY in Q1); the conglomerate's mining + construction segments are the multiple drag. Backlog visibility through 2028 from data center gensets is the most durable AI power infrastructure story.",
+        "risks": "Construction + mining cyclicality on non-DC segments; backup-to-prime power competition from gas turbine alternatives; gross margin compression on liquid-cooled cabinet integration.",
+        "status": "draft"
+      }
     },
     "CMI": {
       "name": "Cummins",
@@ -727,8 +742,23 @@
       "segment_exposures": [
         {"segment": "Power Gen", "share_2026": 0.25, "note": "Standby diesel + HSB engines. New data center vertical splash"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 700,
+        "price_12mo_ago_usd": 350,
+        "market_cap_b": 96.6,
+        "ttm_revenue_b": 34,
+        "fwd_revenue_2026_b": 37,
+        "fwd_pe": 22,
+        "as_of": "2026-05-11",
+        "notes": "FY26 guide raised to +8-11%; Power Systems +19% Q1 with $2B in revenue at 29.5% segment EBITDA margin; DC revenue $3.5B (2025) backlog into 2028."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Cummins' 25% segment share generates ~$8.5B of theoretical flow against ~$3B implied revenue growth — FCR ~2.8, Higher conviction. Power Systems is now the highest-margin segment (29.5%) and accelerating; consensus still values Cummins as a North American on-highway engine cyclical. The DC backlog runs into 2028 with limited visible competitive entry — Cummins + CAT structurally split the genset market.",
+        "risks": "EPA emissions regulation cadence on on-highway diesel; share concession to CAT on large-frame; HSB integration drag from acquisitions.",
+        "status": "draft"
+      }
     },
     "GEV": {
       "name": "GE Vernova",
@@ -739,8 +769,23 @@
         {"segment": "Power Gen", "share_2026": 0.20, "note": "Aeroderivative gas turbines for onsite generation"},
         {"segment": "Utility/Grid", "share_2026": 0.22, "note": "Grid Solutions transformers + HVDC. Long-cycle backlog"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 1083,
+        "price_12mo_ago_usd": 190,
+        "market_cap_b": 290,
+        "ttm_revenue_b": 36,
+        "fwd_revenue_2026_b": 45,
+        "fwd_pe": 55,
+        "as_of": "2026-05-11",
+        "notes": "Stock +71% YTD 2026, +470% from IPO; 2026 guide raised to $44.5-45.5B; gas turbine production scaling to 20 GW/yr by mid-2026."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium-high",
+        "short": "Dual exposure to Power Gen (20% gas turbines) and Utility/Grid (22% transformers + HVDC) generates ~$16B of theoretical flow against ~$9B implied revenue growth — FCR ~1.8, Higher conviction by auto-derivation. The 55x multiple already prices in considerable expansion; the bull case is that the 20+ GW gas turbine capacity scale-out is undermodeled. Wind segment remains the drag but is converging.",
+        "risks": "Gas turbine production ramp execution (long-cycle bottlenecks); wind segment loss continuation; consensus has caught up to the structural setup so future re-rating depends on incremental positive surprises.",
+        "status": "draft"
+      }
     },
     "RYCEY": {
       "name": "Rolls-Royce",
@@ -751,8 +796,23 @@
       "segment_exposures": [
         {"segment": "Power Gen", "share_2026": 0.08, "note": "mtu gensets — premium reciprocating engines. Small-modular-reactor optionality"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 16,
+        "price_12mo_ago_usd": 8,
+        "market_cap_b": 135,
+        "ttm_revenue_b": 22,
+        "fwd_revenue_2026_b": 23.5,
+        "fwd_pe": 30,
+        "as_of": "2026-05-06",
+        "notes": "Native GBp on RR.L at 1279p; RYCEY ADR ~$16. Mid-term operating profit £4.9-5.2B target. Aerospace dominant; mtu Power Systems is the DC line."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "low",
+        "short": "Rolls-Royce's data center exposure is the mtu standby genset franchise (8% Power Gen share = $2.7B theoretical flow) against $1.5B implied total-company revenue growth. FCR ~1.8 reads as Higher conviction, but mtu is only ~£3B of the ~£18B parent (aerospace dominant). The stock has been a multi-bagger on civil aerospace recovery; the data center line is secondary. SMR optionality is real but multi-year out.",
+        "risks": "Aerospace cycle peak (the actual driver); SMR commercialization timing (mid-decade earliest); mtu share concession to Cat + Cummins on big gensets.",
+        "status": "draft"
+      }
     },
 
     "PWR": {
@@ -763,8 +823,23 @@
       "segment_exposures": [
         {"segment": "Utility/Grid", "share_2026": 0.18, "note": "Transmission line construction. Beneficiary of every new data-center substation"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 745,
+        "price_12mo_ago_usd": 290,
+        "market_cap_b": 110,
+        "ttm_revenue_b": 23,
+        "fwd_revenue_2026_b": 26,
+        "fwd_pe": 40,
+        "as_of": "2026-05-08",
+        "notes": "ATH $785 May 6; 2026 forecast +14.6% revenue growth; double-digit guide driven by data center + renewables + utility infrastructure."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Quanta Services is the cleanest pure-play on hyperscaler grid build-out: 18% Utility/Grid share generates ~$7.6B of theoretical flow against ~$3B implied revenue growth (FCR ~2.5, Higher conviction). Every new data center campus needs substation interconnection and high-voltage transmission spurs, and PWR has the largest U.S. line crew. Trades at 40x because the durability story is well-understood, but the segment growth keeps surprising upward.",
+        "risks": "Labor availability constraining capacity; project deferrals on slowing renewables; consensus revision lag forcing multiple compression if any one quarter prints below.",
+        "status": "draft"
+      }
     },
     "ENGGY": {
       "name": "Siemens Energy",
@@ -775,8 +850,23 @@
       "segment_exposures": [
         {"segment": "Utility/Grid", "share_2026": 0.15, "note": "HV transformers + grid technology. Multi-year capacity-constrained backlog"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 176,
+        "price_12mo_ago_usd": 65,
+        "market_cap_b": 140,
+        "ttm_revenue_b": 39,
+        "fwd_revenue_2026_b": 44,
+        "fwd_pe": 32,
+        "as_of": "2026-05-11",
+        "notes": "Native EUR on ENR.DE; ATH €191.66 (Apr 24). FY26 revenue growth guide 14-16%; Grid Technologies guide 25-27%."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Siemens Energy's 15% Utility/Grid share gives ~$6.3B of theoretical 2026 flow against ~$5B implied revenue growth — FCR ~1.26, Priced. The Grid Technologies segment runs at 25-27% growth and is capacity-constrained on transformers + HVDC, but the parent company's gas + wind drag dilutes the story. The 14% YoY share gain in price suggests consensus has largely caught up.",
+        "risks": "Gas + wind segment execution overshadowing Grid Tech outperformance; long-cycle transformer order book sensitivity; FX (EUR) drag on USD-reported growth.",
+        "status": "draft"
+      }
     },
     "MTZ": {
       "name": "MasTec",
@@ -786,8 +876,23 @@
       "segment_exposures": [
         {"segment": "Utility/Grid", "share_2026": 0.10, "note": "T&D + pipeline construction. Less hyperscaler-pure than PWR"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 437,
+        "price_12mo_ago_usd": 140,
+        "market_cap_b": 35,
+        "ttm_revenue_b": 14.3,
+        "fwd_revenue_2026_b": 17.5,
+        "fwd_pe": 40,
+        "as_of": "2026-05-05",
+        "notes": "FY26 guide $17.5B revenue (+22% YoY); record backlog $20.3B driven by communications + clean energy. Q1 2026 revenue $3.8B vs $3.47B consensus."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "MasTec captures ~$4.2B of theoretical 2026 utility flow against ~$3.2B implied revenue growth — FCR ~1.31, Priced. Less hyperscaler-pure than PWR (Quanta Services): MasTec's mix includes communications and oil & gas pipeline construction. The 22% revenue growth guide is partly non-DC. Auto-FCR says the data center grid story is roughly fairly priced after the 200%+ run.",
+        "risks": "Communications + oil/gas mix dragging segment focus; share concession to PWR on the highest-margin transmission projects; labor scarcity at peak demand.",
+        "status": "draft"
+      }
     },
     "CEG": {
       "name": "Constellation Energy",
@@ -795,10 +900,25 @@
       "currency": "USD",
       "primary_segment": "Utility/Grid",
       "segment_exposures": [
-        {"segment": "Utility/Grid", "share_2026": 0.10, "note": "Largest US nuclear fleet. Behind-the-meter PPAs with Microsoft (Three Mile Island restart)"}
+        {"segment": "Utility/Grid", "share_2026": 0.10, "note": "Largest US nuclear fleet + Calpine gas. Behind-the-meter PPAs with Microsoft (Three Mile Island restart)"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 320,
+        "price_12mo_ago_usd": 240,
+        "market_cap_b": 100,
+        "ttm_revenue_b": 32,
+        "fwd_revenue_2026_b": 45,
+        "fwd_pe": 28,
+        "as_of": "2026-05-11",
+        "notes": "Calpine acquisition closed Jan 2026 ($16.4B); Q1 2026 revenue $11.12B; FY26 EPS guide $11-12. Crane Clean Energy Center restart interconnection PJM-delayed to potentially 2031 — Microsoft PPA at risk."
+      },
+      "thesis": {
+        "call": "watching",
+        "confidence": "low",
+        "short": "Constellation's FCR (~0.32) is structurally noisy: the $13B implied revenue growth is mostly the Calpine acquisition rather than organic data center demand. The 10% utility share gives ~$4.2B of theoretical flow, but the Microsoft PPA (Three Mile Island restart) is the actual signal worth watching — PJM interconnection delay to potentially 2031 has dented the bull thesis. Override to Watching until the regulatory path clarifies and Calpine integration produces a clean organic baseline.",
+        "risks": "PJM interconnection timing on Crane restart; Calpine integration distraction; nuclear PTC monetization vs commodity power price spread; reduced PPA pricing power if delays accumulate.",
+        "status": "draft"
+      }
     },
     "NEE": {
       "name": "NextEra Energy",
@@ -808,8 +928,23 @@
       "segment_exposures": [
         {"segment": "Utility/Grid", "share_2026": 0.10, "note": "Renewable + storage developer. Bulk PPA partner to hyperscalers"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 93,
+        "price_12mo_ago_usd": 74,
+        "market_cap_b": 193,
+        "ttm_revenue_b": 28,
+        "fwd_revenue_2026_b": 30,
+        "fwd_pe": 20,
+        "as_of": "2026-05-04",
+        "notes": "Q1 2026 net income +162% YoY to $2.18B; renewables backlog 33 GW (+4 GW Q1); largest US utility by market cap."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "NextEra is the renewable + storage bulk-PPA partner of choice for hyperscalers. 10% utility share generates ~$4.2B of theoretical 2026 flow against ~$2B implied revenue growth — FCR ~2.1, Higher conviction by auto-derivation. The defensive regulated utility (FPL) cushions cyclicality while NEER renewables provides the DC-linked optionality.",
+        "risks": "ITC/PTC policy continuity (IRA durability); interconnection queue timing on new renewables; share defense as data centers shift toward 24/7 gas+nuclear behind-the-meter.",
+        "status": "draft"
+      }
     },
     "VST": {
       "name": "Vistra",
@@ -817,10 +952,25 @@
       "currency": "USD",
       "primary_segment": "Utility/Grid",
       "segment_exposures": [
-        {"segment": "Utility/Grid", "share_2026": 0.08, "note": "Nuclear (Comanche Peak) + gas. ERCOT-heavy data center load growth"}
+        {"segment": "Utility/Grid", "share_2026": 0.08, "note": "Nuclear (Comanche Peak) + gas + Cogentrix. ERCOT-heavy data center load growth"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 148,
+        "price_12mo_ago_usd": 98,
+        "market_cap_b": 50,
+        "ttm_revenue_b": 17,
+        "fwd_revenue_2026_b": 23,
+        "fwd_pe": 18,
+        "as_of": "2026-05-08",
+        "notes": "Q1 2026 revenue $5.64B (+43% YoY); 2.6 GW PJM nuclear PPA with Meta; Cogentrix 5.5 GW natural gas acquisition pending. Analyst target avg $234."
+      },
+      "thesis": {
+        "call": "underrated",
+        "confidence": "medium",
+        "short": "Auto-FCR flags Vistra as Lower conviction (~0.56) but that's a model artifact: the 8% utility-bucket share doesn't fully capture the named Meta PPAs at PJM nuclear sites, the Cogentrix gas acquisition, or ERCOT data-center load growth. Overriding to Higher conviction (manual call). The 18x FWD P/E is cheap relative to the structural setup; analyst target $234 vs spot $148 implies 58% upside that consensus has largely under-modeled.",
+        "risks": "PJM interconnection delays (same risk as CEG); Cogentrix integration; gas commodity price exposure on uncovered megawatts.",
+        "status": "draft"
+      }
     },
 
     "ACM": {
