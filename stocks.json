@@ -1,0 +1,586 @@
+{
+  "last_updated": "2026-05-11",
+  "schema_version": 1,
+  "notes": "Financials and thesis fields are null until manually populated. Auto-rendered card shows 'Thesis pending' state when thesis.short is null. The Sankey waterfall and supplier shares come from data.js — never duplicate them here.",
+  "tickers": {
+    "NVDA": {
+      "name": "NVIDIA",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "GPUs",
+      "segment_exposures": [
+        {"segment": "GPUs", "share_2026": 0.80, "note": "Decaying to ~70% by 2029 as custom ASICs scale"},
+        {"segment": "Networking", "share_2026": 0.175, "note": "Spectrum-X — 0 to ~18% DC share in ~24 months"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "AMD": {
+      "name": "AMD",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "GPUs",
+      "segment_exposures": [
+        {"segment": "GPUs", "share_2026": 0.085, "note": "MI355X / MI400X scaling. Second-source share with Microsoft, Meta, Oracle"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "AVGO": {
+      "name": "Broadcom",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "GPUs",
+      "segment_exposures": [
+        {"segment": "GPUs", "share_2026": 0.075, "note": "Custom ASIC design partner (Google TPU, Meta MTIA — counted as design IP share, not full bill)"},
+        {"segment": "Networking", "share_2026": 0.13, "note": "Tomahawk + Jericho switch silicon — most hyperscaler whitebox switches use Broadcom"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "INTC": {
+      "name": "Intel",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "GPUs",
+      "segment_exposures": [
+        {"segment": "GPUs", "share_2026": 0.04, "note": "Gaudi 3 + Falcon Shores. Long-shot accelerator share"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "MU": {
+      "name": "Micron",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "Memory",
+      "segment_exposures": [
+        {"segment": "Memory", "share_2026": 0.20, "note": "HBM3E shipping at scale; HBM4 sampling. US-domestic supply premium"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "HXSCL": {
+      "name": "SK Hynix",
+      "native_ticker": "000660.KS",
+      "exchange": "KRX (ADR: SKHNF / HXSCL on OTC)",
+      "currency": "KRW",
+      "primary_segment": "Memory",
+      "segment_exposures": [
+        {"segment": "Memory", "share_2026": 0.525, "note": "HBM3E dominant; HBM4 capacity allocated through 2028. The single most supply-critical AI input"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "SSNLF": {
+      "name": "Samsung Electronics",
+      "native_ticker": "005930.KS",
+      "exchange": "KRX (ADR: SSNLF, illiquid)",
+      "currency": "KRW",
+      "primary_segment": "Memory",
+      "segment_exposures": [
+        {"segment": "Memory", "share_2026": 0.275, "note": "HBM3E qualification with NVIDIA still partial. Share gain optional if HBM4 ramps cleanly"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "ANET": {
+      "name": "Arista Networks",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Networking",
+      "segment_exposures": [
+        {"segment": "Networking", "share_2026": 0.20, "note": "Whitebox-style 7800R / 7060X with Broadcom Tomahawk. Meta + Microsoft are anchor customers"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "CSCO": {
+      "name": "Cisco",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "Networking",
+      "segment_exposures": [
+        {"segment": "Networking", "share_2026": 0.24, "note": "Declining hyperscaler share but still leads enterprise + tier-2 cloud"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "COHR": {
+      "name": "Coherent",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Networking",
+      "segment_exposures": [
+        {"segment": "Networking", "share_2026": 0.06, "note": "800G transceivers + EML lasers. Datacom optics is the durable franchise"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "LITE": {
+      "name": "Lumentum",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "Networking",
+      "segment_exposures": [
+        {"segment": "Networking", "share_2026": 0.04, "note": "Indium phosphide laser supply + Cloud Light pluggables. 1.6T ramp"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "DELL": {
+      "name": "Dell Technologies",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Servers",
+      "segment_exposures": [
+        {"segment": "Servers", "share_2026": 0.20, "note": "PowerEdge XE9712 / GB200 racks. The OEM channel for tier-2 hyperscalers and AI-natives"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "HPE": {
+      "name": "Hewlett Packard Enterprise",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Servers",
+      "segment_exposures": [
+        {"segment": "Servers", "share_2026": 0.06, "note": "ProLiant + Cray. Juniper integration adds networking adjacency"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "SMCI": {
+      "name": "Super Micro",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "Servers",
+      "segment_exposures": [
+        {"segment": "Servers", "share_2026": 0.08, "note": "Liquid-cooled GB200 / GB300 specialist. Direct-to-AI-native flow"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "QUANTA_TW": {
+      "name": "Quanta Computer",
+      "native_ticker": "2382.TW",
+      "exchange": "TWSE",
+      "currency": "TWD",
+      "primary_segment": "Servers",
+      "segment_exposures": [
+        {"segment": "Servers", "share_2026": 0.27, "note": "Largest single ODM. Meta + Google + AWS reference designs"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "WIWYNN_TW": {
+      "name": "Wiwynn",
+      "native_ticker": "6669.TW",
+      "exchange": "TWSE",
+      "currency": "TWD",
+      "primary_segment": "Servers",
+      "segment_exposures": [
+        {"segment": "Servers", "share_2026": 0.14, "note": "Microsoft + Meta primary ODM. Spinoff of Wistron with concentrated hyperscaler exposure"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "FOXCONN_TW": {
+      "name": "Hon Hai (Foxconn)",
+      "native_ticker": "2317.TW",
+      "exchange": "TWSE (ADR: HNHPF, illiquid)",
+      "currency": "TWD",
+      "primary_segment": "Servers",
+      "segment_exposures": [
+        {"segment": "Servers", "share_2026": 0.12, "note": "Largest contract manufacturer overall; growing AI server share via NVIDIA partnership"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "VRT": {
+      "name": "Vertiv",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Electrical",
+      "segment_exposures": [
+        {"segment": "Electrical", "share_2026": 0.18, "note": "UPS + busway + Liebert. Hyperscaler reference vendor in power chain"},
+        {"segment": "Cooling", "share_2026": 0.18, "note": "Liquid cooling acquisition (CoolTera) + Liebert thermal. Dual-segment leverage"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "ETN": {
+      "name": "Eaton",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Electrical",
+      "segment_exposures": [
+        {"segment": "Electrical", "share_2026": 0.16, "note": "Switchgear + transformers + busway. Long-cycle backlog, multi-year visibility"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "SBGSY": {
+      "name": "Schneider Electric",
+      "native_ticker": "SU.PA",
+      "exchange": "ENXTPA (ADR: SBGSY on OTC)",
+      "currency": "EUR",
+      "primary_segment": "Electrical",
+      "segment_exposures": [
+        {"segment": "Electrical", "share_2026": 0.20, "note": "Square D + Galaxy + APC. Largest single electrical vendor by hyperscaler share"},
+        {"segment": "Cooling", "share_2026": 0.18, "note": "Motivair acquisition for high-density liquid cooling"},
+        {"segment": "DCIM", "share_2026": 0.25, "note": "EcoStruxure IT — embedded controls layer"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "ABBNY": {
+      "name": "ABB",
+      "native_ticker": "ABBN.SW",
+      "exchange": "SWX (ADR: ABBNY)",
+      "currency": "CHF",
+      "primary_segment": "Electrical",
+      "segment_exposures": [
+        {"segment": "Electrical", "share_2026": 0.12, "note": "MV / LV switchgear + automation. Strong in EU data center buildouts"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "SIEGY": {
+      "name": "Siemens",
+      "native_ticker": "SIE.DE",
+      "exchange": "XETRA (ADR: SIEGY)",
+      "currency": "EUR",
+      "primary_segment": "Electrical",
+      "segment_exposures": [
+        {"segment": "Electrical", "share_2026": 0.10, "note": "Sivacon + Sentron LV gear; complemented by Siemens Energy on HV side"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "HUBB": {
+      "name": "Hubbell",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Electrical",
+      "segment_exposures": [
+        {"segment": "Electrical", "share_2026": 0.04, "note": "Wiring devices + lighting (Legrand-adjacent share)"},
+        {"segment": "Utility/Grid", "share_2026": 0.07, "note": "Transmission/distribution components — direct utility-side spend"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "LGRDY": {
+      "name": "Legrand",
+      "native_ticker": "LR.PA",
+      "exchange": "ENXTPA (ADR: LGRDY on OTC)",
+      "currency": "EUR",
+      "primary_segment": "Electrical",
+      "segment_exposures": [
+        {"segment": "Electrical", "share_2026": 0.04, "note": "Cable management + PDUs + Raritan + Server Tech. Rack-level electrical"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "JCI": {
+      "name": "Johnson Controls",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Cooling",
+      "segment_exposures": [
+        {"segment": "Cooling", "share_2026": 0.12, "note": "YORK chillers + air-side units. Post-Tyco simplification refocus on buildings"},
+        {"segment": "DCIM", "share_2026": 0.12, "note": "Metasys / OpenBlue building automation"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "TT": {
+      "name": "Trane Technologies",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Cooling",
+      "segment_exposures": [
+        {"segment": "Cooling", "share_2026": 0.10, "note": "Trane chillers; growing data-center mix"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "CARR": {
+      "name": "Carrier Global",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Cooling",
+      "segment_exposures": [
+        {"segment": "Cooling", "share_2026": 0.08, "note": "Quantum + AquaForce chillers. Post-Viessmann pivot toward climate solutions"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "MOD": {
+      "name": "Modine",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Cooling",
+      "segment_exposures": [
+        {"segment": "Cooling", "share_2026": 0.05, "note": "Airedale acquisition: precision cooling + CDUs. Data center segment ~35% of revenue"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "CAT": {
+      "name": "Caterpillar",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Power Gen",
+      "segment_exposures": [
+        {"segment": "Power Gen", "share_2026": 0.30, "note": "Diesel + gas gensets, large-frame. Backup power leader"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "CMI": {
+      "name": "Cummins",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Power Gen",
+      "segment_exposures": [
+        {"segment": "Power Gen", "share_2026": 0.25, "note": "Standby diesel + HSB engines. New data center vertical splash"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "GEV": {
+      "name": "GE Vernova",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Power Gen",
+      "segment_exposures": [
+        {"segment": "Power Gen", "share_2026": 0.20, "note": "Aeroderivative gas turbines for onsite generation"},
+        {"segment": "Utility/Grid", "share_2026": 0.22, "note": "Grid Solutions transformers + HVDC. Long-cycle backlog"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "RYCEY": {
+      "name": "Rolls-Royce",
+      "native_ticker": "RR.L",
+      "exchange": "LSE (ADR: RYCEY)",
+      "currency": "GBP",
+      "primary_segment": "Power Gen",
+      "segment_exposures": [
+        {"segment": "Power Gen", "share_2026": 0.08, "note": "mtu gensets — premium reciprocating engines. Small-modular-reactor optionality"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "PWR": {
+      "name": "Quanta Services",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Utility/Grid",
+      "segment_exposures": [
+        {"segment": "Utility/Grid", "share_2026": 0.18, "note": "Transmission line construction. Beneficiary of every new data-center substation"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "ENGGY": {
+      "name": "Siemens Energy",
+      "native_ticker": "ENR.DE",
+      "exchange": "XETRA (ADR: SMNEY / ENGGY)",
+      "currency": "EUR",
+      "primary_segment": "Utility/Grid",
+      "segment_exposures": [
+        {"segment": "Utility/Grid", "share_2026": 0.15, "note": "HV transformers + grid technology. Multi-year capacity-constrained backlog"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "MTZ": {
+      "name": "MasTec",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Utility/Grid",
+      "segment_exposures": [
+        {"segment": "Utility/Grid", "share_2026": 0.10, "note": "T&D + pipeline construction. Less hyperscaler-pure than PWR"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "CEG": {
+      "name": "Constellation Energy",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "Utility/Grid",
+      "segment_exposures": [
+        {"segment": "Utility/Grid", "share_2026": 0.10, "note": "Largest US nuclear fleet. Behind-the-meter PPAs with Microsoft (Three Mile Island restart)"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "NEE": {
+      "name": "NextEra Energy",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Utility/Grid",
+      "segment_exposures": [
+        {"segment": "Utility/Grid", "share_2026": 0.10, "note": "Renewable + storage developer. Bulk PPA partner to hyperscalers"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "VST": {
+      "name": "Vistra",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Utility/Grid",
+      "segment_exposures": [
+        {"segment": "Utility/Grid", "share_2026": 0.08, "note": "Nuclear (Comanche Peak) + gas. ERCOT-heavy data center load growth"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "ACM": {
+      "name": "AECOM",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Shell",
+      "segment_exposures": [
+        {"segment": "Shell", "share_2026": 0.08, "note": "Design + program management. Asset-light beneficiary"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "FLR": {
+      "name": "Fluor",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Shell",
+      "segment_exposures": [
+        {"segment": "Shell", "share_2026": 0.06, "note": "EPC for large-frame data center campuses. NuScale SMR optionality"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "J": {
+      "name": "Jacobs",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Shell",
+      "segment_exposures": [
+        {"segment": "Shell", "share_2026": 0.04, "note": "Critical mission engineering + design. Less pure than ACM"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "EME": {
+      "name": "EMCOR Group",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Shell",
+      "segment_exposures": [
+        {"segment": "Shell", "share_2026": 0.05, "note": "Mechanical + electrical contracting. Direct MEP install work"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "FIX": {
+      "name": "Comfort Systems USA",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Shell",
+      "segment_exposures": [
+        {"segment": "Shell", "share_2026": 0.05, "note": "MEP + modular skids. Pure data-center capex beneficiary"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "XYL": {
+      "name": "Xylem",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Water",
+      "segment_exposures": [
+        {"segment": "Water", "share_2026": 0.22, "note": "Pumps + treatment. Data-center water management adjacency"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "FLS": {
+      "name": "Flowserve",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Water",
+      "segment_exposures": [
+        {"segment": "Water", "share_2026": 0.14, "note": "Industrial pumps + seals. Cooling-tower-loop adjacency"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "PNR": {
+      "name": "Pentair",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Water",
+      "segment_exposures": [
+        {"segment": "Water", "share_2026": 0.10, "note": "Filtration + treatment. Smaller direct hyperscaler exposure"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "WTS": {
+      "name": "Watts Water Technologies",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Water",
+      "segment_exposures": [
+        {"segment": "Water", "share_2026": 0.06, "note": "Plumbing components"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "MWA": {
+      "name": "Mueller Water Products",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Water",
+      "segment_exposures": [
+        {"segment": "Water", "share_2026": 0.06, "note": "Valves + hydrants. Indirect via utility infrastructure"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+    "FERG": {
+      "name": "Ferguson Enterprises",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "primary_segment": "Water",
+      "segment_exposures": [
+        {"segment": "Water", "share_2026": 0.10, "note": "Plumbing/HVAC distribution. Volume-driven hyperscaler beneficiary"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    },
+
+    "HON": {
+      "name": "Honeywell",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "primary_segment": "DCIM",
+      "segment_exposures": [
+        {"segment": "DCIM", "share_2026": 0.18, "note": "Building Management Systems. Post-portfolio reshuffle, cleaner data-center exposure"}
+      ],
+      "financials": null,
+      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+    }
+  }
+}

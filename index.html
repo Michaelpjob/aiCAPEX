@@ -43,6 +43,26 @@
     margin: 0 auto;
     padding: 24px;
   }
+  .site-nav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px;
+  }
+  .site-nav a {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .site-nav a.active {
+    color: var(--text);
+    background: rgba(255,140,66,0.10);
+  }
+  .site-nav a:hover { color: var(--text); }
   header {
     margin-bottom: 20px;
   }
@@ -438,6 +458,10 @@
 </head>
 <body>
 <div class="container">
+  <nav class="site-nav">
+    <a href="./index.html" class="active">Sankey</a>
+    <a href="./calls.html">Calls</a>
+  </nav>
   <header>
     <h1>Hyperscaler AI CapEx Flow Down the Stack</h1>
     <p class="subtitle">
