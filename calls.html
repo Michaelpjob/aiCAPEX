@@ -235,6 +235,30 @@
 
   .sparkline { width: 100%; height: 32px; opacity: 0.7; }
 
+  /* Modeled fair value bar */
+  .fair-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+  }
+  .fair-bar.positive { background: rgba(81,207,102,0.06); border-color: rgba(81,207,102,0.3); }
+  .fair-bar.negative { background: rgba(255,107,107,0.06); border-color: rgba(255,107,107,0.3); }
+  .fair-bar.neutral  { background: rgba(255,255,255,0.02); }
+  .fair-left { display: flex; flex-direction: column; gap: 1px; }
+  .fair-left .lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+  .fair-left .val { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text); }
+  .fair-right { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; }
+  .upside-pct { font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .fair-bar.positive .upside-pct { color: #51cf66; }
+  .fair-bar.negative .upside-pct { color: #ff6b6b; }
+  .fair-bar.neutral  .upside-pct { color: var(--muted); }
+  .kappa { font-size: 10px; color: var(--muted); font-family: "SF Mono", Menlo, Consolas, monospace; cursor: help; }
+
   .thesis-toggle {
     background: transparent;
     border: 1px solid var(--border);
@@ -362,9 +386,9 @@
 
   <header class="page-head">
     <h1>CapEx Flow Calls</h1>
-    <p class="subtitle">Where the market may be over- or underrating public suppliers based on theoretical 2026 CapEx flow. Each card surfaces the share of the Sankey segment a company captures, its implied revenue growth from consensus, and the resulting Flow Coverage Ratio (FCR).</p>
+    <p class="subtitle">Where the market may be over- or underrating public suppliers based on theoretical 2026 CapEx flow. Each card surfaces the share of the Sankey segment a company captures, its implied revenue growth from consensus, a Flow Coverage Ratio (FCR), and a <strong>Modeled Fair Value</strong> derived from the excess flow vs. consensus growth gap.</p>
     <p class="disclaimer">
-      <strong>Not investment advice.</strong> Analytical framework based on theoretical CapEx flow from public hyperscaler guidance and industry market-share data. Author may hold positions in some names listed. Last updated: <span id="lastUpdated">May 2026</span>.
+      <strong>Not investment advice.</strong> Modeled Fair Value uses a same-multiple revenue bridge: Modeled FWD Revenue = Consensus FWD + (Theoretical Flow − Implied Growth) × κ, where κ ∈ [0.05, 0.50] is a per-ticker conversion factor encoding competition, customer concentration, share decay, and non-DC tailwinds. Same multiple is applied to the higher revenue line; no P/E expansion is modeled. Numbers are directional, not precise price targets. Author may hold positions in some names listed. Last updated: <span id="lastUpdated">May 2026</span>.
     </p>
   </header>
 
@@ -385,6 +409,7 @@
     <div class="filter-section">
       <span class="filter-label">Sort:</span>
       <select id="sortSelect">
+        <option value="upside">% upside ↓</option>
         <option value="flow">Theoretical flow ↓</option>
         <option value="fcr">FCR ↓</option>
         <option value="ret">1Y return ↓</option>
@@ -437,7 +462,7 @@
 
   let stocksData = null;
   let augmented = [];        // [{symbol, ticker(augmented)}]
-  let state = { call: 'all', seg: 'all', sort: 'flow' };
+  let state = { call: 'all', seg: 'all', sort: 'upside' };
 
   try {
     // Try ./stocks.json (relative). On file:// this will fail; githack/GitHub Pages serves fine.
@@ -518,6 +543,11 @@
     list.sort((a, b) => {
       const A = a.ticker.computed, B = b.ticker.computed;
       switch (state.sort) {
+        case 'upside': {
+          const ua = A.pct_upside == null ? -99 : A.pct_upside;
+          const ub = B.pct_upside == null ? -99 : B.pct_upside;
+          return ub - ua;
+        }
         case 'fcr': {
           const fa = (A.fcr == null ? -1 : (isFinite(A.fcr) ? A.fcr : 9999));
           const fb = (B.fcr == null ? -1 : (isFinite(B.fcr) ? B.fcr : 9999));

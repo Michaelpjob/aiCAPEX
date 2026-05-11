@@ -20,7 +20,8 @@
         "fwd_revenue_2026_b": 366.8,
         "fwd_pe": 32,
         "as_of": "2026-05-08",
-        "notes": "TTM = fiscal year ended Jan 31 2026. Fwd = analyst consensus FY27 (calendar 2026). Price as of May 8 2026 ATH."
+        "notes": "TTM = fiscal year ended Jan 31 2026. Fwd = analyst consensus FY27 (calendar 2026). Price as of May 8 2026 ATH.",
+        "conversion_factor": 0.15
       },
       "thesis": {
         "call": "priced",
@@ -46,7 +47,8 @@
         "fwd_revenue_2026_b": 52,
         "fwd_pe": 38,
         "as_of": "2026-05-06",
-        "notes": "Q1 2026 revenue $10.25B (beat $9.89B); data center $5.8B (+57% YoY); stock +66% YTD 2026; Lisa Su doubled long-term forecast."
+        "notes": "Q1 2026 revenue $10.25B (beat $9.89B); data center $5.8B (+57% YoY); stock +66% YTD 2026; Lisa Su doubled long-term forecast.",
+        "conversion_factor": 0.20
       },
       "thesis": {
         "call": "priced",
@@ -73,7 +75,8 @@
         "fwd_revenue_2026_b": 85,
         "fwd_pe": 35,
         "as_of": "2026-05-10",
-        "notes": "Q1 FY26 revenue $19.3B (+29% YoY); AI semiconductors $8.4B (+106%); Q2 guide $22B; FY26 implied $85B; mgmt envisions AI chip rev >$100B by FY27 backed by $73B backlog."
+        "notes": "Q1 FY26 revenue $19.3B (+29% YoY); AI semiconductors $8.4B (+106%); Q2 guide $22B; FY26 implied $85B; mgmt envisions AI chip rev >$100B by FY27 backed by $73B backlog.",
+        "conversion_factor": 0.20
       },
       "thesis": {
         "call": "priced",
@@ -99,7 +102,8 @@
         "fwd_revenue_2026_b": 59,
         "fwd_pe": 25,
         "as_of": "2026-05-08",
-        "notes": "Stock +129% YTD 2026 to $130.57 ATH; Q1 2026 revenue $13.6B (+7% YoY); FY26 estimate $59.43B (+12.44%)."
+        "notes": "Stock +129% YTD 2026 to $130.57 ATH; Q1 2026 revenue $13.6B (+7% YoY); FY26 estimate $59.43B (+12.44%).",
+        "conversion_factor": 0.05
       },
       "thesis": {
         "call": "watching",
@@ -126,7 +130,8 @@
         "fwd_revenue_2026_b": 76,
         "fwd_pe": 35,
         "as_of": "2026-05-11",
-        "notes": "Stock +124% YTD 2026, +700% over past year. Q1 FY26 record $13.64B; Q2 guide $18.7B at 68% GM; FY26 consensus ~$76B; 2026 HBM supply sold out."
+        "notes": "Stock +124% YTD 2026, +700% over past year. Q1 FY26 record $13.64B; Q2 guide $18.7B at 68% GM; FY26 consensus ~$76B; 2026 HBM supply sold out.",
+        "conversion_factor": 0.20
       },
       "thesis": {
         "call": null,
@@ -153,7 +158,8 @@
         "fwd_revenue_2026_b": 150,
         "fwd_pe": 12,
         "as_of": "2026-05-11",
-        "notes": "Native KRX listing 000660.KS at ~1.95M won ATH. OTC ADR price approximate. Q1 2026 revenue 52.58T KRW (+198% YoY); 2026 capacity sold out; MSFT 3-year DDR5 deal."
+        "notes": "Native KRX listing 000660.KS at ~1.95M won ATH. OTC ADR price approximate. Q1 2026 revenue 52.58T KRW (+198% YoY); 2026 capacity sold out; MSFT 3-year DDR5 deal.",
+        "conversion_factor": 0.20
       },
       "thesis": {
         "call": null,
@@ -180,7 +186,8 @@
         "fwd_revenue_2026_b": 350,
         "fwd_pe": 12,
         "as_of": "2026-05-10",
-        "notes": "USD-equivalent of native 005930.KS at ~268,500 KRW. Market cap topped $1T May 2026 (second Asian firm after TSMC). Q1 2026 revenue 133.9T KRW. ADR SSNLF illiquid; native pricing more reliable."
+        "notes": "USD-equivalent of native 005930.KS at ~268,500 KRW. Market cap topped $1T May 2026 (second Asian firm after TSMC). Q1 2026 revenue 133.9T KRW. ADR SSNLF illiquid; native pricing more reliable.",
+        "conversion_factor": 0.15
       },
       "thesis": {
         "call": null,
@@ -207,7 +214,8 @@
         "fwd_revenue_2026_b": 11.5,
         "fwd_pe": 45,
         "as_of": "2026-05-08",
-        "notes": "2026 guide raised to $11.5B revenue + $3.5B AI; Q1 revenue $2.71B; Q2 guide $2.8B; analyst targets $181-200."
+        "notes": "2026 guide raised to $11.5B revenue + $3.5B AI; Q1 revenue $2.71B; Q2 guide $2.8B; analyst targets $181-200.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -233,7 +241,8 @@
         "fwd_revenue_2026_b": 57,
         "fwd_pe": 18,
         "as_of": "2026-05-11",
-        "notes": "Q3 FY26 (May 13 release) guide $15.4-15.6B; full-year AI order outlook raised to >$5B (~$3B converts to revenue); Silicon One G300 102.4 Tbps targeting hyperscalers/neoclouds."
+        "notes": "Q3 FY26 (May 13 release) guide $15.4-15.6B; full-year AI order outlook raised to >$5B (~$3B converts to revenue); Silicon One G300 102.4 Tbps targeting hyperscalers/neoclouds.",
+        "conversion_factor": 0.15
       },
       "thesis": {
         "call": "priced",
@@ -259,7 +268,8 @@
         "fwd_revenue_2026_b": 7.2,
         "fwd_pe": 35,
         "as_of": "2026-05-09",
-        "notes": "Q3 FY26 record $1.81B; FY25 revenue $5.81B (+23%); NVIDIA $2B equity investment for AI optics. 800G + 1.6T transceivers ramping with healthy pricing."
+        "notes": "Q3 FY26 record $1.81B; FY25 revenue $5.81B (+23%); NVIDIA $2B equity investment for AI optics. 800G + 1.6T transceivers ramping with healthy pricing.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -285,7 +295,8 @@
         "fwd_revenue_2026_b": 4.0,
         "fwd_pe": 50,
         "as_of": "2026-05-11",
-        "notes": "Q3 FY26 record $808.4M (+90% YoY); Q4 guide $960M-$1.01B; Rosenblatt sees $1.25B/Q by late 2026, $2B/Q by 2027. Stock 20x+ over 12 months."
+        "notes": "Q3 FY26 record $808.4M (+90% YoY); Q4 guide $960M-$1.01B; Rosenblatt sees $1.25B/Q by late 2026, $2B/Q by 2027. Stock 20x+ over 12 months.",
+        "conversion_factor": 0.40
       },
       "thesis": {
         "call": null,
@@ -312,7 +323,8 @@
         "fwd_revenue_2026_b": 140,
         "fwd_pe": 18,
         "as_of": "2026-05-11",
-        "notes": "Dell fiscal year ends late Jan. FY26 (cal 2025) revenue $113.5B (+19% YoY); FY27 guide $138-142B; AI server FY26 $9B → FY27 guide ~$50B; $43B AI backlog exiting Q4 FY26."
+        "notes": "Dell fiscal year ends late Jan. FY26 (cal 2025) revenue $113.5B (+19% YoY); FY27 guide $138-142B; AI server FY26 $9B → FY27 guide ~$50B; $43B AI backlog exiting Q4 FY26.",
+        "conversion_factor": 0.25
       },
       "thesis": {
         "call": null,
@@ -338,7 +350,8 @@
         "fwd_revenue_2026_b": 36,
         "fwd_pe": 12,
         "as_of": "2026-05-05",
-        "notes": "Includes Juniper acquisition (closed 2025). HPE FY ends October. 18% YoY revenue growth; analyst targets cluster near $27."
+        "notes": "Includes Juniper acquisition (closed 2025). HPE FY ends October. 18% YoY revenue growth; analyst targets cluster near $27.",
+        "conversion_factor": 0.30
       },
       "thesis": {
         "call": null,
@@ -364,7 +377,8 @@
         "fwd_revenue_2026_b": 42,
         "fwd_pe": 10,
         "as_of": "2026-05-11",
-        "notes": "Q3 FY26 revenue $10.2B (+123% YoY); FY26 guide $38.9-40.4B. Stock flat YoY despite triple-digit revenue growth due to SEC/DOJ scrutiny and smuggling allegations cap."
+        "notes": "Q3 FY26 revenue $10.2B (+123% YoY); FY26 guide $38.9-40.4B. Stock flat YoY despite triple-digit revenue growth due to SEC/DOJ scrutiny and smuggling allegations cap.",
+        "conversion_factor": 0.20
       },
       "thesis": {
         "call": null,
@@ -391,7 +405,8 @@
         "fwd_revenue_2026_b": 80,
         "fwd_pe": 15,
         "as_of": "2026-05-11",
-        "notes": "Native TWD pricing on 2382.TW. Revenue in $B USD ($68.1B TTM). Quanta is largest single ODM. Analyst target TWD 367 (+15%)."
+        "notes": "Native TWD pricing on 2382.TW. Revenue in $B USD ($68.1B TTM). Quanta is largest single ODM. Analyst target TWD 367 (+15%).",
+        "conversion_factor": 0.30
       },
       "thesis": {
         "call": null,
@@ -418,7 +433,8 @@
         "fwd_revenue_2026_b": 32,
         "fwd_pe": 30,
         "as_of": "2026-05-05",
-        "notes": "Native TWD pricing on 6669.TW. Q1 2026 revenue NT$276B (+62% YoY); ODM for Microsoft + Meta + AWS. Analyst target TWD 6,083."
+        "notes": "Native TWD pricing on 6669.TW. Q1 2026 revenue NT$276B (+62% YoY); ODM for Microsoft + Meta + AWS. Analyst target TWD 6,083.",
+        "conversion_factor": 0.40
       },
       "thesis": {
         "call": null,
@@ -445,7 +461,8 @@
         "fwd_revenue_2026_b": 300,
         "fwd_pe": 12,
         "as_of": "2026-05-11",
-        "notes": "Native TWD pricing on 2317.TW. Q1 2026 revenue $66.6B; cloud+networking (AI server rack assembly) now 40% of total. ADR HNHPF illiquid."
+        "notes": "Native TWD pricing on 2317.TW. Q1 2026 revenue $66.6B; cloud+networking (AI server rack assembly) now 40% of total. ADR HNHPF illiquid.",
+        "conversion_factor": 0.10
       },
       "thesis": {
         "call": null,
@@ -473,7 +490,8 @@
         "fwd_revenue_2026_b": 14.5,
         "fwd_pe": 50,
         "as_of": "2026-05-11",
-        "notes": "ATH $358.92 on May 6, intraday $372 May 11. Citi target raised to $414. TTM revenue $10.84B."
+        "notes": "ATH $358.92 on May 6, intraday $372 May 11. Citi target raised to $414. TTM revenue $10.84B.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -499,7 +517,8 @@
         "fwd_revenue_2026_b": 30.9,
         "fwd_pe": 34,
         "as_of": "2026-05-09",
-        "notes": "Q1 2026 sales $7.45B record; FY26 estimate $30.94B (+12.7%); avg analyst target $445."
+        "notes": "Q1 2026 sales $7.45B record; FY26 estimate $30.94B (+12.7%); avg analyst target $445.",
+        "conversion_factor": 0.40
       },
       "thesis": {
         "call": null,
@@ -528,7 +547,8 @@
         "fwd_revenue_2026_b": 47,
         "fwd_pe": 28,
         "as_of": "2026-05-07",
-        "notes": "OTC ADR price. Native SU.PA €272.95. FY26 guide 7-10% organic growth + 10-15% adj EBITDA growth; Q1 2026 revenue +11% to €10B."
+        "notes": "OTC ADR price. Native SU.PA €272.95. FY26 guide 7-10% organic growth + 10-15% adj EBITDA growth; Q1 2026 revenue +11% to €10B.",
+        "conversion_factor": 0.40
       },
       "thesis": {
         "call": null,
@@ -555,7 +575,8 @@
         "fwd_revenue_2026_b": 36,
         "fwd_pe": 28,
         "as_of": "2026-05-09",
-        "notes": "Native CHF on ABBN.SW. Electrification segment +44% growth; 2026 revenue guide raised to 9%."
+        "notes": "Native CHF on ABBN.SW. Electrification segment +44% growth; 2026 revenue guide raised to 9%.",
+        "conversion_factor": 0.25
       },
       "thesis": {
         "call": null,
@@ -582,7 +603,8 @@
         "fwd_revenue_2026_b": 89,
         "fwd_pe": 22,
         "as_of": "2026-05-11",
-        "notes": "Native EUR on SIE.DE. Q1 2026 revenue €19.1B (+4.3% YoY); FY26 guide upper half of 6-8% range."
+        "notes": "Native EUR on SIE.DE. Q1 2026 revenue €19.1B (+4.3% YoY); FY26 guide upper half of 6-8% range.",
+        "conversion_factor": 0.20
       },
       "thesis": {
         "call": null,
@@ -609,7 +631,8 @@
         "fwd_revenue_2026_b": 6.80,
         "fwd_pe": 26,
         "as_of": "2026-05-01",
-        "notes": "FY26 guide raised to 8-11% growth; Q1 2026 sales +11.1% YoY to $1.52B driven by Electrical Solutions and grid infrastructure."
+        "notes": "FY26 guide raised to 8-11% growth; Q1 2026 sales +11.1% YoY to $1.52B driven by Electrical Solutions and grid infrastructure.",
+        "conversion_factor": 0.30
       },
       "thesis": {
         "call": null,
@@ -636,7 +659,8 @@
         "fwd_revenue_2026_b": 10.3,
         "fwd_pe": 28,
         "as_of": "2026-05-10",
-        "notes": "Native EUR on LR.PA. 2026 guide 10-15% sales growth; data centers now 20% of sales, 15% of organic growth. ADR LGRDY thinly traded on OTC."
+        "notes": "Native EUR on LR.PA. 2026 guide 10-15% sales growth; data centers now 20% of sales, 15% of organic growth. ADR LGRDY thinly traded on OTC.",
+        "conversion_factor": 0.40
       },
       "thesis": {
         "call": null,
@@ -664,7 +688,8 @@
         "fwd_revenue_2026_b": 28,
         "fwd_pe": 28,
         "as_of": "2026-05-08",
-        "notes": "Q2 2026 revenue $6.14B (beat $6.08B); orders +30% (on top of ~40% prior); backlog $20B record (70% converts in 12mo). FY26 EPS guide $4.85."
+        "notes": "Q2 2026 revenue $6.14B (beat $6.08B); orders +30% (on top of ~40% prior); backlog $20B record (70% converts in 12mo). FY26 EPS guide $4.85.",
+        "conversion_factor": 0.45
       },
       "thesis": {
         "call": null,
@@ -690,7 +715,8 @@
         "fwd_revenue_2026_b": 24,
         "fwd_pe": 30,
         "as_of": "2026-05-10",
-        "notes": "Q1 2026 revenue $4.97B (+6%); 2026 guide 8.5-9.5% growth; LiquidStack + Stellar acquisitions expand AI cooling exposure. Stock +18% YTD."
+        "notes": "Q1 2026 revenue $4.97B (+6%); 2026 guide 8.5-9.5% growth; LiquidStack + Stellar acquisitions expand AI cooling exposure. Stock +18% YTD.",
+        "conversion_factor": 0.40
       },
       "thesis": {
         "call": null,
@@ -716,7 +742,8 @@
         "fwd_revenue_2026_b": 22,
         "fwd_pe": 22,
         "as_of": "2026-05-11",
-        "notes": "Q1 2026 revenue $5.34B (+2.4%); FY26 guide ~$22B (flat-low single digit). Data center orders +500% in Q1; DC backlog $1B → $1.5B target."
+        "notes": "Q1 2026 revenue $5.34B (+2.4%); FY26 guide ~$22B (flat-low single digit). Data center orders +500% in Q1; DC backlog $1B → $1.5B target.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -742,7 +769,8 @@
         "fwd_revenue_2026_b": 3.6,
         "fwd_pe": 35,
         "as_of": "2026-05-06",
-        "notes": "FY26 guide implies 20-25% sales growth. DC sales +78% YoY in Q3 FY26."
+        "notes": "FY26 guide implies 20-25% sales growth. DC sales +78% YoY in Q3 FY26.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -769,7 +797,8 @@
         "fwd_revenue_2026_b": 67,
         "fwd_pe": 24,
         "as_of": "2026-05-05",
-        "notes": "Q1 2026 revenue $17.4B; Power Gen revenue +41% YoY; backlog $63B exiting Q1 (vs $51B end-2025). Stock +32% YTD."
+        "notes": "Q1 2026 revenue $17.4B; Power Gen revenue +41% YoY; backlog $63B exiting Q1 (vs $51B end-2025). Stock +32% YTD.",
+        "conversion_factor": 0.35
       },
       "thesis": {
         "call": null,
@@ -795,7 +824,8 @@
         "fwd_revenue_2026_b": 37,
         "fwd_pe": 22,
         "as_of": "2026-05-11",
-        "notes": "FY26 guide raised to +8-11%; Power Systems +19% Q1 with $2B in revenue at 29.5% segment EBITDA margin; DC revenue $3.5B (2025) backlog into 2028."
+        "notes": "FY26 guide raised to +8-11%; Power Systems +19% Q1 with $2B in revenue at 29.5% segment EBITDA margin; DC revenue $3.5B (2025) backlog into 2028.",
+        "conversion_factor": 0.45
       },
       "thesis": {
         "call": null,
@@ -822,7 +852,8 @@
         "fwd_revenue_2026_b": 45,
         "fwd_pe": 55,
         "as_of": "2026-05-11",
-        "notes": "Stock +71% YTD 2026, +470% from IPO; 2026 guide raised to $44.5-45.5B; gas turbine production scaling to 20 GW/yr by mid-2026."
+        "notes": "Stock +71% YTD 2026, +470% from IPO; 2026 guide raised to $44.5-45.5B; gas turbine production scaling to 20 GW/yr by mid-2026.",
+        "conversion_factor": 0.40
       },
       "thesis": {
         "call": null,
@@ -849,7 +880,8 @@
         "fwd_revenue_2026_b": 23.5,
         "fwd_pe": 30,
         "as_of": "2026-05-06",
-        "notes": "Native GBp on RR.L at 1279p; RYCEY ADR ~$16. Mid-term operating profit £4.9-5.2B target. Aerospace dominant; mtu Power Systems is the DC line."
+        "notes": "Native GBp on RR.L at 1279p; RYCEY ADR ~$16. Mid-term operating profit £4.9-5.2B target. Aerospace dominant; mtu Power Systems is the DC line.",
+        "conversion_factor": 0.15
       },
       "thesis": {
         "call": null,
@@ -876,7 +908,8 @@
         "fwd_revenue_2026_b": 26,
         "fwd_pe": 40,
         "as_of": "2026-05-08",
-        "notes": "ATH $785 May 6; 2026 forecast +14.6% revenue growth; double-digit guide driven by data center + renewables + utility infrastructure."
+        "notes": "ATH $785 May 6; 2026 forecast +14.6% revenue growth; double-digit guide driven by data center + renewables + utility infrastructure.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -903,7 +936,8 @@
         "fwd_revenue_2026_b": 44,
         "fwd_pe": 32,
         "as_of": "2026-05-11",
-        "notes": "Native EUR on ENR.DE; ATH €191.66 (Apr 24). FY26 revenue growth guide 14-16%; Grid Technologies guide 25-27%."
+        "notes": "Native EUR on ENR.DE; ATH €191.66 (Apr 24). FY26 revenue growth guide 14-16%; Grid Technologies guide 25-27%.",
+        "conversion_factor": 0.35
       },
       "thesis": {
         "call": null,
@@ -929,7 +963,8 @@
         "fwd_revenue_2026_b": 17.5,
         "fwd_pe": 40,
         "as_of": "2026-05-05",
-        "notes": "FY26 guide $17.5B revenue (+22% YoY); record backlog $20.3B driven by communications + clean energy. Q1 2026 revenue $3.8B vs $3.47B consensus."
+        "notes": "FY26 guide $17.5B revenue (+22% YoY); record backlog $20.3B driven by communications + clean energy. Q1 2026 revenue $3.8B vs $3.47B consensus.",
+        "conversion_factor": 0.30
       },
       "thesis": {
         "call": null,
@@ -955,7 +990,8 @@
         "fwd_revenue_2026_b": 45,
         "fwd_pe": 28,
         "as_of": "2026-05-11",
-        "notes": "Calpine acquisition closed Jan 2026 ($16.4B); Q1 2026 revenue $11.12B; FY26 EPS guide $11-12. Crane Clean Energy Center restart interconnection PJM-delayed to potentially 2031 — Microsoft PPA at risk."
+        "notes": "Calpine acquisition closed Jan 2026 ($16.4B); Q1 2026 revenue $11.12B; FY26 EPS guide $11-12. Crane Clean Energy Center restart interconnection PJM-delayed to potentially 2031 — Microsoft PPA at risk.",
+        "conversion_factor": 0.10
       },
       "thesis": {
         "call": "watching",
@@ -981,7 +1017,8 @@
         "fwd_revenue_2026_b": 30,
         "fwd_pe": 20,
         "as_of": "2026-05-04",
-        "notes": "Q1 2026 net income +162% YoY to $2.18B; renewables backlog 33 GW (+4 GW Q1); largest US utility by market cap."
+        "notes": "Q1 2026 net income +162% YoY to $2.18B; renewables backlog 33 GW (+4 GW Q1); largest US utility by market cap.",
+        "conversion_factor": 0.30
       },
       "thesis": {
         "call": null,
@@ -1007,7 +1044,8 @@
         "fwd_revenue_2026_b": 23,
         "fwd_pe": 18,
         "as_of": "2026-05-08",
-        "notes": "Q1 2026 revenue $5.64B (+43% YoY); 2.6 GW PJM nuclear PPA with Meta; Cogentrix 5.5 GW natural gas acquisition pending. Analyst target avg $234."
+        "notes": "Q1 2026 revenue $5.64B (+43% YoY); 2.6 GW PJM nuclear PPA with Meta; Cogentrix 5.5 GW natural gas acquisition pending. Analyst target avg $234.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": "underrated",
@@ -1034,7 +1072,8 @@
         "fwd_revenue_2026_b": 17,
         "fwd_pe": 20,
         "as_of": "2026-05-09",
-        "notes": "FY25 revenue $16.14B (+0.21%); 2026 revenue growth forecast +5.23%. Avg analyst target $132 (+45% upside)."
+        "notes": "FY25 revenue $16.14B (+0.21%); 2026 revenue growth forecast +5.23%. Avg analyst target $132 (+45% upside).",
+        "conversion_factor": 0.35
       },
       "thesis": {
         "call": null,
@@ -1060,7 +1099,8 @@
         "fwd_revenue_2026_b": 16,
         "fwd_pe": 15,
         "as_of": "2026-05-11",
-        "notes": "Q1 2026 revenue $3.66B (missed); stock -15% on earnings. TeraWulf Kentucky data center LNTP signed. Analyst targets $40-57."
+        "notes": "Q1 2026 revenue $3.66B (missed); stock -15% on earnings. TeraWulf Kentucky data center LNTP signed. Analyst targets $40-57.",
+        "conversion_factor": 0.25
       },
       "thesis": {
         "call": null,
@@ -1086,7 +1126,8 @@
         "fwd_revenue_2026_b": 18,
         "fwd_pe": 18,
         "as_of": "2026-05-03",
-        "notes": "FY26 guide 6-10% adj net revenue growth; adj EPS $6.90-$7.30; Q2 EPS $1.75 beat. Avg analyst target $155 (+20%)."
+        "notes": "FY26 guide 6-10% adj net revenue growth; adj EPS $6.90-$7.30; Q2 EPS $1.75 beat. Avg analyst target $155 (+20%).",
+        "conversion_factor": 0.25
       },
       "thesis": {
         "call": null,
@@ -1112,7 +1153,8 @@
         "fwd_revenue_2026_b": 18.85,
         "fwd_pe": 25,
         "as_of": "2026-05-09",
-        "notes": "Q1 2026 record revenue $4.63B (+19.7%); record backlog $15.62B; DC segment RPOs +112% YoY; FY26 guide raised to $18.50-19.25B."
+        "notes": "Q1 2026 record revenue $4.63B (+19.7%); record backlog $15.62B; DC segment RPOs +112% YoY; FY26 guide raised to $18.50-19.25B.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -1138,7 +1180,8 @@
         "fwd_revenue_2026_b": 10.93,
         "fwd_pe": 32,
         "as_of": "2026-05-04",
-        "notes": "Q1 2026 revenue +56.5% to $2.87B; FY26 guide $10.93B (+25%+); record backlog $12.5B; data center >50% of revenue."
+        "notes": "Q1 2026 revenue +56.5% to $2.87B; FY26 guide $10.93B (+25%+); record backlog $12.5B; data center >50% of revenue.",
+        "conversion_factor": 0.50
       },
       "thesis": {
         "call": null,
@@ -1165,7 +1208,8 @@
         "fwd_revenue_2026_b": 9.25,
         "fwd_pe": 22,
         "as_of": "2026-05-06",
-        "notes": "FY26 revenue guide raised to $9.2-9.3B (+2-3%); China headwinds drag Water Infrastructure / Applied Water. Avg analyst target $158."
+        "notes": "FY26 revenue guide raised to $9.2-9.3B (+2-3%); China headwinds drag Water Infrastructure / Applied Water. Avg analyst target $158.",
+        "conversion_factor": 0.10
       },
       "thesis": {
         "call": "watching",
@@ -1191,7 +1235,8 @@
         "fwd_revenue_2026_b": 4.95,
         "fwd_pe": 18,
         "as_of": "2026-05-09",
-        "notes": "FY26 guide $4.9-5.0B; Q1 EPS $0.85 beat; revenue $1.07B miss on $1.17B. Analyst targets $89-92."
+        "notes": "FY26 guide $4.9-5.0B; Q1 EPS $0.85 beat; revenue $1.07B miss on $1.17B. Analyst targets $89-92.",
+        "conversion_factor": 0.10
       },
       "thesis": {
         "call": "watching",
@@ -1217,7 +1262,8 @@
         "fwd_revenue_2026_b": 4.5,
         "fwd_pe": 22,
         "as_of": "2026-05-09",
-        "notes": "Placeholder — estimates pending owner verification. PNR runs filtration + pumps with smaller DC concentration than XYL."
+        "notes": "Placeholder — estimates pending owner verification. PNR runs filtration + pumps with smaller DC concentration than XYL.",
+        "conversion_factor": 0.05
       },
       "thesis": {
         "call": "watching",
@@ -1243,7 +1289,8 @@
         "fwd_revenue_2026_b": 2.3,
         "fwd_pe": 28,
         "as_of": "2026-05-09",
-        "notes": "Placeholder — estimates pending owner verification. Smallest direct hyperscaler exposure among water names."
+        "notes": "Placeholder — estimates pending owner verification. Smallest direct hyperscaler exposure among water names.",
+        "conversion_factor": 0.05
       },
       "thesis": {
         "call": "watching",
@@ -1269,7 +1316,8 @@
         "fwd_revenue_2026_b": 1.4,
         "fwd_pe": 18,
         "as_of": "2026-05-09",
-        "notes": "Placeholder — estimates pending owner verification. Valves + hydrants are mostly municipal utility, indirect DC link only."
+        "notes": "Placeholder — estimates pending owner verification. Valves + hydrants are mostly municipal utility, indirect DC link only.",
+        "conversion_factor": 0.05
       },
       "thesis": {
         "call": "watching",
@@ -1295,7 +1343,8 @@
         "fwd_revenue_2026_b": 32,
         "fwd_pe": 22,
         "as_of": "2026-05-09",
-        "notes": "FY25 revenue $30.80B (+0.12%); Q1 2026 revenue +3.6% to $7.5B; ATH $271 (Feb 12). Avg analyst target $269."
+        "notes": "FY25 revenue $30.80B (+0.12%); Q1 2026 revenue +3.6% to $7.5B; ATH $271 (Feb 12). Avg analyst target $269.",
+        "conversion_factor": 0.30
       },
       "thesis": {
         "call": null,
@@ -1322,7 +1371,8 @@
         "fwd_revenue_2026_b": 39.3,
         "fwd_pe": 22,
         "as_of": "2026-05-09",
-        "notes": "FY26 guide $38.8-39.8B (+3-6% organic); portfolio reshuffle ongoing. Avg analyst target $256 (+19%)."
+        "notes": "FY26 guide $38.8-39.8B (+3-6% organic); portfolio reshuffle ongoing. Avg analyst target $256 (+19%).",
+        "conversion_factor": 0.15
       },
       "thesis": {
         "call": "priced",
