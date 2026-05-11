@@ -89,10 +89,25 @@
       "currency": "USD",
       "primary_segment": "GPUs",
       "segment_exposures": [
-        {"segment": "GPUs", "share_2026": 0.04, "note": "Gaudi 3 + Falcon Shores. Long-shot accelerator share"}
+        {"segment": "GPUs", "share_2026": 0.04, "note": "Gaudi 3 + Falcon Shores. Long-shot accelerator share — includes Intel/Other bucket"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 125,
+        "price_12mo_ago_usd": 32,
+        "market_cap_b": 230,
+        "ttm_revenue_b": 53,
+        "fwd_revenue_2026_b": 59,
+        "fwd_pe": 25,
+        "as_of": "2026-05-08",
+        "notes": "Stock +129% YTD 2026 to $130.57 ATH; Q1 2026 revenue $13.6B (+7% YoY); FY26 estimate $59.43B (+12.44%)."
+      },
+      "thesis": {
+        "call": "watching",
+        "confidence": "low",
+        "short": "Auto-FCR math says Higher conviction (~1.7) because the 4% 'Intel/Other' share against $288B GPU spend implies ~$11.5B of theoretical flow against ~$6.6B implied growth. The flow attribution is generous: Gaudi 3 and Falcon Shores have not won meaningful hyperscaler share at scale, and the 4% includes 'Other' rather than reflecting confirmed Intel design wins. Overriding to Watching until accelerator share materializes — the foundry turnaround narrative drives the stock more than data center silicon today.",
+        "risks": "Gaudi 4 / Falcon Shores execution risk; foundry losses dwarfing data center upside; CPU share concession to AMD continues.",
+        "status": "draft"
+      }
     },
 
     "MU": {
@@ -157,8 +172,23 @@
       "segment_exposures": [
         {"segment": "Memory", "share_2026": 0.275, "note": "HBM3E qualification with NVIDIA still partial. Share gain optional if HBM4 ramps cleanly"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 190,
+        "price_12mo_ago_usd": 50,
+        "market_cap_b": 1070,
+        "ttm_revenue_b": 215,
+        "fwd_revenue_2026_b": 350,
+        "fwd_pe": 12,
+        "as_of": "2026-05-10",
+        "notes": "USD-equivalent of native 005930.KS at ~268,500 KRW. Market cap topped $1T May 2026 (second Asian firm after TSMC). Q1 2026 revenue 133.9T KRW. ADR SSNLF illiquid; native pricing more reliable."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Samsung is too big and too diversified for the FCR framework to read well: hyperscaler memory at 27.5% share gives ~$18.7B of theoretical flow, but Samsung's $135B implied total revenue growth dilutes it to FCR ~0.14 (auto Lower conviction). The real question is HBM share gain at NVIDIA: closing the qualification gap with SK Hynix on HBM3E/HBM4 could 2-3x the memory line alone, but that's not in consensus yet.",
+        "risks": "HBM3E qualification stall; foundry losses continuing to drag earnings; KRW exposure; concentration of memory upside in cycle vs. share gain.",
+        "status": "draft"
+      }
     },
 
     "ANET": {
@@ -229,8 +259,23 @@
       "segment_exposures": [
         {"segment": "Servers", "share_2026": 0.20, "note": "PowerEdge XE9712 / GB200 racks. The OEM channel for tier-2 hyperscalers and AI-natives"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 246,
+        "price_12mo_ago_usd": 91,
+        "market_cap_b": 161,
+        "ttm_revenue_b": 113.5,
+        "fwd_revenue_2026_b": 140,
+        "fwd_pe": 18,
+        "as_of": "2026-05-11",
+        "notes": "Dell fiscal year ends late Jan. FY26 (cal 2025) revenue $113.5B (+19% YoY); FY27 guide $138-142B; AI server FY26 $9B → FY27 guide ~$50B; $43B AI backlog exiting Q4 FY26."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Dell's AI server franchise is real ($50B FY27 guide, $43B backlog) but consensus already models a $26.5B revenue jump from $113.5B to $140B. Theoretical hyperscaler flow at 20% server share ($17B) underweights the implied growth — FCR around 0.64 says Lower conviction at face value. The flow model may under-attribute Dell's enterprise + tier-2 channel exposure; if so, the auto-call is harsh, but UBS already downgraded after the 170% rally.",
+        "risks": "Mix shift to lower-margin AI server skus compressing operating margin; ODM (Quanta/Wiwynn) competitive intensification at top hyperscalers; Concentration in 3-4 named AI customers.",
+        "status": "draft"
+      }
     },
     "HPE": {
       "name": "Hewlett Packard Enterprise",
@@ -240,8 +285,23 @@
       "segment_exposures": [
         {"segment": "Servers", "share_2026": 0.06, "note": "ProLiant + Cray. Juniper integration adds networking adjacency"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 31,
+        "price_12mo_ago_usd": 21,
+        "market_cap_b": 42,
+        "ttm_revenue_b": 32,
+        "fwd_revenue_2026_b": 36,
+        "fwd_pe": 12,
+        "as_of": "2026-05-05",
+        "notes": "Includes Juniper acquisition (closed 2025). HPE FY ends October. 18% YoY revenue growth; analyst targets cluster near $27."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "HPE's 6% server share gives ~$5.1B of theoretical flow against ~$4B implied growth — FCR 1.28 in the Priced band. Juniper integration adds networking adjacency that the flow model doesn't fully credit, but Wall Street targets ($27 vs $31 spot) reflect that the AI server story is already priced in modestly. Cleaner read than Dell because HPE's smaller server share aligns better with its smaller AI exposure.",
+        "risks": "GreenLake (subscription) cannibalization of on-prem; Juniper integration distraction; share concession to Dell + ODMs on hyperscaler bids.",
+        "status": "draft"
+      }
     },
     "SMCI": {
       "name": "Super Micro",
@@ -251,8 +311,23 @@
       "segment_exposures": [
         {"segment": "Servers", "share_2026": 0.08, "note": "Liquid-cooled GB200 / GB300 specialist. Direct-to-AI-native flow"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 36,
+        "price_12mo_ago_usd": 40,
+        "market_cap_b": 21,
+        "ttm_revenue_b": 30,
+        "fwd_revenue_2026_b": 42,
+        "fwd_pe": 10,
+        "as_of": "2026-05-11",
+        "notes": "Q3 FY26 revenue $10.2B (+123% YoY); FY26 guide $38.9-40.4B. Stock flat YoY despite triple-digit revenue growth due to SEC/DOJ scrutiny and smuggling allegations cap."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "low",
+        "short": "Liquid-cooled GB200/GB300 server specialist — 8% segment share gives ~$6.8B of theoretical flow against ~$12B implied growth. FCR 0.57 lands in Lower conviction. The numbers paradoxically show what the market knows: revenue is hyper-growing, but governance overhang and customer concentration cap the multiple, and consensus already models the growth at a 10x P/E. Cheap optionality if the legal cloud clears.",
+        "risks": "Governance / SEC / DOJ resolution timing; ODM displacement of OEM-style integrators; gross margin compression from liquid cooling ramp.",
+        "status": "draft"
+      }
     },
     "QUANTA_TW": {
       "name": "Quanta Computer",
@@ -263,8 +338,23 @@
       "segment_exposures": [
         {"segment": "Servers", "share_2026": 0.27, "note": "Largest single ODM. Meta + Google + AWS reference designs"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 319,
+        "price_12mo_ago_usd": 200,
+        "market_cap_b": 41,
+        "ttm_revenue_b": 68,
+        "fwd_revenue_2026_b": 80,
+        "fwd_pe": 15,
+        "as_of": "2026-05-11",
+        "notes": "Native TWD pricing on 2382.TW. Revenue in $B USD ($68.1B TTM). Quanta is largest single ODM. Analyst target TWD 367 (+15%)."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Quanta captures ~$23B of theoretical 2026 server flow at 27% segment share — the single largest position in the Server segment. Implied growth at $12B and FCR ~1.9 keeps this in Higher conviction. The Meta + Google + AWS reference design footprint is the moat. Trading at 15x with Taiwan exposure / TWD weakness as the discount, but the AI server volume story is unambiguously real.",
+        "risks": "Geopolitical premium discount widens; share loss to Wiwynn / Foxconn on specific platforms; pass-through margin model means GPU price compression flows directly to revenue.",
+        "status": "draft"
+      }
     },
     "WIWYNN_TW": {
       "name": "Wiwynn",
@@ -275,8 +365,23 @@
       "segment_exposures": [
         {"segment": "Servers", "share_2026": 0.14, "note": "Microsoft + Meta primary ODM. Spinoff of Wistron with concentrated hyperscaler exposure"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 4675,
+        "price_12mo_ago_usd": 2500,
+        "market_cap_b": 26,
+        "ttm_revenue_b": 24,
+        "fwd_revenue_2026_b": 32,
+        "fwd_pe": 30,
+        "as_of": "2026-05-05",
+        "notes": "Native TWD pricing on 6669.TW. Q1 2026 revenue NT$276B (+62% YoY); ODM for Microsoft + Meta + AWS. Analyst target TWD 6,083."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium-high",
+        "short": "Wiwynn's 14% server share against $85B segment spend yields ~$11.9B of theoretical flow vs. ~$8B implied growth — FCR ~1.49 just below the Higher conviction threshold (auto Priced). More concentrated hyperscaler exposure than Quanta (Microsoft + Meta heavy), which is both the bull case (sticky relationships) and the risk (customer concentration). The 30x multiple already prices in the AI server boom modeled in consensus.",
+        "risks": "Microsoft / Meta capex cadence and AI rack mix; share competition with Quanta on specific platforms; Taiwan geopolitical premium.",
+        "status": "draft"
+      }
     },
     "FOXCONN_TW": {
       "name": "Hon Hai (Foxconn)",
@@ -287,8 +392,23 @@
       "segment_exposures": [
         {"segment": "Servers", "share_2026": 0.12, "note": "Largest contract manufacturer overall; growing AI server share via NVIDIA partnership"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 228,
+        "price_12mo_ago_usd": 146,
+        "market_cap_b": 100,
+        "ttm_revenue_b": 230,
+        "fwd_revenue_2026_b": 300,
+        "fwd_pe": 12,
+        "as_of": "2026-05-11",
+        "notes": "Native TWD pricing on 2317.TW. Q1 2026 revenue $66.6B; cloud+networking (AI server rack assembly) now 40% of total. ADR HNHPF illiquid."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Foxconn's 12% AI server share generates ~$10.2B of theoretical flow, but the total-revenue base is so large ($230B TTM → $300B FWD) that implied growth dilutes FCR to ~0.15 (auto Lower conviction). The AI server line is real and compounding (cloud+networking now 40% of revenue, surpassing iPhones), but the conglomerate structure caps how much that flows to multiple expansion. iPhone seasonality and TWD exposure are larger price drivers.",
+        "risks": "iPhone cyclicality; FX exposure; capex from US/Mexico expansion drags margin; share of GB200/GB300 rack assembly vs. Quanta + Wiwynn.",
+        "status": "draft"
+      }
     },
 
     "VRT": {
