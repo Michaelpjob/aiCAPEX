@@ -225,8 +225,23 @@
       "segment_exposures": [
         {"segment": "Networking", "share_2026": 0.24, "note": "Declining hyperscaler share but still leads enterprise + tier-2 cloud"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 95,
+        "price_12mo_ago_usd": 48,
+        "market_cap_b": 380,
+        "ttm_revenue_b": 54,
+        "fwd_revenue_2026_b": 57,
+        "fwd_pe": 18,
+        "as_of": "2026-05-11",
+        "notes": "Q3 FY26 (May 13 release) guide $15.4-15.6B; full-year AI order outlook raised to >$5B (~$3B converts to revenue); Silicon One G300 102.4 Tbps targeting hyperscalers/neoclouds."
+      },
+      "thesis": {
+        "call": "priced",
+        "confidence": "medium",
+        "short": "Auto-FCR (4.7) is inflated because the 24% networking share lumps in Cisco's enterprise + tier-2 cloud business, but Cisco's own AI conversion guide is ~$3B against $14B of theoretical flow. The truer read is closer to Priced: Cisco is regaining some hyperscaler share via Silicon One G300, but the share decay through 2029 (24% → 18%) is the dominant trend in the model. Manual override to Priced reflects that reality.",
+        "risks": "Continued share erosion to Arista + NVIDIA Spectrum-X on top-of-rack; Splunk integration drag; multiple compression on any guidance miss.",
+        "status": "draft"
+      }
     },
     "COHR": {
       "name": "Coherent",
@@ -236,8 +251,23 @@
       "segment_exposures": [
         {"segment": "Networking", "share_2026": 0.06, "note": "800G transceivers + EML lasers. Datacom optics is the durable franchise"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 335,
+        "price_12mo_ago_usd": 85,
+        "market_cap_b": 52,
+        "ttm_revenue_b": 5.81,
+        "fwd_revenue_2026_b": 7.2,
+        "fwd_pe": 35,
+        "as_of": "2026-05-09",
+        "notes": "Q3 FY26 record $1.81B; FY25 revenue $5.81B (+23%); NVIDIA $2B equity investment for AI optics. 800G + 1.6T transceivers ramping with healthy pricing."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Coherent captures ~$3.5B of theoretical 2026 networking optics flow against ~$1.4B implied growth — FCR ~2.5, Higher conviction. The NVIDIA $2B equity investment is the structural signal: NVIDIA wants captive optics capacity for Spectrum-X scaling. 800G/1.6T ramp at healthy ASPs supports gross margin recovery, and the share base is durable until silicon photonics (3+ years out) shifts the supplier set.",
+        "risks": "Optics ASP normalization once supply catches demand; silicon photonics dilution (Nvidia / Lightmatter); Capacity scale-out timing on EML lasers.",
+        "status": "draft"
+      }
     },
     "LITE": {
       "name": "Lumentum",
@@ -247,8 +277,23 @@
       "segment_exposures": [
         {"segment": "Networking", "share_2026": 0.04, "note": "Indium phosphide laser supply + Cloud Light pluggables. 1.6T ramp"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 902,
+        "price_12mo_ago_usd": 50,
+        "market_cap_b": 62,
+        "ttm_revenue_b": 2.5,
+        "fwd_revenue_2026_b": 4.0,
+        "fwd_pe": 50,
+        "as_of": "2026-05-11",
+        "notes": "Q3 FY26 record $808.4M (+90% YoY); Q4 guide $960M-$1.01B; Rosenblatt sees $1.25B/Q by late 2026, $2B/Q by 2027. Stock 20x+ over 12 months."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Lumentum captures ~$2.4B of theoretical 2026 optics flow against $1.5B implied growth — FCR ~1.2, Priced. The 4% segment share understates the durable indium-phosphide laser franchise, but consensus has caught up after the 20x stock run. Cloud Light pluggables and 1.6T ramp are the next leg; the question is whether the $2B/Q FY27 run rate is achievable without margin compression.",
+        "risks": "Margin pressure as 1.6T volume builds before pricing normalizes; share concession to Coherent on 800G EML; supply allocation from NVIDIA-COHR equity deal redirecting share.",
+        "status": "draft"
+      }
     },
 
     "DELL": {
@@ -981,8 +1026,23 @@
       "segment_exposures": [
         {"segment": "Shell", "share_2026": 0.08, "note": "Design + program management. Asset-light beneficiary"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 91,
+        "price_12mo_ago_usd": 95,
+        "market_cap_b": 12,
+        "ttm_revenue_b": 16.14,
+        "fwd_revenue_2026_b": 17,
+        "fwd_pe": 20,
+        "as_of": "2026-05-09",
+        "notes": "FY25 revenue $16.14B (+0.21%); 2026 revenue growth forecast +5.23%. Avg analyst target $132 (+45% upside)."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "AECOM's 8% Shell share gives ~$4.7B of theoretical flow against just ~$0.9B implied growth — auto FCR ~5.5, Higher conviction. The asset-light design + program management model means most data center construction work cycles through AECOM in some role; the implied growth is modest only because the legacy infrastructure book is large and flat.",
+        "risks": "Backlog conversion timing; competition from Jacobs on PMC mandates; cyclicality in non-DC infrastructure spend.",
+        "status": "draft"
+      }
     },
     "FLR": {
       "name": "Fluor",
@@ -992,8 +1052,23 @@
       "segment_exposures": [
         {"segment": "Shell", "share_2026": 0.06, "note": "EPC for large-frame data center campuses. NuScale SMR optionality"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 43,
+        "price_12mo_ago_usd": 50,
+        "market_cap_b": 7.5,
+        "ttm_revenue_b": 15,
+        "fwd_revenue_2026_b": 16,
+        "fwd_pe": 15,
+        "as_of": "2026-05-11",
+        "notes": "Q1 2026 revenue $3.66B (missed); stock -15% on earnings. TeraWulf Kentucky data center LNTP signed. Analyst targets $40-57."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "low",
+        "short": "Fluor's 6% Shell share generates ~$3.5B of theoretical flow against ~$1B implied growth — auto FCR ~3.5, Higher conviction. The Q1 miss and lower stock price actually improve the entry, but execution risk is real: Fluor's TeraWulf engagement is encouraging but lumpy. NuScale SMR optionality remains multi-year out. Cleaner long-cycle EPC backlog visibility than the stock price suggests.",
+        "risks": "Project execution variability (recurring at Fluor); SMR commercialization timing; share concession to private builders (Turner/DPR) on hyperscaler campuses.",
+        "status": "draft"
+      }
     },
     "J": {
       "name": "Jacobs",
@@ -1003,8 +1078,23 @@
       "segment_exposures": [
         {"segment": "Shell", "share_2026": 0.04, "note": "Critical mission engineering + design. Less pure than ACM"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 129,
+        "price_12mo_ago_usd": 130,
+        "market_cap_b": 16,
+        "ttm_revenue_b": 17,
+        "fwd_revenue_2026_b": 18,
+        "fwd_pe": 18,
+        "as_of": "2026-05-03",
+        "notes": "FY26 guide 6-10% adj net revenue growth; adj EPS $6.90-$7.30; Q2 EPS $1.75 beat. Avg analyst target $155 (+20%)."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Jacobs Engineering's 4% Shell share gives ~$2.4B of theoretical flow against ~$1B implied growth — FCR ~2.4, Higher conviction by auto-derivation. Less data-center pure than AECOM but with strong critical-mission engineering positioning. The 6-10% adj net revenue growth guide aligns with the flow attribution; consensus largely priced.",
+        "risks": "Lower DC mix than ACM; cyclicality in critical infrastructure spend; share concession to AECOM on PMC roles.",
+        "status": "draft"
+      }
     },
     "EME": {
       "name": "EMCOR Group",
@@ -1014,8 +1104,23 @@
       "segment_exposures": [
         {"segment": "Shell", "share_2026": 0.05, "note": "Mechanical + electrical contracting. Direct MEP install work"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 933,
+        "price_12mo_ago_usd": 400,
+        "market_cap_b": 41,
+        "ttm_revenue_b": 16.5,
+        "fwd_revenue_2026_b": 18.85,
+        "fwd_pe": 25,
+        "as_of": "2026-05-09",
+        "notes": "Q1 2026 record revenue $4.63B (+19.7%); record backlog $15.62B; DC segment RPOs +112% YoY; FY26 guide raised to $18.50-19.25B."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "EMCOR is one of the most direct MEP install plays. 5% Shell share gives ~$2.95B of theoretical flow against ~$2.35B implied growth — FCR ~1.25, Priced. The data center RPO growth of 112% YoY says the segment is structurally accelerating, but consensus has caught up (the stock is up ~130% in 12 months). Auto-FCR Priced reflects that catch-up.",
+        "risks": "Labor cost inflation in critical-trade markets; share concession to Comfort Systems on specific platforms; backlog conversion timing.",
+        "status": "draft"
+      }
     },
     "FIX": {
       "name": "Comfort Systems USA",
@@ -1025,8 +1130,23 @@
       "segment_exposures": [
         {"segment": "Shell", "share_2026": 0.05, "note": "MEP + modular skids. Pure data-center capex beneficiary"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 1893,
+        "price_12mo_ago_usd": 500,
+        "market_cap_b": 70,
+        "ttm_revenue_b": 8.5,
+        "fwd_revenue_2026_b": 10.93,
+        "fwd_pe": 32,
+        "as_of": "2026-05-04",
+        "notes": "Q1 2026 revenue +56.5% to $2.87B; FY26 guide $10.93B (+25%+); record backlog $12.5B; data center >50% of revenue."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "high",
+        "short": "Comfort Systems is the cleanest mid-cap MEP pure play on data center build-out: more than half of revenue now from DC segment. 5% Shell share gives ~$2.95B of theoretical flow against ~$2.4B implied growth — FCR ~1.2, Priced. Stock has run 280%+ in 12 months and now trades at 32x; the flow math justifies the current multiple but limited upside until backlog converts faster than consensus.",
+        "risks": "Labor scarcity is the binding constraint; valuation multiple compression on any growth deceleration; concentration in 2-3 mega-projects.",
+        "status": "draft"
+      }
     },
 
     "XYL": {
@@ -1037,8 +1157,23 @@
       "segment_exposures": [
         {"segment": "Water", "share_2026": 0.22, "note": "Pumps + treatment. Data-center water management adjacency"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 116,
+        "price_12mo_ago_usd": 130,
+        "market_cap_b": 28,
+        "ttm_revenue_b": 9,
+        "fwd_revenue_2026_b": 9.25,
+        "fwd_pe": 22,
+        "as_of": "2026-05-06",
+        "notes": "FY26 revenue guide raised to $9.2-9.3B (+2-3%); China headwinds drag Water Infrastructure / Applied Water. Avg analyst target $158."
+      },
+      "thesis": {
+        "call": "watching",
+        "confidence": "low",
+        "short": "Xylem's 22% water share would normally generate ~$5.5B of theoretical 2026 flow against ~$0.25B implied growth — auto FCR ~22, extreme Higher conviction. But the water segment 22% share is industrial + municipal + hyperscaler mixed; actual data-center water exposure is a small fraction. Overriding to Watching: the flow model overstates this for a reason that holds across all the water names — water capex per data center is small in absolute dollars even at high share.",
+        "risks": "China industrial drag on broader business; water capex per data center is concentrated in cooling-loop pumps (Flowserve adjacent) more than treatment.",
+        "status": "draft"
+      }
     },
     "FLS": {
       "name": "Flowserve",
@@ -1048,8 +1183,23 @@
       "segment_exposures": [
         {"segment": "Water", "share_2026": 0.14, "note": "Industrial pumps + seals. Cooling-tower-loop adjacency"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 72,
+        "price_12mo_ago_usd": 45,
+        "market_cap_b": 9.5,
+        "ttm_revenue_b": 4.7,
+        "fwd_revenue_2026_b": 4.95,
+        "fwd_pe": 18,
+        "as_of": "2026-05-09",
+        "notes": "FY26 guide $4.9-5.0B; Q1 EPS $0.85 beat; revenue $1.07B miss on $1.17B. Analyst targets $89-92."
+      },
+      "thesis": {
+        "call": "watching",
+        "confidence": "low",
+        "short": "Flowserve's 14% water share generates ~$3.5B of theoretical 2026 flow against ~$0.25B implied growth — auto FCR ~14, extreme. Same caveat as XYL: the water segment % is broad and most spend is non-DC. The actual DC-relevant Flowserve line (cooling-tower-loop pumps) is a few hundred million revenue. Overriding to Watching until segment attribution can be refined.",
+        "risks": "Same as other water names — model overstates due to broad water-segment share assumption; oil & gas pump cyclicality.",
+        "status": "draft"
+      }
     },
     "PNR": {
       "name": "Pentair",
@@ -1059,8 +1209,23 @@
       "segment_exposures": [
         {"segment": "Water", "share_2026": 0.10, "note": "Filtration + treatment. Smaller direct hyperscaler exposure"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 120,
+        "price_12mo_ago_usd": 90,
+        "market_cap_b": 20,
+        "ttm_revenue_b": 4.3,
+        "fwd_revenue_2026_b": 4.5,
+        "fwd_pe": 22,
+        "as_of": "2026-05-09",
+        "notes": "Placeholder — estimates pending owner verification. PNR runs filtration + pumps with smaller DC concentration than XYL."
+      },
+      "thesis": {
+        "call": "watching",
+        "confidence": "low",
+        "short": "Pentair's 10% water share generates ~$2.5B of theoretical flow against minimal implied growth — same water-segment overattribution issue. Overriding to Watching pending more precise share definition (DC-only water vs. all water).",
+        "risks": "Residential pool & spa drag; share concession to XYL on industrial filtration; minimal direct hyperscaler exposure relative to share.",
+        "status": "draft"
+      }
     },
     "WTS": {
       "name": "Watts Water Technologies",
@@ -1070,8 +1235,23 @@
       "segment_exposures": [
         {"segment": "Water", "share_2026": 0.06, "note": "Plumbing components"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 220,
+        "price_12mo_ago_usd": 215,
+        "market_cap_b": 7.4,
+        "ttm_revenue_b": 2.2,
+        "fwd_revenue_2026_b": 2.3,
+        "fwd_pe": 28,
+        "as_of": "2026-05-09",
+        "notes": "Placeholder — estimates pending owner verification. Smallest direct hyperscaler exposure among water names."
+      },
+      "thesis": {
+        "call": "watching",
+        "confidence": "low",
+        "short": "Watts is a plumbing components specialist with minimal direct hyperscaler exposure. Auto-FCR optimistic because of water segment share, but actual DC share is sub-1%. Watching.",
+        "risks": "Residential and commercial construction cycles; share concession to integrators on big project bids.",
+        "status": "draft"
+      }
     },
     "MWA": {
       "name": "Mueller Water Products",
@@ -1081,8 +1261,23 @@
       "segment_exposures": [
         {"segment": "Water", "share_2026": 0.06, "note": "Valves + hydrants. Indirect via utility infrastructure"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 26,
+        "price_12mo_ago_usd": 20,
+        "market_cap_b": 4,
+        "ttm_revenue_b": 1.3,
+        "fwd_revenue_2026_b": 1.4,
+        "fwd_pe": 18,
+        "as_of": "2026-05-09",
+        "notes": "Placeholder — estimates pending owner verification. Valves + hydrants are mostly municipal utility, indirect DC link only."
+      },
+      "thesis": {
+        "call": "watching",
+        "confidence": "low",
+        "short": "Mueller Water Products supplies valves + hydrants mainly to municipal utility systems. Data center exposure is indirect at best. Watching.",
+        "risks": "Municipal water budget cyclicality; lead-pipe replacement timing; minimal DC linkage.",
+        "status": "draft"
+      }
     },
     "FERG": {
       "name": "Ferguson Enterprises",
@@ -1092,8 +1287,23 @@
       "segment_exposures": [
         {"segment": "Water", "share_2026": 0.10, "note": "Plumbing/HVAC distribution. Volume-driven hyperscaler beneficiary"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 266,
+        "price_12mo_ago_usd": 200,
+        "market_cap_b": 53,
+        "ttm_revenue_b": 30.8,
+        "fwd_revenue_2026_b": 32,
+        "fwd_pe": 22,
+        "as_of": "2026-05-09",
+        "notes": "FY25 revenue $30.80B (+0.12%); Q1 2026 revenue +3.6% to $7.5B; ATH $271 (Feb 12). Avg analyst target $269."
+      },
+      "thesis": {
+        "call": null,
+        "confidence": "medium",
+        "short": "Ferguson is the largest US plumbing/HVAC distribution channel; 10% water share gives ~$2.5B of theoretical flow against ~$1.2B implied growth (FCR ~2.1, Higher conviction). The distribution model is volume-driven — every cooling tower and pipe run on a hyperscale campus cycles through a distributor, and Ferguson dominates. Slower-growth than the spec'd-in pump/valve OEMs, but with cleaner DC pull-through than the pure water names.",
+        "risks": "Construction cyclicality across non-DC segments; share concession to industrial-specialist distributors on engineered systems; margin compression from price competition.",
+        "status": "draft"
+      }
     },
 
     "HON": {
@@ -1104,8 +1314,23 @@
       "segment_exposures": [
         {"segment": "DCIM", "share_2026": 0.18, "note": "Building Management Systems. Post-portfolio reshuffle, cleaner data-center exposure"}
       ],
-      "financials": null,
-      "thesis": {"call": null, "short": null, "risks": null, "confidence": null, "status": "pending"}
+      "financials": {
+        "price_usd": 215,
+        "price_12mo_ago_usd": 200,
+        "market_cap_b": 140,
+        "ttm_revenue_b": 38,
+        "fwd_revenue_2026_b": 39.3,
+        "fwd_pe": 22,
+        "as_of": "2026-05-09",
+        "notes": "FY26 guide $38.8-39.8B (+3-6% organic); portfolio reshuffle ongoing. Avg analyst target $256 (+19%)."
+      },
+      "thesis": {
+        "call": "priced",
+        "confidence": "medium",
+        "short": "Honeywell's 18% DCIM share generates ~$3B of theoretical flow against ~$1.3B implied growth — auto FCR ~2.4, Higher conviction. But the parent company is so diversified ($38B revenue, 4 segments) that the DCIM line barely moves the multiple. Overriding to Priced reflects that reality: Building Automation is real but small relative to aerospace + materials drag. The portfolio reshuffle could unlock the BA segment if it spins out, but that's optionality not thesis.",
+        "risks": "Aerospace + Performance Materials cyclicality dominating multiple; spin-out timing unclear; share concession to JCI + Siemens on next-gen BMS.",
+        "status": "draft"
+      }
     }
   }
 }
