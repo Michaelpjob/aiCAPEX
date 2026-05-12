@@ -197,15 +197,15 @@
         }
       ],
       "financials": {
-        "price_usd": NaN,
+        "price_usd": 1140,
         "inception_price_usd": 1140,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 193870.84,
-        "market_cap_b": 1302583.72,
-        "ttm_revenue_b": 132083.67,
+        "price_12mo_ago_usd": 120,
+        "market_cap_b": 900,
+        "ttm_revenue_b": 68,
         "fwd_revenue_2026_b": 150,
-        "fwd_pe": 4.9,
-        "as_of": "2026-05-12",
+        "fwd_pe": 12,
+        "as_of": "2026-05-10",
         "notes": "Native KRX listing 000660.KS at ~1.95M won ATH. OTC ADR price approximate. Q1 2026 revenue 52.58T KRW (+198% YoY); 2026 capacity sold out; MSFT 3-year DDR5 deal.",
         "price_36mo_ago_usd": 85118.32,
         "conversion_factor": 0.2
@@ -232,15 +232,15 @@
         }
       ],
       "financials": {
-        "price_usd": NaN,
+        "price_usd": 190,
         "inception_price_usd": 190,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 56601.68,
-        "market_cap_b": 1832071.18,
-        "ttm_revenue_b": 388405.94,
+        "price_12mo_ago_usd": 50,
+        "market_cap_b": 1070,
+        "ttm_revenue_b": 215,
         "fwd_revenue_2026_b": 350,
-        "fwd_pe": 5.5,
-        "as_of": "2026-05-12",
+        "fwd_pe": 12,
+        "as_of": "2026-05-10",
         "notes": "USD-equivalent of native 005930.KS at ~268,500 KRW. Market cap topped $1T May 2026 (second Asian firm after TSMC). Q1 2026 revenue 133.9T KRW. ADR SSNLF illiquid; native pricing more reliable.",
         "price_36mo_ago_usd": 60385.24,
         "conversion_factor": 0.15
@@ -505,11 +505,11 @@
         }
       ],
       "financials": {
-        "price_usd": NaN,
+        "price_usd": 343.50,
         "inception_price_usd": 319,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 246.73,
-        "market_cap_b": 1310.54,
+        "price_12mo_ago_usd": 271.50,
+        "market_cap_b": 44,
         "ttm_revenue_b": 2123.69,
         "fwd_revenue_2026_b": 80,
         "fwd_pe": 12.6,
@@ -540,11 +540,11 @@
         }
       ],
       "financials": {
-        "price_usd": NaN,
+        "price_usd": 5820.00,
         "inception_price_usd": 4675,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 2189.56,
-        "market_cap_b": 1076.02,
+        "price_12mo_ago_usd": 2420.00,
+        "market_cap_b": 32,
         "ttm_revenue_b": 1056.52,
         "fwd_revenue_2026_b": 32,
         "fwd_pe": 12.8,
@@ -575,11 +575,11 @@
         }
       ],
       "financials": {
-        "price_usd": NaN,
+        "price_usd": 249.50,
         "inception_price_usd": 228,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 147.64,
-        "market_cap_b": 3490.68,
+        "price_12mo_ago_usd": 156.00,
+        "market_cap_b": 110,
         "ttm_revenue_b": 8103.1,
         "fwd_revenue_2026_b": 300,
         "fwd_pe": 12.4,

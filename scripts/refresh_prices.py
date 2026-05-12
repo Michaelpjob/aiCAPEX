@@ -35,6 +35,7 @@ Run on GitHub Actions: see .github/workflows/refresh-prices.yml
 """
 
 import json
+import math
 import datetime
 import sys
 from pathlib import Path
@@ -48,6 +49,8 @@ except ImportError:
 # Map our internal ticker keys to the symbol yfinance understands.
 # If the key matches a US ticker that yfinance accepts as-is, no entry needed.
 SYMBOL_MAP = {
+    # International tickers — currently SKIPPED (see SKIP_AUTO_REFRESH below).
+    # Mapping kept for reference / future when native-currency display is wired up.
     "HXSCL":      "000660.KS",   # SK Hynix (KRX)
     "SSNLF":      "005930.KS",   # Samsung Electronics (KRX)
     "QUANTA_TW":  "2382.TW",     # Quanta Computer
@@ -61,7 +64,27 @@ SYMBOL_MAP = {
     "RYCEY":      "RR.L",        # Rolls-Royce (LSE)
 }
 
+# Tickers to leave entirely alone in the auto-refresh.
+# These are international tickers where yfinance returns native-currency values
+# that would clobber our manual USD-equivalent display values. Until we wire up
+# proper currency-aware handling, they stay manually maintained.
+SKIP_AUTO_REFRESH = {
+    "HXSCL", "SSNLF", "QUANTA_TW", "WIWYNN_TW", "FOXCONN_TW",
+    "SBGSY", "ABBNY", "SIEGY", "LGRDY", "ENGGY", "RYCEY",
+}
+
 MAX_INTRADAY_MOVE_PCT = 50.0   # if price would change > 50% in one run, skip
+
+
+def is_valid_number(v):
+    """True if v is a finite number (not None, not NaN, not Inf)."""
+    if v is None:
+        return False
+    try:
+        f = float(v)
+    except (TypeError, ValueError):
+        return False
+    return math.isfinite(f)
 
 
 def resolve_symbol(key: str, ticker_data: dict) -> str:
@@ -105,6 +128,10 @@ def refresh_one(key: str, ticker_data: dict, log: list[str]) -> bool:
         log.append(f"  - {key}: skipped (no financials block)")
         return False
 
+    if key in SKIP_AUTO_REFRESH:
+        log.append(f"  - {key}: skipped (manual-only, in SKIP_AUTO_REFRESH)")
+        return False
+
     symbol = resolve_symbol(key, ticker_data)
     today = datetime.date.today()
 
@@ -121,11 +148,20 @@ def refresh_one(key: str, ticker_data: dict, log: list[str]) -> bool:
             log.append(f"  - {key} ({symbol}): no history returned")
             return False
 
-        # Latest close as current price
-        current_price = float(hist["Close"].iloc[-1])
+        # Latest close as current price — walk back if last bar is NaN
+        current_price = None
+        for i in range(len(hist) - 1, -1, -1):
+            v = hist["Close"].iloc[i]
+            if is_valid_number(v):
+                current_price = float(v)
+                break
+        if current_price is None:
+            log.append(f"  - {key} ({symbol}): no valid current price (all closes NaN/null)")
+            return False
+
         # Sanity guard
         prev_price = fin.get("price_usd")
-        if prev_price and prev_price > 0:
+        if is_valid_number(prev_price) and prev_price > 0:
             move = abs(current_price - prev_price) / prev_price
             if move > MAX_INTRADAY_MOVE_PCT / 100:
                 log.append(
@@ -150,23 +186,25 @@ def refresh_one(key: str, ticker_data: dict, log: list[str]) -> bool:
         ttm_rev    = info.get("totalRevenue")  # in dollars (or native cur)
         fwd_pe     = info.get("forwardPE")
 
-        # Write back
+        # Write back — every numeric write is gated on is_valid_number() so we
+        # NEVER write NaN/Inf/None into the JSON (those produce invalid JSON
+        # output and break the client-side parser).
         fin["price_usd"] = round(current_price, 2)
-        if p12 is not None:
-            fin["price_12mo_ago_usd"] = round(p12, 2)
-        if p36 is not None:
-            fin["price_36mo_ago_usd"] = round(p36, 2)
-        if market_cap:
-            fin["market_cap_b"] = round(market_cap / 1e9, 2)
-        if ttm_rev:
-            fin["ttm_revenue_b"] = round(ttm_rev / 1e9, 2)
-        if fwd_pe and 0 < fwd_pe < 500:
-            fin["fwd_pe"] = round(fwd_pe, 1)
+        if is_valid_number(p12):
+            fin["price_12mo_ago_usd"] = round(float(p12), 2)
+        if is_valid_number(p36):
+            fin["price_36mo_ago_usd"] = round(float(p36), 2)
+        if is_valid_number(market_cap):
+            fin["market_cap_b"] = round(float(market_cap) / 1e9, 2)
+        if is_valid_number(ttm_rev):
+            fin["ttm_revenue_b"] = round(float(ttm_rev) / 1e9, 2)
+        if is_valid_number(fwd_pe) and 0 < float(fwd_pe) < 500:
+            fin["fwd_pe"] = round(float(fwd_pe), 1)
         fin["as_of"] = today.isoformat()
 
         log.append(
             f"  - {key} ({symbol}): ${current_price:.2f}  "
-            f"(mkt cap ${(market_cap/1e9 if market_cap else 0):.1f}B)"
+            f"(mkt cap ${(market_cap/1e9 if is_valid_number(market_cap) else 0):.1f}B)"
         )
         return True
 
@@ -195,7 +233,12 @@ def main():
     today = datetime.date.today().isoformat()
     data["last_updated"] = today
 
-    stocks_path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+    # allow_nan=False makes json.dumps raise rather than silently write the
+    # literal token 'NaN' (which is invalid JSON and breaks the page).
+    stocks_path.write_text(
+        json.dumps(data, indent=2, allow_nan=False) + "\n",
+        encoding="utf-8"
+    )
 
     print("\n".join(log))
     print(f"\nUpdated {updated}/{len(tickers)} tickers. last_updated = {today}")
