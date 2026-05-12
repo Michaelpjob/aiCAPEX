@@ -14,6 +14,8 @@
       ],
       "financials": {
         "price_usd": 220.00,
+        "inception_price_usd": 220.00,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 135.00,
         "market_cap_b": 5400,
         "ttm_revenue_b": 215.9,
@@ -42,6 +44,8 @@
       ],
       "financials": {
         "price_usd": 385,
+        "inception_price_usd": 385,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 120,
         "market_cap_b": 625,
         "ttm_revenue_b": 35,
@@ -71,6 +75,8 @@
       ],
       "financials": {
         "price_usd": 430,
+        "inception_price_usd": 430,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 165,
         "market_cap_b": 2040,
         "ttm_revenue_b": 60,
@@ -99,6 +105,8 @@
       ],
       "financials": {
         "price_usd": 125,
+        "inception_price_usd": 125,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 32,
         "market_cap_b": 230,
         "ttm_revenue_b": 53,
@@ -128,6 +136,8 @@
       ],
       "financials": {
         "price_usd": 804,
+        "inception_price_usd": 804,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 115,
         "market_cap_b": 907,
         "ttm_revenue_b": 50,
@@ -157,6 +167,8 @@
       ],
       "financials": {
         "price_usd": 1140,
+        "inception_price_usd": 1140,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 120,
         "market_cap_b": 900,
         "ttm_revenue_b": 68,
@@ -186,6 +198,8 @@
       ],
       "financials": {
         "price_usd": 190,
+        "inception_price_usd": 190,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 50,
         "market_cap_b": 1070,
         "ttm_revenue_b": 215,
@@ -215,6 +229,8 @@
       ],
       "financials": {
         "price_usd": 137,
+        "inception_price_usd": 142,
+        "inception_date": "2026-05-08",
         "price_12mo_ago_usd": 80,
         "market_cap_b": 207,
         "ttm_revenue_b": 9.0,
@@ -243,6 +259,8 @@
       ],
       "financials": {
         "price_usd": 95,
+        "inception_price_usd": 95,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 48,
         "market_cap_b": 380,
         "ttm_revenue_b": 54,
@@ -271,6 +289,8 @@
       ],
       "financials": {
         "price_usd": 335,
+        "inception_price_usd": 335,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 85,
         "market_cap_b": 52,
         "ttm_revenue_b": 5.81,
@@ -299,6 +319,8 @@
       ],
       "financials": {
         "price_usd": 902,
+        "inception_price_usd": 902,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 50,
         "market_cap_b": 62,
         "ttm_revenue_b": 2.5,
@@ -328,6 +350,8 @@
       ],
       "financials": {
         "price_usd": 246,
+        "inception_price_usd": 246,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 91,
         "market_cap_b": 161,
         "ttm_revenue_b": 113.5,
@@ -356,6 +380,8 @@
       ],
       "financials": {
         "price_usd": 31,
+        "inception_price_usd": 31,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 21,
         "market_cap_b": 42,
         "ttm_revenue_b": 32,
@@ -384,6 +410,8 @@
       ],
       "financials": {
         "price_usd": 36,
+        "inception_price_usd": 36,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 40,
         "market_cap_b": 21,
         "ttm_revenue_b": 30,
@@ -413,6 +441,8 @@
       ],
       "financials": {
         "price_usd": 319,
+        "inception_price_usd": 319,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 200,
         "market_cap_b": 41,
         "ttm_revenue_b": 68,
@@ -442,6 +472,8 @@
       ],
       "financials": {
         "price_usd": 4675,
+        "inception_price_usd": 4675,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 2500,
         "market_cap_b": 26,
         "ttm_revenue_b": 24,
@@ -471,6 +503,8 @@
       ],
       "financials": {
         "price_usd": 228,
+        "inception_price_usd": 228,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 146,
         "market_cap_b": 100,
         "ttm_revenue_b": 230,
@@ -501,6 +535,8 @@
       ],
       "financials": {
         "price_usd": 369,
+        "inception_price_usd": 369,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 120,
         "market_cap_b": 142,
         "ttm_revenue_b": 10.8,
@@ -529,6 +565,8 @@
       ],
       "financials": {
         "price_usd": 418,
+        "inception_price_usd": 402,
+        "inception_date": "2026-05-09",
         "price_12mo_ago_usd": 310,
         "market_cap_b": 144,
         "ttm_revenue_b": 27.5,
@@ -560,6 +598,8 @@
       ],
       "financials": {
         "price_usd": 64,
+        "inception_price_usd": 64,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 50,
         "market_cap_b": 175,
         "ttm_revenue_b": 43,
@@ -589,6 +629,8 @@
       ],
       "financials": {
         "price_usd": 82,
+        "inception_price_usd": 82,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 55,
         "market_cap_b": 175,
         "ttm_revenue_b": 33,
@@ -618,6 +660,8 @@
       ],
       "financials": {
         "price_usd": 269,
+        "inception_price_usd": 269,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 210,
         "market_cap_b": 240,
         "ttm_revenue_b": 85,
@@ -647,6 +691,8 @@
       ],
       "financials": {
         "price_usd": 490,
+        "inception_price_usd": 508,
+        "inception_date": "2026-05-01",
         "price_12mo_ago_usd": 380,
         "market_cap_b": 26,
         "ttm_revenue_b": 6.45,
@@ -676,6 +722,8 @@
       ],
       "financials": {
         "price_usd": 157,
+        "inception_price_usd": 157,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 110,
         "market_cap_b": 50,
         "ttm_revenue_b": 9,
@@ -706,6 +754,8 @@
       ],
       "financials": {
         "price_usd": 140,
+        "inception_price_usd": 140,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 80,
         "market_cap_b": 93,
         "ttm_revenue_b": 26,
@@ -734,6 +784,8 @@
       ],
       "financials": {
         "price_usd": 421,
+        "inception_price_usd": 421,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 340,
         "market_cap_b": 95,
         "ttm_revenue_b": 22,
@@ -762,6 +814,8 @@
       ],
       "financials": {
         "price_usd": 66,
+        "inception_price_usd": 66,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 70,
         "market_cap_b": 55,
         "ttm_revenue_b": 21,
@@ -790,6 +844,8 @@
       ],
       "financials": {
         "price_usd": 285,
+        "inception_price_usd": 268,
+        "inception_date": "2026-05-06",
         "price_12mo_ago_usd": 100.00,
         "market_cap_b": 15,
         "ttm_revenue_b": 3.0,
@@ -819,6 +875,8 @@
       ],
       "financials": {
         "price_usd": 750,
+        "inception_price_usd": 750,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 350,
         "market_cap_b": 370,
         "ttm_revenue_b": 63,
@@ -847,6 +905,8 @@
       ],
       "financials": {
         "price_usd": 700,
+        "inception_price_usd": 700,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 350,
         "market_cap_b": 96.6,
         "ttm_revenue_b": 34,
@@ -876,6 +936,8 @@
       ],
       "financials": {
         "price_usd": 1083,
+        "inception_price_usd": 1083,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 190,
         "market_cap_b": 290,
         "ttm_revenue_b": 36,
@@ -905,6 +967,8 @@
       ],
       "financials": {
         "price_usd": 16,
+        "inception_price_usd": 16,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 8,
         "market_cap_b": 135,
         "ttm_revenue_b": 22,
@@ -934,6 +998,8 @@
       ],
       "financials": {
         "price_usd": 778,
+        "inception_price_usd": 745,
+        "inception_date": "2026-05-08",
         "price_12mo_ago_usd": 290,
         "market_cap_b": 115,
         "ttm_revenue_b": 23,
@@ -963,6 +1029,8 @@
       ],
       "financials": {
         "price_usd": 176,
+        "inception_price_usd": 176,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 65,
         "market_cap_b": 140,
         "ttm_revenue_b": 39,
@@ -991,6 +1059,8 @@
       ],
       "financials": {
         "price_usd": 437,
+        "inception_price_usd": 437,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 140,
         "market_cap_b": 35,
         "ttm_revenue_b": 14.3,
@@ -1019,6 +1089,8 @@
       ],
       "financials": {
         "price_usd": 320,
+        "inception_price_usd": 320,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 240,
         "market_cap_b": 100,
         "ttm_revenue_b": 32,
@@ -1047,6 +1119,8 @@
       ],
       "financials": {
         "price_usd": 93,
+        "inception_price_usd": 93,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 74,
         "market_cap_b": 193,
         "ttm_revenue_b": 28,
@@ -1075,6 +1149,8 @@
       ],
       "financials": {
         "price_usd": 148,
+        "inception_price_usd": 148,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 98,
         "market_cap_b": 50,
         "ttm_revenue_b": 17,
@@ -1104,6 +1180,8 @@
       ],
       "financials": {
         "price_usd": 91,
+        "inception_price_usd": 91,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 95,
         "market_cap_b": 12,
         "ttm_revenue_b": 16.14,
@@ -1132,6 +1210,8 @@
       ],
       "financials": {
         "price_usd": 43,
+        "inception_price_usd": 43,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 50,
         "market_cap_b": 7.5,
         "ttm_revenue_b": 15,
@@ -1160,6 +1240,8 @@
       ],
       "financials": {
         "price_usd": 129,
+        "inception_price_usd": 129,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 130,
         "market_cap_b": 16,
         "ttm_revenue_b": 17,
@@ -1188,6 +1270,8 @@
       ],
       "financials": {
         "price_usd": 933,
+        "inception_price_usd": 933,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 400,
         "market_cap_b": 41,
         "ttm_revenue_b": 16.5,
@@ -1216,6 +1300,8 @@
       ],
       "financials": {
         "price_usd": 1893,
+        "inception_price_usd": 1893,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 500,
         "market_cap_b": 70,
         "ttm_revenue_b": 8.5,
@@ -1245,6 +1331,8 @@
       ],
       "financials": {
         "price_usd": 116,
+        "inception_price_usd": 116,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 130,
         "market_cap_b": 28,
         "ttm_revenue_b": 9,
@@ -1273,6 +1361,8 @@
       ],
       "financials": {
         "price_usd": 72,
+        "inception_price_usd": 72,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 45,
         "market_cap_b": 9.5,
         "ttm_revenue_b": 4.7,
@@ -1334,6 +1424,8 @@
       ],
       "financials": {
         "price_usd": 266,
+        "inception_price_usd": 266,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 200,
         "market_cap_b": 53,
         "ttm_revenue_b": 30.8,
@@ -1363,6 +1455,8 @@
       ],
       "financials": {
         "price_usd": 215,
+        "inception_price_usd": 215,
+        "inception_date": "2026-05-11",
         "price_12mo_ago_usd": 200,
         "market_cap_b": 140,
         "ttm_revenue_b": 38,

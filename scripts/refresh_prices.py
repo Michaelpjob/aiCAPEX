@@ -2,8 +2,7 @@
 """
 Refresh stocks.json with latest prices from yfinance.
 
-Updates per ticker (only these fields — manual fields like fwd_revenue_2026_b,
-conversion_factor, thesis, and notes are left untouched):
+Updates per ticker (only these fields):
     - financials.price_usd
     - financials.price_12mo_ago_usd
     - financials.price_36mo_ago_usd
@@ -11,6 +10,15 @@ conversion_factor, thesis, and notes are left untouched):
     - financials.ttm_revenue_b   (best-effort from yfinance.info['totalRevenue'])
     - financials.fwd_pe          (best-effort from yfinance.info['forwardPE'])
     - financials.as_of
+
+NEVER touched (manual / track-record fields):
+    - financials.inception_price_usd  (the price at which the call was made)
+    - financials.inception_date       (when the call was made)
+    - financials.fwd_revenue_2026_b   (analyst consensus, not on yfinance free)
+    - financials.conversion_factor    (per-ticker κ, judgment)
+    - financials.notes
+    - thesis.*  (call, short, risks, status, confidence)
+    - segment_exposures.*
 
 Safety guards:
     - Per-ticker try/except — one failure doesn't kill the whole run.
