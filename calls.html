@@ -510,7 +510,8 @@
 
   try {
     // Try ./stocks.json (relative). On file:// this will fail; githack/GitHub Pages serves fine.
-    const resp = await fetch('./stocks.json');
+    // `cache: 'no-store'` bypasses browser cache so daily-refresh updates are picked up immediately.
+    const resp = await fetch('./stocks.json', { cache: 'no-store' });
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     stocksData = await resp.json();
   } catch (err) {
