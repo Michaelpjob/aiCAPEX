@@ -187,7 +187,7 @@
       "name": "SK Hynix",
       "native_ticker": "000660.KS",
       "exchange": "KRX (ADR: SKHNF / HXSCL on OTC)",
-      "currency": "KRW",
+      "currency": "USD",
       "primary_segment": "Memory",
       "segment_exposures": [
         {
@@ -201,6 +201,7 @@
         "inception_price_usd": 1140,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 120,
+        "price_36mo_ago_usd": 62,
         "market_cap_b": 900,
         "ttm_revenue_b": 68,
         "fwd_revenue_2026_b": 150,
@@ -222,7 +223,7 @@
       "name": "Samsung Electronics",
       "native_ticker": "005930.KS",
       "exchange": "KRX (ADR: SSNLF, illiquid)",
-      "currency": "KRW",
+      "currency": "USD",
       "primary_segment": "Memory",
       "segment_exposures": [
         {
@@ -236,6 +237,7 @@
         "inception_price_usd": 190,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 50,
+        "price_36mo_ago_usd": 44,
         "market_cap_b": 1070,
         "ttm_revenue_b": 215,
         "fwd_revenue_2026_b": 350,
@@ -495,7 +497,7 @@
       "name": "Quanta Computer",
       "native_ticker": "2382.TW",
       "exchange": "TWSE",
-      "currency": "TWD",
+      "currency": "USD",
       "primary_segment": "Servers",
       "segment_exposures": [
         {
@@ -505,17 +507,17 @@
         }
       ],
       "financials": {
-        "price_usd": 343.50,
-        "inception_price_usd": 319,
+        "price_usd": 10.41,
+        "inception_price_usd": 9.67,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 271.50,
+        "price_12mo_ago_usd": 8.23,
         "market_cap_b": 44,
-        "ttm_revenue_b": 2123.69,
+        "ttm_revenue_b": 68,
         "fwd_revenue_2026_b": 80,
-        "fwd_pe": 12.6,
-        "as_of": "2026-05-12",
-        "notes": "Native TWD pricing on 2382.TW. Revenue in $B USD ($68.1B TTM). Quanta is largest single ODM. Analyst target TWD 367 (+15%). Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 93.81,
+        "fwd_pe": 13,
+        "as_of": "2026-05-11",
+        "notes": "Native TWD on 2382.TW (~343.50 TWD); displayed here in USD-equivalent at FX ~33 TWD/USD. Quanta is largest single ODM. Analyst target TWD 367 (+15%).",
+        "price_36mo_ago_usd": 2.84,
         "conversion_factor": 0.3
       },
       "thesis": {
@@ -530,7 +532,7 @@
       "name": "Wiwynn",
       "native_ticker": "6669.TW",
       "exchange": "TWSE",
-      "currency": "TWD",
+      "currency": "USD",
       "primary_segment": "Servers",
       "segment_exposures": [
         {
@@ -540,17 +542,17 @@
         }
       ],
       "financials": {
-        "price_usd": 5820.00,
-        "inception_price_usd": 4675,
+        "price_usd": 176.36,
+        "inception_price_usd": 141.67,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 2420.00,
+        "price_12mo_ago_usd": 73.33,
         "market_cap_b": 32,
-        "ttm_revenue_b": 1056.52,
+        "ttm_revenue_b": 24,
         "fwd_revenue_2026_b": 32,
-        "fwd_pe": 12.8,
-        "as_of": "2026-05-12",
-        "notes": "Native TWD pricing on 6669.TW. Q1 2026 revenue NT$276B (+62% YoY); ODM for Microsoft + Meta + AWS. Analyst target TWD 6,083. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 946.65,
+        "fwd_pe": 22,
+        "as_of": "2026-05-11",
+        "notes": "Native TWD on 6669.TW (~5,820 TWD); displayed here in USD-equivalent at FX ~33 TWD/USD. Q1 2026 revenue NT$276B (+62% YoY); ODM for Microsoft + Meta + AWS.",
+        "price_36mo_ago_usd": 28.69,
         "conversion_factor": 0.4
       },
       "thesis": {
@@ -565,7 +567,7 @@
       "name": "Hon Hai (Foxconn)",
       "native_ticker": "2317.TW",
       "exchange": "TWSE (ADR: HNHPF, illiquid)",
-      "currency": "TWD",
+      "currency": "USD",
       "primary_segment": "Servers",
       "segment_exposures": [
         {
@@ -575,17 +577,17 @@
         }
       ],
       "financials": {
-        "price_usd": 249.50,
-        "inception_price_usd": 228,
+        "price_usd": 7.56,
+        "inception_price_usd": 6.91,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 156.00,
+        "price_12mo_ago_usd": 4.73,
         "market_cap_b": 110,
-        "ttm_revenue_b": 8103.1,
+        "ttm_revenue_b": 230,
         "fwd_revenue_2026_b": 300,
-        "fwd_pe": 12.4,
-        "as_of": "2026-05-12",
-        "notes": "Native TWD pricing on 2317.TW. Q1 2026 revenue $66.6B; cloud+networking (AI server rack assembly) now 40% of total. ADR HNHPF illiquid. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 91.99,
+        "fwd_pe": 13,
+        "as_of": "2026-05-11",
+        "notes": "Native TWD on 2317.TW (~249.50 TWD); displayed here in USD-equivalent at FX ~33 TWD/USD. Q1 2026 revenue $66.6B; cloud+networking (AI server rack assembly) now 40% of total.",
+        "price_36mo_ago_usd": 2.79,
         "conversion_factor": 0.1
       },
       "thesis": {
@@ -673,7 +675,7 @@
       "name": "Schneider Electric",
       "native_ticker": "SU.PA",
       "exchange": "ENXTPA (ADR: SBGSY on OTC)",
-      "currency": "EUR",
+      "currency": "USD",
       "primary_segment": "Electrical",
       "segment_exposures": [
         {
@@ -718,7 +720,7 @@
       "name": "ABB",
       "native_ticker": "ABBN.SW",
       "exchange": "SWX (ADR: ABBNY)",
-      "currency": "CHF",
+      "currency": "USD",
       "primary_segment": "Electrical",
       "segment_exposures": [
         {
@@ -728,17 +730,17 @@
         }
       ],
       "financials": {
-        "price_usd": 81.16,
-        "inception_price_usd": 82,
+        "price_usd": 92.52,
+        "inception_price_usd": 93.48,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 45.95,
-        "market_cap_b": 147.35,
-        "ttm_revenue_b": 34.57,
-        "fwd_revenue_2026_b": 36,
-        "fwd_pe": 30.8,
-        "as_of": "2026-05-12",
-        "notes": "Native CHF on ABBN.SW. Electrification segment +44% growth; 2026 revenue guide raised to 9%.",
-        "price_36mo_ago_usd": 31.36,
+        "price_12mo_ago_usd": 52.38,
+        "market_cap_b": 168,
+        "ttm_revenue_b": 39.41,
+        "fwd_revenue_2026_b": 41,
+        "fwd_pe": 31,
+        "as_of": "2026-05-11",
+        "notes": "Native CHF on ABBN.SW; displayed here in USD-equivalent at FX ~1.14 USD/CHF. Electrification segment +44% growth; 2026 revenue guide raised to 9%.",
+        "price_36mo_ago_usd": 35.75,
         "conversion_factor": 0.25
       },
       "thesis": {
@@ -753,7 +755,7 @@
       "name": "Siemens",
       "native_ticker": "SIE.DE",
       "exchange": "XETRA (ADR: SIEGY)",
-      "currency": "EUR",
+      "currency": "USD",
       "primary_segment": "Electrical",
       "segment_exposures": [
         {
@@ -763,17 +765,17 @@
         }
       ],
       "financials": {
-        "price_usd": 264.6,
-        "inception_price_usd": 269,
+        "price_usd": 288.41,
+        "inception_price_usd": 293.21,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 217.13,
-        "market_cap_b": 201.82,
-        "ttm_revenue_b": 79.7,
-        "fwd_revenue_2026_b": 89,
-        "fwd_pe": 20.9,
-        "as_of": "2026-05-12",
-        "notes": "Native EUR on SIE.DE. Q1 2026 revenue \u20ac19.1B (+4.3% YoY); FY26 guide upper half of 6-8% range.",
-        "price_36mo_ago_usd": 139.64,
+        "price_12mo_ago_usd": 236.67,
+        "market_cap_b": 220,
+        "ttm_revenue_b": 86.87,
+        "fwd_revenue_2026_b": 97,
+        "fwd_pe": 21,
+        "as_of": "2026-05-11",
+        "notes": "Native EUR on SIE.DE; displayed here in USD-equivalent at FX ~1.09 USD/EUR. Q1 2026 revenue \u20ac19.1B (+4.3% YoY); FY26 guide upper half of 6-8% range.",
+        "price_36mo_ago_usd": 152.21,
         "conversion_factor": 0.2
       },
       "thesis": {
@@ -827,7 +829,7 @@
       "name": "Legrand",
       "native_ticker": "LR.PA",
       "exchange": "ENXTPA (ADR: LGRDY on OTC)",
-      "currency": "EUR",
+      "currency": "USD",
       "primary_segment": "Electrical",
       "segment_exposures": [
         {
@@ -837,17 +839,17 @@
         }
       ],
       "financials": {
-        "price_usd": 152.15,
-        "inception_price_usd": 157,
+        "price_usd": 165.84,
+        "inception_price_usd": 171.13,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 104.84,
-        "market_cap_b": 39.77,
-        "ttm_revenue_b": 9.74,
-        "fwd_revenue_2026_b": 10.3,
+        "price_12mo_ago_usd": 114.28,
+        "market_cap_b": 43.35,
+        "ttm_revenue_b": 10.62,
+        "fwd_revenue_2026_b": 11.23,
         "fwd_pe": 23.5,
         "as_of": "2026-05-12",
-        "notes": "Native EUR on LR.PA. 2026 guide 10-15% sales growth; data centers now 20% of sales, 15% of organic growth. ADR LGRDY thinly traded on OTC.",
-        "price_36mo_ago_usd": 81.08,
+        "notes": "Native EUR on LR.PA; displayed here in USD-equivalent at FX ~1.09 USD/EUR. 2026 guide 10-15% sales growth; data centers now 20% of sales, 15% of organic growth. ADR LGRDY thinly traded on OTC.",
+        "price_36mo_ago_usd": 88.38,
         "conversion_factor": 0.4
       },
       "thesis": {
@@ -1110,7 +1112,7 @@
       "name": "Rolls-Royce",
       "native_ticker": "RR.L",
       "exchange": "LSE (ADR: RYCEY)",
-      "currency": "GBP",
+      "currency": "USD",
       "primary_segment": "Power Gen",
       "segment_exposures": [
         {
@@ -1179,7 +1181,7 @@
       "name": "Siemens Energy",
       "native_ticker": "ENR.DE",
       "exchange": "XETRA (ADR: SMNEY / ENGGY)",
-      "currency": "EUR",
+      "currency": "USD",
       "primary_segment": "Utility/Grid",
       "segment_exposures": [
         {
@@ -1189,17 +1191,17 @@
         }
       ],
       "financials": {
-        "price_usd": 169.48,
-        "inception_price_usd": 176,
+        "price_usd": 184.73,
+        "inception_price_usd": 191.84,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 75.3,
-        "market_cap_b": 144.96,
-        "ttm_revenue_b": 39.81,
-        "fwd_revenue_2026_b": 44,
+        "price_12mo_ago_usd": 82.08,
+        "market_cap_b": 158,
+        "ttm_revenue_b": 43.39,
+        "fwd_revenue_2026_b": 47.96,
         "fwd_pe": 29.7,
         "as_of": "2026-05-12",
-        "notes": "Native EUR on ENR.DE; ATH \u20ac191.66 (Apr 24). FY26 revenue growth guide 14-16%; Grid Technologies guide 25-27%.",
-        "price_36mo_ago_usd": 21.57,
+        "notes": "Native EUR on ENR.DE; displayed here in USD-equivalent at FX ~1.09 USD/EUR. ATH \u20ac191.66 (Apr 24). FY26 revenue growth guide 14-16%; Grid Technologies guide 25-27%.",
+        "price_36mo_ago_usd": 23.51,
         "conversion_factor": 0.35
       },
       "thesis": {
