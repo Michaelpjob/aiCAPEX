@@ -43,17 +43,17 @@
         {"segment": "GPUs", "share_2026": 0.085, "note": "MI355X / MI400X scaling. Second-source share with Microsoft, Meta, Oracle"}
       ],
       "financials": {
-        "price_usd": 385,
+        "price_usd": 458.79,
         "inception_price_usd": 385,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 120,
+        "price_12mo_ago_usd": 110.73,
         "market_cap_b": 625,
         "ttm_revenue_b": 35,
         "fwd_revenue_2026_b": 52,
         "fwd_pe": 38,
-        "as_of": "2026-05-06",
-        "notes": "Q1 2026 revenue $10.25B (beat $9.89B); data center $5.8B (+57% YoY); stock +66% YTD 2026; Lisa Su doubled long-term forecast.",
-        "price_36mo_ago_usd": 108,
+        "as_of": "2026-05-11",
+        "notes": "Q1 2026 revenue $10.25B (beat $9.89B); data center $5.8B (+57% YoY); stock +66% YTD 2026; Lisa Su doubled long-term forecast. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 113.91,
         "conversion_factor": 0.20
       },
       "thesis": {
@@ -288,17 +288,17 @@
         {"segment": "Networking", "share_2026": 0.06, "note": "800G transceivers + EML lasers. Datacom optics is the durable franchise"}
       ],
       "financials": {
-        "price_usd": 335,
+        "price_usd": 379.69,
         "inception_price_usd": 335,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 85,
-        "market_cap_b": 52,
+        "price_12mo_ago_usd": 75.63,
+        "market_cap_b": 59,
         "ttm_revenue_b": 5.81,
         "fwd_revenue_2026_b": 7.2,
-        "fwd_pe": 35,
-        "as_of": "2026-05-09",
-        "notes": "Q3 FY26 record $1.81B; FY25 revenue $5.81B (+23%); NVIDIA $2B equity investment for AI optics. 800G + 1.6T transceivers ramping with healthy pricing.",
-        "price_36mo_ago_usd": 40,
+        "fwd_pe": 40,
+        "as_of": "2026-05-11",
+        "notes": "Q3 FY26 record $1.81B; FY25 revenue $5.81B (+23%); NVIDIA $2B equity investment for AI optics. 800G + 1.6T transceivers ramping with healthy pricing. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 50.98,
         "conversion_factor": 0.50
       },
       "thesis": {
@@ -318,17 +318,17 @@
         {"segment": "Networking", "share_2026": 0.04, "note": "Indium phosphide laser supply + Cloud Light pluggables. 1.6T ramp"}
       ],
       "financials": {
-        "price_usd": 902,
+        "price_usd": 1053.09,
         "inception_price_usd": 902,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 50,
-        "market_cap_b": 62,
+        "price_12mo_ago_usd": 72.28,
+        "market_cap_b": 72,
         "ttm_revenue_b": 2.5,
         "fwd_revenue_2026_b": 4.0,
         "fwd_pe": 50,
         "as_of": "2026-05-11",
-        "notes": "Q3 FY26 record $808.4M (+90% YoY); Q4 guide $960M-$1.01B; Rosenblatt sees $1.25B/Q by late 2026, $2B/Q by 2027. Stock 20x+ over 12 months.",
-        "price_36mo_ago_usd": 50,
+        "notes": "Q3 FY26 record $808.4M (+90% YoY); Q4 guide $960M-$1.01B; Rosenblatt sees $1.25B/Q by late 2026, $2B/Q by 2027. Stock 20x+ over 12 months. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 56.73,
         "conversion_factor": 0.40
       },
       "thesis": {
@@ -440,17 +440,17 @@
         {"segment": "Servers", "share_2026": 0.27, "note": "Largest single ODM. Meta + Google + AWS reference designs"}
       ],
       "financials": {
-        "price_usd": 319,
+        "price_usd": 343.50,
         "inception_price_usd": 319,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 200,
-        "market_cap_b": 41,
+        "price_12mo_ago_usd": 271.50,
+        "market_cap_b": 44,
         "ttm_revenue_b": 68,
         "fwd_revenue_2026_b": 80,
         "fwd_pe": 15,
         "as_of": "2026-05-11",
-        "notes": "Native TWD pricing on 2382.TW. Revenue in $B USD ($68.1B TTM). Quanta is largest single ODM. Analyst target TWD 367 (+15%).",
-        "price_36mo_ago_usd": 110,
+        "notes": "Native TWD pricing on 2382.TW. Revenue in $B USD ($68.1B TTM). Quanta is largest single ODM. Analyst target TWD 367 (+15%). Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 152.00,
         "conversion_factor": 0.30
       },
       "thesis": {
@@ -471,17 +471,17 @@
         {"segment": "Servers", "share_2026": 0.14, "note": "Microsoft + Meta primary ODM. Spinoff of Wistron with concentrated hyperscaler exposure"}
       ],
       "financials": {
-        "price_usd": 4675,
+        "price_usd": 5820.00,
         "inception_price_usd": 4675,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 2500,
-        "market_cap_b": 26,
+        "price_12mo_ago_usd": 2420.00,
+        "market_cap_b": 32,
         "ttm_revenue_b": 24,
         "fwd_revenue_2026_b": 32,
-        "fwd_pe": 30,
-        "as_of": "2026-05-05",
-        "notes": "Native TWD pricing on 6669.TW. Q1 2026 revenue NT$276B (+62% YoY); ODM for Microsoft + Meta + AWS. Analyst target TWD 6,083.",
-        "price_36mo_ago_usd": 1200,
+        "fwd_pe": 36,
+        "as_of": "2026-05-11",
+        "notes": "Native TWD pricing on 6669.TW. Q1 2026 revenue NT$276B (+62% YoY); ODM for Microsoft + Meta + AWS. Analyst target TWD 6,083. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 1420.00,
         "conversion_factor": 0.40
       },
       "thesis": {
@@ -502,17 +502,17 @@
         {"segment": "Servers", "share_2026": 0.12, "note": "Largest contract manufacturer overall; growing AI server share via NVIDIA partnership"}
       ],
       "financials": {
-        "price_usd": 228,
+        "price_usd": 249.50,
         "inception_price_usd": 228,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 146,
-        "market_cap_b": 100,
+        "price_12mo_ago_usd": 156.00,
+        "market_cap_b": 110,
         "ttm_revenue_b": 230,
         "fwd_revenue_2026_b": 300,
-        "fwd_pe": 12,
+        "fwd_pe": 13,
         "as_of": "2026-05-11",
-        "notes": "Native TWD pricing on 2317.TW. Q1 2026 revenue $66.6B; cloud+networking (AI server rack assembly) now 40% of total. ADR HNHPF illiquid.",
-        "price_36mo_ago_usd": 108,
+        "notes": "Native TWD pricing on 2317.TW. Q1 2026 revenue $66.6B; cloud+networking (AI server rack assembly) now 40% of total. ADR HNHPF illiquid. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 113.00,
         "conversion_factor": 0.10
       },
       "thesis": {
@@ -783,17 +783,17 @@
         {"segment": "Cooling", "share_2026": 0.10, "note": "Trane chillers; growing data-center mix. Stellar + LiquidStack acquisitions add liquid-cooling capability"}
       ],
       "financials": {
-        "price_usd": 421,
+        "price_usd": 476.50,
         "inception_price_usd": 421,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 340,
-        "market_cap_b": 95,
+        "price_12mo_ago_usd": 430.27,
+        "market_cap_b": 107,
         "ttm_revenue_b": 22,
         "fwd_revenue_2026_b": 24,
-        "fwd_pe": 30,
-        "as_of": "2026-05-10",
-        "notes": "Q1 2026 revenue $4.97B (+6%); 2026 guide 8.5-9.5% growth; LiquidStack + Stellar acquisitions expand AI cooling exposure. Stock +18% YTD.",
-        "price_36mo_ago_usd": 190,
+        "fwd_pe": 33,
+        "as_of": "2026-05-11",
+        "notes": "Q1 2026 revenue $4.97B (+6%); 2026 guide 8.5-9.5% growth; LiquidStack + Stellar acquisitions expand AI cooling exposure. Stock +18% YTD. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 191.26,
         "conversion_factor": 0.40
       },
       "thesis": {
@@ -874,17 +874,17 @@
         {"segment": "Power Gen", "share_2026": 0.30, "note": "Diesel + gas gensets, large-frame. Backup power leader"}
       ],
       "financials": {
-        "price_usd": 750,
+        "price_usd": 926.79,
         "inception_price_usd": 750,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 350,
-        "market_cap_b": 370,
+        "price_12mo_ago_usd": 348.03,
+        "market_cap_b": 440,
         "ttm_revenue_b": 63,
         "fwd_revenue_2026_b": 67,
-        "fwd_pe": 24,
-        "as_of": "2026-05-05",
-        "notes": "Q1 2026 revenue $17.4B; Power Gen revenue +41% YoY; backlog $63B exiting Q1 (vs $51B end-2025). Stock +32% YTD.",
-        "price_36mo_ago_usd": 220,
+        "fwd_pe": 28,
+        "as_of": "2026-05-11",
+        "notes": "Q1 2026 revenue $17.4B; Power Gen revenue +41% YoY; backlog $63B exiting Q1 (vs $51B end-2025). Stock +32% YTD. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 246.05,
         "conversion_factor": 0.35
       },
       "thesis": {
@@ -1088,17 +1088,17 @@
         {"segment": "Utility/Grid", "share_2026": 0.10, "note": "Largest US nuclear fleet + Calpine gas. Behind-the-meter PPAs with Microsoft (Three Mile Island restart)"}
       ],
       "financials": {
-        "price_usd": 320,
+        "price_usd": 299.69,
         "inception_price_usd": 320,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 240,
-        "market_cap_b": 100,
+        "price_12mo_ago_usd": 306.15,
+        "market_cap_b": 94,
         "ttm_revenue_b": 32,
         "fwd_revenue_2026_b": 45,
-        "fwd_pe": 28,
+        "fwd_pe": 26,
         "as_of": "2026-05-11",
-        "notes": "Calpine acquisition closed Jan 2026 ($16.4B); Q1 2026 revenue $11.12B; FY26 EPS guide $11-12. Crane Clean Energy Center restart interconnection PJM-delayed to potentially 2031 — Microsoft PPA at risk.",
-        "price_36mo_ago_usd": 84,
+        "notes": "Calpine acquisition closed Jan 2026 ($16.4B); Q1 2026 revenue $11.12B; FY26 EPS guide $11-12. Crane Clean Energy Center restart interconnection PJM-delayed to potentially 2031 — Microsoft PPA at risk. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 91.55,
         "conversion_factor": 0.10
       },
       "thesis": {
@@ -1179,17 +1179,17 @@
         {"segment": "Shell", "share_2026": 0.08, "note": "Design + program management. Asset-light beneficiary"}
       ],
       "financials": {
-        "price_usd": 91,
+        "price_usd": 79.50,
         "inception_price_usd": 91,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 95,
-        "market_cap_b": 12,
+        "price_12mo_ago_usd": 109.85,
+        "market_cap_b": 11,
         "ttm_revenue_b": 16.14,
         "fwd_revenue_2026_b": 17,
-        "fwd_pe": 20,
-        "as_of": "2026-05-09",
-        "notes": "FY25 revenue $16.14B (+0.21%); 2026 revenue growth forecast +5.23%. Avg analyst target $132 (+45% upside).",
-        "price_36mo_ago_usd": 80,
+        "fwd_pe": 18,
+        "as_of": "2026-05-11",
+        "notes": "FY25 revenue $16.14B (+0.21%); 2026 revenue growth forecast +5.23%. Avg analyst target $132 (+45% upside). Price refreshed from Yahoo May 11 — down 13% since called.",
+        "price_36mo_ago_usd": 84.69,
         "conversion_factor": 0.35
       },
       "thesis": {
@@ -1239,17 +1239,17 @@
         {"segment": "Shell", "share_2026": 0.04, "note": "Critical mission engineering + design. Less pure than ACM"}
       ],
       "financials": {
-        "price_usd": 129,
+        "price_usd": 117.02,
         "inception_price_usd": 129,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 130,
-        "market_cap_b": 16,
+        "price_12mo_ago_usd": 126.30,
+        "market_cap_b": 14,
         "ttm_revenue_b": 17,
         "fwd_revenue_2026_b": 18,
-        "fwd_pe": 18,
-        "as_of": "2026-05-03",
-        "notes": "FY26 guide 6-10% adj net revenue growth; adj EPS $6.90-$7.30; Q2 EPS $1.75 beat. Avg analyst target $155 (+20%).",
-        "price_36mo_ago_usd": 130,
+        "fwd_pe": 16,
+        "as_of": "2026-05-11",
+        "notes": "FY26 guide 6-10% adj net revenue growth; adj EPS $6.90-$7.30; Q2 EPS $1.75 beat. Avg analyst target $155 (+20%). Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 98.34,
         "conversion_factor": 0.25
       },
       "thesis": {
@@ -1299,17 +1299,17 @@
         {"segment": "Shell", "share_2026": 0.05, "note": "MEP + modular skids. Pure data-center capex beneficiary"}
       ],
       "financials": {
-        "price_usd": 1893,
+        "price_usd": 2032.98,
         "inception_price_usd": 1893,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 500,
-        "market_cap_b": 70,
+        "price_12mo_ago_usd": 478.23,
+        "market_cap_b": 75,
         "ttm_revenue_b": 8.5,
         "fwd_revenue_2026_b": 10.93,
-        "fwd_pe": 32,
-        "as_of": "2026-05-04",
-        "notes": "Q1 2026 revenue +56.5% to $2.87B; FY26 guide $10.93B (+25%+); record backlog $12.5B; data center >50% of revenue.",
-        "price_36mo_ago_usd": 155,
+        "fwd_pe": 34,
+        "as_of": "2026-05-11",
+        "notes": "Q1 2026 revenue +56.5% to $2.87B; FY26 guide $10.93B (+25%+); record backlog $12.5B; data center >50% of revenue. Price refreshed from Yahoo May 11.",
+        "price_36mo_ago_usd": 164.20,
         "conversion_factor": 0.50
       },
       "thesis": {

@@ -1,9 +1,14 @@
-name: Daily price refresh
+name: Price refresh
 
-# Runs every weekday at 22:00 UTC (~17:00 ET, just after US market close).
-# Can also be triggered manually from the Actions tab.
+# Runs 3x per weekday for a near-live feel:
+#   14:00 UTC (10:00 ET — half-hour after US market open)
+#   19:00 UTC (15:00 ET — mid-afternoon)
+#   22:00 UTC (18:00 ET — after US market close, end-of-day data settled)
+# Also triggerable manually via the Actions tab → "Run workflow".
 on:
   schedule:
+    - cron: '0 14 * * 1-5'
+    - cron: '0 19 * * 1-5'
     - cron: '0 22 * * 1-5'
   workflow_dispatch: {}
 
