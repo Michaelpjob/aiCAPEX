@@ -1,0 +1,42 @@
+name: Daily price refresh
+
+# Runs every weekday at 22:00 UTC (~17:00 ET, just after US market close).
+# Can also be triggered manually from the Actions tab.
+on:
+  schedule:
+    - cron: '0 22 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install --quiet 'yfinance>=0.2.40' 'pandas>=2.0'
+
+      - name: Refresh stocks.json
+        run: python scripts/refresh_prices.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet stocks.json; then
+            echo "No changes — nothing to commit."
+            exit 0
+          fi
+          git add stocks.json
+          git commit -m "data: daily price refresh $(date -u +%Y-%m-%d)"
+          git push

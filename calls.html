@@ -88,6 +88,27 @@
     padding-left: 10px;
     margin-top: 10px;
   }
+  .vintage-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,140,66,0.08);
+    border: 1px solid rgba(255,140,66,0.35);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-style: normal;
+  }
+  .vintage-pill .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent); display: inline-block;
+  }
+  .vintage-pill .date { color: var(--text); }
 
   .filter-bar {
     background: var(--panel);
@@ -404,8 +425,14 @@
   <header class="page-head">
     <h1>CapEx Flow Calls</h1>
     <p class="subtitle">Where the market may be over- or underrating public suppliers based on theoretical 2026 CapEx flow. Each card surfaces the share of the Sankey segment a company captures, its implied revenue growth from consensus, a Flow Coverage Ratio (FCR), and a <strong>Modeled Fair Value</strong> derived from the excess flow vs. consensus growth gap.</p>
+    <div class="vintage-pill">
+      <span class="dot"></span>
+      <span>Data snapshot</span>
+      <span class="date" id="lastUpdated">May 2026</span>
+      <span style="color:var(--muted); font-weight:500; letter-spacing:0">· prices not auto-refreshed — verify against your broker before acting</span>
+    </div>
     <p class="disclaimer">
-      <strong>Not investment advice.</strong> Modeled Fair Value uses a same-multiple revenue bridge: Modeled FWD Revenue = Consensus FWD + (Theoretical Flow − Implied Growth) × κ, where κ ∈ [0.05, 0.50] is a per-ticker conversion factor encoding competition, customer concentration, share decay, and non-DC tailwinds. The chart on each card plots <strong>current price → projected price targets 2027 / 2028 / 2029</strong>, derived from theoretical CapEx flow growth applied to the 2026 fair-value baseline (same-multiple assumption, no P/E expansion modeled). Numbers are directional, not precise price targets. Author may hold positions in some names listed. Last updated: <span id="lastUpdated">May 2026</span>.
+      <strong>Not investment advice.</strong> Prices, TTM revenue, and forward consensus values are manually entered point-in-time snapshots, not a live feed — they go stale between updates. Modeled Fair Value uses a same-multiple revenue bridge: Modeled FWD Revenue = Consensus FWD + (Theoretical Flow − Implied Growth) × κ, where κ ∈ [0.05, 0.50] is a per-ticker conversion factor encoding competition, customer concentration, share decay, and non-DC tailwinds. The chart on each card plots <strong>current price → projected price targets 2027 / 2028 / 2029</strong>, derived from theoretical CapEx flow growth applied to the 2026 fair-value baseline (same-multiple assumption, no P/E expansion modeled). Numbers are directional, not precise price targets. Author may hold positions in some names listed.
     </p>
   </header>
 
