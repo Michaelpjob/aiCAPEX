@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14",
+  "last_updated": "2026-05-15",
   "schema_version": 1,
   "notes": "Financials and thesis fields are null until manually populated. Auto-rendered card shows 'Thesis pending' state when thesis.short is null. The Sankey waterfall and supplier shares come from data.js \u2014 never duplicate them here.",
   "tickers": {
@@ -21,17 +21,17 @@
         }
       ],
       "financials": {
-        "price_usd": 235.74,
+        "price_usd": 227.8,
         "inception_price_usd": 220.0,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 135.31,
-        "market_cap_b": 5709.75,
+        "price_12mo_ago_usd": 134.8,
+        "market_cap_b": 5517.07,
         "ttm_revenue_b": 215.94,
         "fwd_revenue_2026_b": 366.8,
-        "fwd_pe": 20.7,
-        "as_of": "2026-05-14",
+        "fwd_pe": 19.9,
+        "as_of": "2026-05-15",
         "notes": "TTM = fiscal year ended Jan 31 2026. Fwd = analyst consensus FY27 (calendar 2026). Price as of May 8 2026 ATH.",
-        "price_36mo_ago_usd": 28.93,
+        "price_36mo_ago_usd": 29.19,
         "conversion_factor": 0.15
       },
       "thesis": {
@@ -55,17 +55,17 @@
         }
       ],
       "financials": {
-        "price_usd": 449.7,
+        "price_usd": 433.12,
         "inception_price_usd": 385,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 117.72,
-        "market_cap_b": 733.28,
+        "price_12mo_ago_usd": 114.99,
+        "market_cap_b": 705.83,
         "ttm_revenue_b": 37.45,
         "fwd_revenue_2026_b": 52,
-        "fwd_pe": 34.8,
-        "as_of": "2026-05-14",
+        "fwd_pe": 33.4,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 revenue $10.25B (beat $9.89B); data center $5.8B (+57% YoY); stock +66% YTD 2026; Lisa Su doubled long-term forecast. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 97.4,
+        "price_36mo_ago_usd": 101.48,
         "conversion_factor": 0.2
       },
       "thesis": {
@@ -94,17 +94,17 @@
         }
       ],
       "financials": {
-        "price_usd": 439.79,
+        "price_usd": 426.83,
         "inception_price_usd": 430,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 230.25,
-        "market_cap_b": 2082.26,
+        "price_12mo_ago_usd": 230.77,
+        "market_cap_b": 2020.92,
         "ttm_revenue_b": 68.28,
         "fwd_revenue_2026_b": 85,
-        "fwd_pe": 24.2,
-        "as_of": "2026-05-14",
+        "fwd_pe": 23.3,
+        "as_of": "2026-05-15",
         "notes": "Q1 FY26 revenue $19.3B (+29% YoY); AI semiconductors $8.4B (+106%); Q2 guide $22B; FY26 implied $85B; mgmt envisions AI chip rev >$100B by FY27 backed by $73B backlog.",
-        "price_36mo_ago_usd": 61.48,
+        "price_36mo_ago_usd": 61.64,
         "conversion_factor": 0.2
       },
       "thesis": {
@@ -128,17 +128,17 @@
         }
       ],
       "financials": {
-        "price_usd": 115.93,
+        "price_usd": 109.06,
         "inception_price_usd": 125,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 21.52,
-        "market_cap_b": 582.66,
+        "price_12mo_ago_usd": 21.55,
+        "market_cap_b": 548.06,
         "ttm_revenue_b": 53.76,
         "fwd_revenue_2026_b": 59,
-        "fwd_pe": 75.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 71.1,
+        "as_of": "2026-05-15",
         "notes": "Stock +129% YTD 2026 to $130.57 ATH; Q1 2026 revenue $13.6B (+7% YoY); FY26 estimate $59.43B (+12.44%).",
-        "price_36mo_ago_usd": 29.2,
+        "price_36mo_ago_usd": 28.64,
         "conversion_factor": 0.05
       },
       "thesis": {
@@ -162,17 +162,17 @@
         }
       ],
       "financials": {
-        "price_usd": 776.01,
+        "price_usd": 733.0,
         "inception_price_usd": 804,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 95.09,
-        "market_cap_b": 875.13,
+        "price_12mo_ago_usd": 95.22,
+        "market_cap_b": 826.63,
         "ttm_revenue_b": 58.12,
         "fwd_revenue_2026_b": 76,
-        "fwd_pe": 7.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 7.2,
+        "as_of": "2026-05-15",
         "notes": "Stock +124% YTD 2026, +700% over past year. Q1 FY26 record $13.64B; Q2 guide $18.7B at 68% GM; FY26 consensus ~$76B; 2026 HBM supply sold out.",
-        "price_36mo_ago_usd": 63.82,
+        "price_36mo_ago_usd": 62.92,
         "conversion_factor": 0.2
       },
       "thesis": {
@@ -266,17 +266,17 @@
         }
       ],
       "financials": {
-        "price_usd": 147.81,
+        "price_usd": 144.5,
         "inception_price_usd": 142,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 98.22,
-        "market_cap_b": 186.12,
+        "price_12mo_ago_usd": 96.07,
+        "market_cap_b": 181.95,
         "ttm_revenue_b": 9.71,
         "fwd_revenue_2026_b": 11.5,
-        "fwd_pe": 33.3,
-        "as_of": "2026-05-14",
+        "fwd_pe": 32.6,
+        "as_of": "2026-05-15",
         "notes": "2026 guide raised to $11.5B revenue + $3.5B AI; Q1 revenue $2.71B; Q2 guide $2.8B. Stock -3% May 11 on cautious management guidance for remainder of year.",
-        "price_36mo_ago_usd": 34.49,
+        "price_36mo_ago_usd": 34.03,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -300,17 +300,17 @@
         }
       ],
       "financials": {
-        "price_usd": 115.53,
+        "price_usd": 116.69,
         "inception_price_usd": 95,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 59.91,
-        "market_cap_b": 456.33,
-        "ttm_revenue_b": 59.05,
+        "price_12mo_ago_usd": 62.81,
+        "market_cap_b": 460.93,
+        "ttm_revenue_b": 60.75,
         "fwd_revenue_2026_b": 57,
-        "fwd_pe": 24.8,
-        "as_of": "2026-05-14",
+        "fwd_pe": 24.6,
+        "as_of": "2026-05-15",
         "notes": "Q3 FY26 (May 13 release) guide $15.4-15.6B; full-year AI order outlook raised to >$5B (~$3B converts to revenue); Silicon One G300 102.4 Tbps targeting hyperscalers/neoclouds.",
-        "price_36mo_ago_usd": 43.35,
+        "price_36mo_ago_usd": 43.18,
         "conversion_factor": 0.15
       },
       "thesis": {
@@ -334,17 +334,17 @@
         }
       ],
       "financials": {
-        "price_usd": 404.94,
+        "price_usd": 387.69,
         "inception_price_usd": 335,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 80.7,
-        "market_cap_b": 79.22,
+        "price_12mo_ago_usd": 78.82,
+        "market_cap_b": 75.85,
         "ttm_revenue_b": 6.6,
         "fwd_revenue_2026_b": 7.2,
-        "fwd_pe": 50.5,
-        "as_of": "2026-05-14",
+        "fwd_pe": 48.4,
+        "as_of": "2026-05-15",
         "notes": "Q3 FY26 record $1.81B; FY25 revenue $5.81B (+23%); NVIDIA $2B equity investment for AI optics. 800G + 1.6T transceivers ramping with healthy pricing. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 28.77,
+        "price_36mo_ago_usd": 27.66,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -368,17 +368,17 @@
         }
       ],
       "financials": {
-        "price_usd": 1001.81,
+        "price_usd": 978.65,
         "inception_price_usd": 902,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 78.29,
-        "market_cap_b": 77.94,
+        "price_12mo_ago_usd": 77.76,
+        "market_cap_b": 76.14,
         "ttm_revenue_b": 2.49,
         "fwd_revenue_2026_b": 4.0,
-        "fwd_pe": 55.7,
-        "as_of": "2026-05-14",
+        "fwd_pe": 54.4,
+        "as_of": "2026-05-15",
         "notes": "Q3 FY26 record $808.4M (+90% YoY); Q4 guide $960M-$1.01B; Rosenblatt sees $1.25B/Q by late 2026, $2B/Q by 2027. Stock 20x+ over 12 months. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 45.12,
+        "price_36mo_ago_usd": 44.33,
         "conversion_factor": 0.4
       },
       "thesis": {
@@ -402,17 +402,17 @@
         }
       ],
       "financials": {
-        "price_usd": 247.89,
+        "price_usd": 240.56,
         "inception_price_usd": 246,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 109.36,
-        "market_cap_b": 161.18,
+        "price_12mo_ago_usd": 109.21,
+        "market_cap_b": 156.41,
         "ttm_revenue_b": 113.54,
         "fwd_revenue_2026_b": 140,
-        "fwd_pe": 16.8,
-        "as_of": "2026-05-14",
+        "fwd_pe": 16.3,
+        "as_of": "2026-05-15",
         "notes": "Dell fiscal year ends late Jan. FY26 (cal 2025) revenue $113.5B (+19% YoY); FY27 guide $138-142B; AI server FY26 $9B \u2192 FY27 guide ~$50B; $43B AI backlog exiting Q4 FY26.",
-        "price_36mo_ago_usd": 42.59,
+        "price_36mo_ago_usd": 43.02,
         "conversion_factor": 0.25
       },
       "thesis": {
@@ -436,17 +436,17 @@
         }
       ],
       "financials": {
-        "price_usd": 34.13,
+        "price_usd": 32.82,
         "inception_price_usd": 31,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 17.41,
-        "market_cap_b": 45.29,
+        "price_12mo_ago_usd": 17.19,
+        "market_cap_b": 43.55,
         "ttm_revenue_b": 35.74,
         "fwd_revenue_2026_b": 36,
-        "fwd_pe": 12.5,
-        "as_of": "2026-05-14",
+        "fwd_pe": 12.0,
+        "as_of": "2026-05-15",
         "notes": "Includes Juniper acquisition (closed 2025). HPE FY ends October. 18% YoY revenue growth; analyst targets cluster near $27.",
-        "price_36mo_ago_usd": 13.17,
+        "price_36mo_ago_usd": 12.94,
         "conversion_factor": 0.3
       },
       "thesis": {
@@ -470,17 +470,17 @@
         }
       ],
       "financials": {
-        "price_usd": 33.03,
+        "price_usd": 31.01,
         "inception_price_usd": 36,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 45.0,
-        "market_cap_b": 19.86,
+        "price_12mo_ago_usd": 43.96,
+        "market_cap_b": 18.65,
         "ttm_revenue_b": 33.7,
         "fwd_revenue_2026_b": 42,
-        "fwd_pe": 10.3,
-        "as_of": "2026-05-14",
+        "fwd_pe": 9.6,
+        "as_of": "2026-05-15",
         "notes": "Q3 FY26 revenue $10.2B (+123% YoY); FY26 guide $38.9-40.4B. Stock flat YoY despite triple-digit revenue growth due to SEC/DOJ scrutiny and smuggling allegations cap.",
-        "price_36mo_ago_usd": 13.78,
+        "price_36mo_ago_usd": 14.58,
         "conversion_factor": 0.2
       },
       "thesis": {
@@ -614,17 +614,17 @@
         }
       ],
       "financials": {
-        "price_usd": 376.23,
+        "price_usd": 369.33,
         "inception_price_usd": 369,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 109.34,
-        "market_cap_b": 144.51,
+        "price_12mo_ago_usd": 105.25,
+        "market_cap_b": 141.86,
         "ttm_revenue_b": 10.84,
         "fwd_revenue_2026_b": 14.5,
-        "fwd_pe": 43.0,
-        "as_of": "2026-05-14",
+        "fwd_pe": 42.2,
+        "as_of": "2026-05-15",
         "notes": "ATH $358.92 on May 6, intraday $372 May 11. Citi target raised to $414. TTM revenue $10.84B.",
-        "price_36mo_ago_usd": 15.27,
+        "price_36mo_ago_usd": 15.08,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -648,17 +648,17 @@
         }
       ],
       "financials": {
-        "price_usd": 408.1,
+        "price_usd": 397.93,
         "inception_price_usd": 402,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 325.31,
-        "market_cap_b": 158.47,
+        "price_12mo_ago_usd": 323.07,
+        "market_cap_b": 154.52,
         "ttm_revenue_b": 28.52,
         "fwd_revenue_2026_b": 30.9,
-        "fwd_pe": 26.0,
-        "as_of": "2026-05-14",
+        "fwd_pe": 25.3,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 sales $7.45B record; FY26 estimate $30.94B (+12.7%); avg analyst target $445. Stock +3.6% May 11 on continued Q1 strength.",
-        "price_36mo_ago_usd": 163.44,
+        "price_36mo_ago_usd": 160.06,
         "conversion_factor": 0.4
       },
       "thesis": {
@@ -802,17 +802,17 @@
         }
       ],
       "financials": {
-        "price_usd": 482.03,
+        "price_usd": 483.38,
         "inception_price_usd": 508,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 380.95,
-        "market_cap_b": 25.47,
+        "price_12mo_ago_usd": 381.9,
+        "market_cap_b": 25.54,
         "ttm_revenue_b": 6.0,
         "fwd_revenue_2026_b": 6.8,
         "fwd_pe": 22.2,
-        "as_of": "2026-05-14",
+        "as_of": "2026-05-15",
         "notes": "FY26 guide raised to 8-11% growth; Q1 2026 sales +11.1% YoY to $1.52B driven by Electrical Solutions and grid infrastructure.",
-        "price_36mo_ago_usd": 262.92,
+        "price_36mo_ago_usd": 259.54,
         "conversion_factor": 0.3
       },
       "thesis": {
@@ -876,17 +876,17 @@
         }
       ],
       "financials": {
-        "price_usd": 145.03,
+        "price_usd": 142.04,
         "inception_price_usd": 140,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 95.71,
-        "market_cap_b": 88.49,
+        "price_12mo_ago_usd": 96.14,
+        "market_cap_b": 86.66,
         "ttm_revenue_b": 24.43,
         "fwd_revenue_2026_b": 28,
-        "fwd_pe": 25.5,
-        "as_of": "2026-05-14",
+        "fwd_pe": 25.0,
+        "as_of": "2026-05-15",
         "notes": "Q2 2026 revenue $6.14B (beat $6.08B); orders +30% (on top of ~40% prior); backlog $20B record (70% converts in 12mo). FY26 EPS guide $4.85.",
-        "price_36mo_ago_usd": 59.31,
+        "price_36mo_ago_usd": 57.77,
         "conversion_factor": 0.45
       },
       "thesis": {
@@ -910,17 +910,17 @@
         }
       ],
       "financials": {
-        "price_usd": 481.67,
+        "price_usd": 468.66,
         "inception_price_usd": 421,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 416.79,
-        "market_cap_b": 106.48,
+        "price_12mo_ago_usd": 419.46,
+        "market_cap_b": 103.6,
         "ttm_revenue_b": 21.6,
         "fwd_revenue_2026_b": 24,
-        "fwd_pe": 28.3,
-        "as_of": "2026-05-14",
+        "fwd_pe": 27.5,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 revenue $4.97B (+6%); 2026 guide 8.5-9.5% growth; LiquidStack + Stellar acquisitions expand AI cooling exposure. Stock +18% YTD. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 172.65,
+        "price_36mo_ago_usd": 167.54,
         "conversion_factor": 0.4
       },
       "thesis": {
@@ -944,17 +944,17 @@
         }
       ],
       "financials": {
-        "price_usd": 66.73,
+        "price_usd": 64.46,
         "inception_price_usd": 66,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 72.3,
-        "market_cap_b": 55.42,
+        "price_12mo_ago_usd": 72.41,
+        "market_cap_b": 53.54,
         "ttm_revenue_b": 21.87,
         "fwd_revenue_2026_b": 22,
-        "fwd_pe": 20.9,
-        "as_of": "2026-05-14",
+        "fwd_pe": 20.1,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 revenue $5.34B (+2.4%); FY26 guide ~$22B (flat-low single digit). Data center orders +500% in Q1; DC backlog $1B \u2192 $1.5B target.",
-        "price_36mo_ago_usd": 41.09,
+        "price_36mo_ago_usd": 40.46,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -978,17 +978,17 @@
         }
       ],
       "financials": {
-        "price_usd": 292.16,
+        "price_usd": 275.51,
         "inception_price_usd": 268,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 105.08,
-        "market_cap_b": 15.41,
+        "price_12mo_ago_usd": 102.45,
+        "market_cap_b": 14.53,
         "ttm_revenue_b": 2.87,
         "fwd_revenue_2026_b": 3.6,
-        "fwd_pe": 39.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 37.3,
+        "as_of": "2026-05-15",
         "notes": "FY26 guide implies 20-25% sales growth. DC sales +78% YoY in Q3 FY26. Stock +4% May 11 intraday.",
-        "price_36mo_ago_usd": 20.57,
+        "price_36mo_ago_usd": 20.19,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -1012,17 +1012,17 @@
         }
       ],
       "financials": {
-        "price_usd": 920.22,
+        "price_usd": 884.02,
         "inception_price_usd": 750,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 345.92,
-        "market_cap_b": 423.85,
+        "price_12mo_ago_usd": 346.06,
+        "market_cap_b": 407.17,
         "ttm_revenue_b": 70.76,
         "fwd_revenue_2026_b": 67,
-        "fwd_pe": 31.0,
-        "as_of": "2026-05-14",
+        "fwd_pe": 29.7,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 revenue $17.4B; Power Gen revenue +41% YoY; backlog $63B exiting Q1 (vs $51B end-2025). Stock +32% YTD. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 201.95,
+        "price_36mo_ago_usd": 198.04,
         "conversion_factor": 0.35
       },
       "thesis": {
@@ -1046,17 +1046,17 @@
         }
       ],
       "financials": {
-        "price_usd": 716.45,
+        "price_usd": 695.93,
         "inception_price_usd": 700,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 326.75,
-        "market_cap_b": 98.86,
+        "price_12mo_ago_usd": 326.05,
+        "market_cap_b": 96.03,
         "ttm_revenue_b": 33.89,
         "fwd_revenue_2026_b": 37,
-        "fwd_pe": 21.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 21.0,
+        "as_of": "2026-05-15",
         "notes": "FY26 guide raised to +8-11%; Power Systems +19% Q1 with $2B in revenue at 29.5% segment EBITDA margin; DC revenue $3.5B (2025) backlog into 2028.",
-        "price_36mo_ago_usd": 204.29,
+        "price_36mo_ago_usd": 198.57,
         "conversion_factor": 0.45
       },
       "thesis": {
@@ -1085,15 +1085,15 @@
         }
       ],
       "financials": {
-        "price_usd": 1090.53,
+        "price_usd": 1049.44,
         "inception_price_usd": 1083,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 431.89,
-        "market_cap_b": 293.05,
+        "price_12mo_ago_usd": 426.03,
+        "market_cap_b": 282.0,
         "ttm_revenue_b": 39.37,
         "fwd_revenue_2026_b": 45,
-        "fwd_pe": 44.0,
-        "as_of": "2026-05-14",
+        "fwd_pe": 42.4,
+        "as_of": "2026-05-15",
         "notes": "Stock +71% YTD 2026, +470% from IPO; 2026 guide raised to $44.5-45.5B; gas turbine production scaling to 20 GW/yr by mid-2026.",
         "price_36mo_ago_usd": 130.76,
         "conversion_factor": 0.4
@@ -1154,17 +1154,17 @@
         }
       ],
       "financials": {
-        "price_usd": 780.08,
+        "price_usd": 767.16,
         "inception_price_usd": 745,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 342.82,
-        "market_cap_b": 117.06,
+        "price_12mo_ago_usd": 340.04,
+        "market_cap_b": 115.12,
         "ttm_revenue_b": 30.12,
         "fwd_revenue_2026_b": 26,
-        "fwd_pe": 47.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 46.8,
+        "as_of": "2026-05-15",
         "notes": "ATH $785 May 6; 2026 forecast +14.6% revenue growth; double-digit guide driven by data center + renewables + utility infrastructure. Stock +4.4% May 11.",
-        "price_36mo_ago_usd": 174.13,
+        "price_36mo_ago_usd": 169.03,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -1223,17 +1223,17 @@
         }
       ],
       "financials": {
-        "price_usd": 434.77,
+        "price_usd": 418.78,
         "inception_price_usd": 437,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 157.32,
-        "market_cap_b": 34.35,
+        "price_12mo_ago_usd": 155.61,
+        "market_cap_b": 33.09,
         "ttm_revenue_b": 15.28,
         "fwd_revenue_2026_b": 17.5,
-        "fwd_pe": 37.1,
-        "as_of": "2026-05-14",
+        "fwd_pe": 35.8,
+        "as_of": "2026-05-15",
         "notes": "FY26 guide $17.5B revenue (+22% YoY); record backlog $20.3B driven by communications + clean energy. Q1 2026 revenue $3.8B vs $3.47B consensus.",
-        "price_36mo_ago_usd": 97.05,
+        "price_36mo_ago_usd": 95.65,
         "conversion_factor": 0.3
       },
       "thesis": {
@@ -1257,17 +1257,17 @@
         }
       ],
       "financials": {
-        "price_usd": 275.26,
+        "price_usd": 268.41,
         "inception_price_usd": 320,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 286.7,
-        "market_cap_b": 99.42,
+        "price_12mo_ago_usd": 282.97,
+        "market_cap_b": 96.91,
         "ttm_revenue_b": 29.87,
         "fwd_revenue_2026_b": 45,
-        "fwd_pe": 20.2,
-        "as_of": "2026-05-14",
+        "fwd_pe": 19.7,
+        "as_of": "2026-05-15",
         "notes": "Calpine acquisition closed Jan 2026 ($16.4B); Q1 2026 revenue $11.12B; FY26 EPS guide $11-12. Crane Clean Energy Center restart interconnection PJM-delayed to potentially 2031 \u2014 Microsoft PPA at risk. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 78.77,
+        "price_36mo_ago_usd": 77.53,
         "conversion_factor": 0.1
       },
       "thesis": {
@@ -1291,17 +1291,17 @@
         }
       ],
       "financials": {
-        "price_usd": 95.68,
+        "price_usd": 93.78,
         "inception_price_usd": 93,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 70.11,
-        "market_cap_b": 199.53,
+        "price_12mo_ago_usd": 72.4,
+        "market_cap_b": 195.55,
         "ttm_revenue_b": 27.87,
         "fwd_revenue_2026_b": 30,
-        "fwd_pe": 21.8,
-        "as_of": "2026-05-14",
+        "fwd_pe": 21.4,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 net income +162% YoY to $2.18B; renewables backlog 33 GW (+4 GW Q1); largest US utility by market cap.",
-        "price_36mo_ago_usd": 71.03,
+        "price_36mo_ago_usd": 69.48,
         "conversion_factor": 0.3
       },
       "thesis": {
@@ -1325,17 +1325,17 @@
         }
       ],
       "financials": {
-        "price_usd": 141.9,
+        "price_usd": 138.67,
         "inception_price_usd": 148,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 153.93,
-        "market_cap_b": 47.85,
+        "price_12mo_ago_usd": 151.29,
+        "market_cap_b": 46.76,
         "ttm_revenue_b": 19.45,
         "fwd_revenue_2026_b": 23,
-        "fwd_pe": 12.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 12.3,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 revenue $5.64B (+43% YoY); 2.6 GW PJM nuclear PPA with Meta; Cogentrix 5.5 GW natural gas acquisition pending. Analyst target avg $234.",
-        "price_36mo_ago_usd": 23.9,
+        "price_36mo_ago_usd": 23.47,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -1359,17 +1359,17 @@
         }
       ],
       "financials": {
-        "price_usd": 71.0,
+        "price_usd": 71.91,
         "inception_price_usd": 91,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 105.89,
-        "market_cap_b": 9.13,
+        "price_12mo_ago_usd": 107.09,
+        "market_cap_b": 9.24,
         "ttm_revenue_b": 15.99,
         "fwd_revenue_2026_b": 17,
-        "fwd_pe": 10.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 10.7,
+        "as_of": "2026-05-15",
         "notes": "FY25 revenue $16.14B (+0.21%); 2026 revenue growth forecast +5.23%. Avg analyst target $132 (+45% upside). Price refreshed from Yahoo May 11 \u2014 down 13% since called.",
-        "price_36mo_ago_usd": 77.09,
+        "price_36mo_ago_usd": 76.17,
         "conversion_factor": 0.35
       },
       "thesis": {
@@ -1393,17 +1393,17 @@
         }
       ],
       "financials": {
-        "price_usd": 45.49,
+        "price_usd": 44.4,
         "inception_price_usd": 43,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 38.72,
-        "market_cap_b": 6.35,
+        "price_12mo_ago_usd": 38.53,
+        "market_cap_b": 6.2,
         "ttm_revenue_b": 15.18,
         "fwd_revenue_2026_b": 16,
-        "fwd_pe": 14.2,
-        "as_of": "2026-05-14",
+        "fwd_pe": 14.1,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 revenue $3.66B (missed); stock -15% on earnings. TeraWulf Kentucky data center LNTP signed. Analyst targets $40-57.",
-        "price_36mo_ago_usd": 27.03,
+        "price_36mo_ago_usd": 26.63,
         "conversion_factor": 0.25
       },
       "thesis": {
@@ -1427,17 +1427,17 @@
         }
       ],
       "financials": {
-        "price_usd": 112.76,
+        "price_usd": 112.06,
         "inception_price_usd": 129,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 123.76,
-        "market_cap_b": 13.31,
+        "price_12mo_ago_usd": 126.29,
+        "market_cap_b": 13.23,
         "ttm_revenue_b": 13.17,
         "fwd_revenue_2026_b": 18,
-        "fwd_pe": 13.6,
-        "as_of": "2026-05-14",
+        "fwd_pe": 13.5,
+        "as_of": "2026-05-15",
         "notes": "FY26 guide 6-10% adj net revenue growth; adj EPS $6.90-$7.30; Q2 EPS $1.75 beat. Avg analyst target $155 (+20%). Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 91.83,
+        "price_36mo_ago_usd": 91.43,
         "conversion_factor": 0.25
       },
       "thesis": {
@@ -1461,17 +1461,17 @@
         }
       ],
       "financials": {
-        "price_usd": 930.03,
+        "price_usd": 907.38,
         "inception_price_usd": 933,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 465.68,
-        "market_cap_b": 41.42,
+        "price_12mo_ago_usd": 463.4,
+        "market_cap_b": 40.41,
         "ttm_revenue_b": 17.75,
         "fwd_revenue_2026_b": 18.85,
-        "fwd_pe": 28.7,
-        "as_of": "2026-05-14",
+        "fwd_pe": 28.0,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 record revenue $4.63B (+19.7%); record backlog $15.62B; DC segment RPOs +112% YoY; FY26 guide raised to $18.50-19.25B.",
-        "price_36mo_ago_usd": 164.34,
+        "price_36mo_ago_usd": 163.03,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -1495,17 +1495,17 @@
         }
       ],
       "financials": {
-        "price_usd": 2042.36,
+        "price_usd": 1960.37,
         "inception_price_usd": 1893,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 466.19,
-        "market_cap_b": 71.9,
+        "price_12mo_ago_usd": 462.07,
+        "market_cap_b": 69.01,
         "ttm_revenue_b": 10.14,
         "fwd_revenue_2026_b": 10.93,
-        "fwd_pe": 39.0,
-        "as_of": "2026-05-14",
+        "fwd_pe": 37.4,
+        "as_of": "2026-05-15",
         "notes": "Q1 2026 revenue +56.5% to $2.87B; FY26 guide $10.93B (+25%+); record backlog $12.5B; data center >50% of revenue. Price refreshed from Yahoo May 11.",
-        "price_36mo_ago_usd": 149.75,
+        "price_36mo_ago_usd": 148.97,
         "conversion_factor": 0.5
       },
       "thesis": {
@@ -1529,17 +1529,17 @@
         }
       ],
       "financials": {
-        "price_usd": 109.44,
+        "price_usd": 109.45,
         "inception_price_usd": 116,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 123.93,
-        "market_cap_b": 26.01,
+        "price_12mo_ago_usd": 125.09,
+        "market_cap_b": 26.02,
         "ttm_revenue_b": 9.09,
         "fwd_revenue_2026_b": 9.25,
         "fwd_pe": 18.0,
-        "as_of": "2026-05-14",
+        "as_of": "2026-05-15",
         "notes": "FY26 revenue guide raised to $9.2-9.3B (+2-3%); China headwinds drag Water Infrastructure / Applied Water. Avg analyst target $158.",
-        "price_36mo_ago_usd": 100.93,
+        "price_36mo_ago_usd": 99.6,
         "conversion_factor": 0.1
       },
       "thesis": {
@@ -1563,17 +1563,17 @@
         }
       ],
       "financials": {
-        "price_usd": 67.99,
+        "price_usd": 65.99,
         "inception_price_usd": 72,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 51.41,
-        "market_cap_b": 8.69,
+        "price_12mo_ago_usd": 50.37,
+        "market_cap_b": 8.43,
         "ttm_revenue_b": 4.65,
         "fwd_revenue_2026_b": 4.95,
-        "fwd_pe": 14.7,
-        "as_of": "2026-05-14",
+        "fwd_pe": 14.3,
+        "as_of": "2026-05-15",
         "notes": "FY26 guide $4.9-5.0B; Q1 EPS $0.85 beat; revenue $1.07B miss on $1.17B. Analyst targets $89-92.",
-        "price_36mo_ago_usd": 33.49,
+        "price_36mo_ago_usd": 32.89,
         "conversion_factor": 0.1
       },
       "thesis": {
@@ -1660,17 +1660,17 @@
         }
       ],
       "financials": {
-        "price_usd": 232.0,
+        "price_usd": 223.57,
         "inception_price_usd": 266,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 172.45,
-        "market_cap_b": 44.99,
+        "price_12mo_ago_usd": 178.95,
+        "market_cap_b": 43.36,
         "ttm_revenue_b": 31.06,
         "fwd_revenue_2026_b": 32,
-        "fwd_pe": 18.5,
-        "as_of": "2026-05-14",
+        "fwd_pe": 17.8,
+        "as_of": "2026-05-15",
         "notes": "FY25 revenue $30.80B (+0.12%); Q1 2026 revenue +3.6% to $7.5B; ATH $271 (Feb 12). Avg analyst target $269.",
-        "price_36mo_ago_usd": 140.16,
+        "price_36mo_ago_usd": 138.3,
         "conversion_factor": 0.3
       },
       "thesis": {
@@ -1694,17 +1694,17 @@
         }
       ],
       "financials": {
-        "price_usd": 217.72,
+        "price_usd": 211.87,
         "inception_price_usd": 215,
         "inception_date": "2026-05-10",
-        "price_12mo_ago_usd": 200.4,
-        "market_cap_b": 137.96,
+        "price_12mo_ago_usd": 205.11,
+        "market_cap_b": 134.25,
         "ttm_revenue_b": 37.66,
         "fwd_revenue_2026_b": 39.3,
-        "fwd_pe": 19.0,
-        "as_of": "2026-05-14",
+        "fwd_pe": 18.5,
+        "as_of": "2026-05-15",
         "notes": "FY26 guide $38.8-39.8B (+3-6% organic); portfolio reshuffle ongoing. Avg analyst target $256 (+19%).",
-        "price_36mo_ago_usd": 172.65,
+        "price_36mo_ago_usd": 170.25,
         "conversion_factor": 0.15
       },
       "thesis": {
