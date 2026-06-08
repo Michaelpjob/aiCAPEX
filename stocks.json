@@ -169,7 +169,7 @@
         "market_cap_b": 1070.54,
         "ttm_revenue_b": 58.12,
         "fwd_revenue_2026_b": 76,
-        "fwd_pe": 9.0,
+        "fwd_pe": 8.8,
         "as_of": "2026-06-08",
         "notes": "Stock +124% YTD 2026, +700% over past year. Q1 FY26 record $13.64B; Q2 guide $18.7B at 68% GM; FY26 consensus ~$76B; 2026 HBM supply sold out.",
         "price_36mo_ago_usd": 64.6,
@@ -1301,7 +1301,7 @@
         "fwd_pe": 19.1,
         "as_of": "2026-06-08",
         "notes": "Q1 2026 net income +162% YoY to $2.18B; renewables backlog 33 GW (+4 GW Q1); largest US utility by market cap.",
-        "price_36mo_ago_usd": 67.8,
+        "price_36mo_ago_usd": 67.79,
         "conversion_factor": 0.3
       },
       "thesis": {
