@@ -402,11 +402,11 @@
         }
       ],
       "financials": {
-        "price_usd": 394.29,
+        "price_usd": 394.32,
         "inception_price_usd": 246,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 121.63,
-        "market_cap_b": 254.77,
+        "market_cap_b": 254.79,
         "ttm_revenue_b": 134.0,
         "fwd_revenue_2026_b": 140,
         "fwd_pe": 18.4,
