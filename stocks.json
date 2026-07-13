@@ -402,11 +402,11 @@
         }
       ],
       "financials": {
-        "price_usd": 426.9,
+        "price_usd": 427.11,
         "inception_price_usd": 246,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 123.79,
-        "market_cap_b": 275.84,
+        "market_cap_b": 275.97,
         "ttm_revenue_b": 134.0,
         "fwd_revenue_2026_b": 140,
         "fwd_pe": 19.9,
@@ -440,7 +440,7 @@
         "inception_price_usd": 31,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 20.25,
-        "market_cap_b": 62.55,
+        "market_cap_b": 62.56,
         "ttm_revenue_b": 38.79,
         "fwd_revenue_2026_b": 36,
         "fwd_pe": 11.8,
