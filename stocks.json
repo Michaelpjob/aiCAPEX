@@ -62,7 +62,7 @@
         "market_cap_b": 893.78,
         "ttm_revenue_b": 37.45,
         "fwd_revenue_2026_b": 52,
-        "fwd_pe": 41.2,
+        "fwd_pe": 41.1,
         "as_of": "2026-07-14",
         "notes": "Q1 2026 revenue $10.25B (beat $9.89B); data center $5.8B (+57% YoY); stock +66% YTD 2026; Lisa Su doubled long-term forecast. Price refreshed from Yahoo May 11.",
         "price_36mo_ago_usd": 115.94,
@@ -266,11 +266,11 @@
         }
       ],
       "financials": {
-        "price_usd": 182.54,
+        "price_usd": 182.57,
         "inception_price_usd": 142,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 108.37,
-        "market_cap_b": 229.85,
+        "market_cap_b": 229.89,
         "ttm_revenue_b": 9.71,
         "fwd_revenue_2026_b": 11.5,
         "fwd_pe": 41.0,
@@ -402,11 +402,11 @@
         }
       ],
       "financials": {
-        "price_usd": 457.57,
+        "price_usd": 457.54,
         "inception_price_usd": 246,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 123.79,
-        "market_cap_b": 295.65,
+        "market_cap_b": 295.64,
         "ttm_revenue_b": 134.0,
         "fwd_revenue_2026_b": 140,
         "fwd_pe": 21.3,
@@ -614,11 +614,11 @@
         }
       ],
       "financials": {
-        "price_usd": 303.67,
+        "price_usd": 303.58,
         "inception_price_usd": 369,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 124.58,
-        "market_cap_b": 116.64,
+        "market_cap_b": 116.61,
         "ttm_revenue_b": 10.84,
         "fwd_revenue_2026_b": 14.5,
         "fwd_pe": 34.2,
@@ -648,11 +648,11 @@
         }
       ],
       "financials": {
-        "price_usd": 415.67,
+        "price_usd": 415.52,
         "inception_price_usd": 402,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 356.16,
-        "market_cap_b": 161.4,
+        "market_cap_b": 161.35,
         "ttm_revenue_b": 28.52,
         "fwd_revenue_2026_b": 30.9,
         "fwd_pe": 26.3,
@@ -802,11 +802,11 @@
         }
       ],
       "financials": {
-        "price_usd": 483.73,
+        "price_usd": 483.89,
         "inception_price_usd": 508,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 410.13,
-        "market_cap_b": 25.56,
+        "market_cap_b": 25.57,
         "ttm_revenue_b": 6.0,
         "fwd_revenue_2026_b": 6.8,
         "fwd_pe": 21.5,
@@ -876,11 +876,11 @@
         }
       ],
       "financials": {
-        "price_usd": 145.26,
+        "price_usd": 145.24,
         "inception_price_usd": 140,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 105.64,
-        "market_cap_b": 88.63,
+        "market_cap_b": 88.61,
         "ttm_revenue_b": 24.43,
         "fwd_revenue_2026_b": 28,
         "fwd_pe": 25.2,
@@ -910,11 +910,11 @@
         }
       ],
       "financials": {
-        "price_usd": 483.58,
+        "price_usd": 483.55,
         "inception_price_usd": 421,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 436.15,
-        "market_cap_b": 106.9,
+        "market_cap_b": 106.89,
         "ttm_revenue_b": 21.6,
         "fwd_revenue_2026_b": 24,
         "fwd_pe": 28.3,
@@ -944,11 +944,11 @@
         }
       ],
       "financials": {
-        "price_usd": 69.77,
+        "price_usd": 69.76,
         "inception_price_usd": 66,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 75.5,
-        "market_cap_b": 57.95,
+        "market_cap_b": 57.94,
         "ttm_revenue_b": 21.87,
         "fwd_revenue_2026_b": 22,
         "fwd_pe": 21.7,
@@ -978,7 +978,7 @@
         }
       ],
       "financials": {
-        "price_usd": 229.59,
+        "price_usd": 229.57,
         "inception_price_usd": 268,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 91.74,
@@ -1012,11 +1012,11 @@
         }
       ],
       "financials": {
-        "price_usd": 933.82,
+        "price_usd": 933.34,
         "inception_price_usd": 750,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 401.43,
-        "market_cap_b": 430.11,
+        "market_cap_b": 429.89,
         "ttm_revenue_b": 70.76,
         "fwd_revenue_2026_b": 67,
         "fwd_pe": 30.7,
@@ -1046,11 +1046,11 @@
         }
       ],
       "financials": {
-        "price_usd": 675.16,
+        "price_usd": 675.54,
         "inception_price_usd": 700,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 334.86,
-        "market_cap_b": 93.16,
+        "market_cap_b": 93.22,
         "ttm_revenue_b": 33.89,
         "fwd_revenue_2026_b": 37,
         "fwd_pe": 19.8,
@@ -1085,14 +1085,14 @@
         }
       ],
       "financials": {
-        "price_usd": 1066.92,
+        "price_usd": 1066.01,
         "inception_price_usd": 1083,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 553.54,
-        "market_cap_b": 286.7,
+        "market_cap_b": 286.46,
         "ttm_revenue_b": 39.37,
         "fwd_revenue_2026_b": 45,
-        "fwd_pe": 43.4,
+        "fwd_pe": 43.3,
         "as_of": "2026-07-14",
         "notes": "Stock +71% YTD 2026, +470% from IPO; 2026 guide raised to $44.5-45.5B; gas turbine production scaling to 20 GW/yr by mid-2026.",
         "price_36mo_ago_usd": 130.7,
@@ -1154,11 +1154,11 @@
         }
       ],
       "financials": {
-        "price_usd": 661.2,
+        "price_usd": 660.94,
         "inception_price_usd": 745,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 386.67,
-        "market_cap_b": 99.22,
+        "market_cap_b": 99.18,
         "ttm_revenue_b": 30.12,
         "fwd_revenue_2026_b": 26,
         "fwd_pe": 40.1,
@@ -1223,11 +1223,11 @@
         }
       ],
       "financials": {
-        "price_usd": 365.01,
+        "price_usd": 365.1,
         "inception_price_usd": 437,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 172.38,
-        "market_cap_b": 28.84,
+        "market_cap_b": 28.85,
         "ttm_revenue_b": 15.28,
         "fwd_revenue_2026_b": 17.5,
         "fwd_pe": 32.7,
@@ -1325,11 +1325,11 @@
         }
       ],
       "financials": {
-        "price_usd": 158.39,
+        "price_usd": 158.43,
         "inception_price_usd": 148,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 193.79,
-        "market_cap_b": 53.41,
+        "market_cap_b": 53.42,
         "ttm_revenue_b": 19.45,
         "fwd_revenue_2026_b": 23,
         "fwd_pe": 14.7,
@@ -1427,7 +1427,7 @@
         }
       ],
       "financials": {
-        "price_usd": 129.24,
+        "price_usd": 129.26,
         "inception_price_usd": 129,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 134.64,
@@ -1461,7 +1461,7 @@
         }
       ],
       "financials": {
-        "price_usd": 774.64,
+        "price_usd": 774.74,
         "inception_price_usd": 933,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 555.79,
@@ -1495,14 +1495,14 @@
         }
       ],
       "financials": {
-        "price_usd": 1773.29,
+        "price_usd": 1775.1,
         "inception_price_usd": 1893,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 541.73,
-        "market_cap_b": 62.39,
+        "market_cap_b": 62.46,
         "ttm_revenue_b": 10.14,
         "fwd_revenue_2026_b": 10.93,
-        "fwd_pe": 32.7,
+        "fwd_pe": 32.8,
         "as_of": "2026-07-14",
         "notes": "Q1 2026 revenue +56.5% to $2.87B; FY26 guide $10.93B (+25%+); record backlog $12.5B; data center >50% of revenue. Price refreshed from Yahoo May 11.",
         "price_36mo_ago_usd": 162.09,
@@ -1529,11 +1529,11 @@
         }
       ],
       "financials": {
-        "price_usd": 121.59,
+        "price_usd": 121.55,
         "inception_price_usd": 116,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 129.29,
-        "market_cap_b": 28.9,
+        "market_cap_b": 28.89,
         "ttm_revenue_b": 9.09,
         "fwd_revenue_2026_b": 9.25,
         "fwd_pe": 19.9,
@@ -1563,7 +1563,7 @@
         }
       ],
       "financials": {
-        "price_usd": 69.57,
+        "price_usd": 69.59,
         "inception_price_usd": 72,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 52.29,
@@ -1660,11 +1660,11 @@
         }
       ],
       "financials": {
-        "price_usd": 234.61,
+        "price_usd": 234.68,
         "inception_price_usd": 266,
         "inception_date": "2026-05-10",
         "price_12mo_ago_usd": 217.02,
-        "market_cap_b": 45.5,
+        "market_cap_b": 45.51,
         "ttm_revenue_b": 31.06,
         "fwd_revenue_2026_b": 32,
         "fwd_pe": 18.7,
