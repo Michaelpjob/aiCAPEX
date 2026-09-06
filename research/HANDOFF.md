@@ -1,50 +1,81 @@
-# Datacenter efficiency research: handoff
+# Datacenter efficiency research: handoff for the next session
 
-**Goal:** a research brief on how hardware, model, and routing efficiency gains net against AI demand growth in the gigawatt forecasts, plus a LinkedIn thesis and post series built from it.
+**Who this is for:** a Claude Code session run by Michael Job (michael.job.gb@gmail.com), picking this work up in the `Michaelpjob/aiCAPEX` repo. Michael owns the decisions; you own the verification, the edits, and the rebuilds. Nothing in this folder has been posted anywhere or linked from the site.
 
-**Who this is for:** Michael, or a Claude Code session picking the work up. Everything is in this folder of the aiCAPEX repo. The site's index page does not link to it.
+**Your job, in order of value:** verify the flagged figures against primary sources, correct the brief and the posts where a figure moves, rebuild the page, and keep the labels honest. Do not draft new sections, do not post to LinkedIn, and do not change the site's index page unless Michael asks in this session.
 
 ---
 
 ## 1. What is in this folder
 
-| Thing | Where | Status |
+| File | What it is | State |
 | --- | --- | --- |
-| The brief, markdown source with full source list | `datacenter-efficiency-vs-power-demand.md` | PROPOSED v1, 6 Sep 2026 |
-| The brief as a standalone styled page, two charts | `datacenter-efficiency-vs-power-demand.html` | built from the markdown; regenerate rather than edit |
-| Published copy of the page | https://claude.ai/code/artifact/d8cb7836-43a4-4c39-a464-f5a5a5b5edd8 | private artifact, first draft |
-| LinkedIn thesis, voice rules, six drafted posts, verification list | `linkedin-thesis-and-posts.md` | PROPOSED v1 |
-| Page build script | `build_page.py` | run after any edit to the markdown |
-| This file | `HANDOFF.md` | n/a |
+| `datacenter-efficiency-vs-power-demand.md` | The brief. Source of truth. Full source list at the end. | PROPOSED v1, 6 Sep 2026 |
+| `datacenter-efficiency-vs-power-demand.html` | The brief as a standalone dark-palette page with two inline-SVG charts. | Generated. Never edit by hand; rebuild it. |
+| `build_page.py` | Generates the HTML from the markdown. | Run after any edit to the brief. |
+| `linkedin-thesis-and-posts.md` | The one-line thesis, three-beat structure, voice rules, six drafted posts, and the verification list (section 6). | PROPOSED v1 |
+| `HANDOFF.md` | This file. | n/a |
 
-## 2. The argument in four lines
+Published copy of the page: https://claude.ai/code/artifact/d8cb7836-43a4-4c39-a464-f5a5a5b5edd8 (private artifact owned by Michael).
 
-1. Energy per AI answer is falling 3x to 6x a year (hardware 1.4x, algorithms ~3x, serving software 1.5x, plus one-time steps). Google measured 33x in one year.
-2. Volume is rising faster: Google tokens 6.7x in a year, reasoning models 10x to 100x more tokens per task, frontier training power doubling annually.
-3. The residual is about 1.5x a year, which is what the IEA measured for AI datacenter electricity in 2025.
-4. The number that caps the buildout is supply: turbines sold out to 2029, transformers on five-year lead times, ERCOT approving ~9 GW of 474 GW requested. Efficiency sets what a gigawatt buys, not how many get built.
+## 2. The argument, so you can judge whether an edit breaks it
 
-## 3. What is verified and what is not
+1. Energy per AI answer falls 3x to 6x a year. Hardware perf/W about 1.4x (Epoch AI), algorithms about 3x for fixed capability (arXiv 2511.23455), serving software 1.5x to 4x per chip over its life, plus one-time steps (FP4, MoE, distillation, liquid cooling, oversubscription). Google measured 33x in one year (arXiv 2508.15734).
+2. Volume rises faster. Google tokens 6.7x year on year to 3.2 quadrillion a month (I/O, May 2026). Reasoning models use 10x to 100x more tokens per task. Frontier training power doubles annually (Epoch, 2.1x).
+3. The residual is about 1.5x a year. The IEA measured AI-focused datacenter electricity growing 50% in 2025. Same number.
+4. Supply caps the buildout: turbine slots sold to 2029, transformer lead times to five years, ERCOT approving about 9 GW of 474 GW requested. Efficiency sets what a gigawatt buys. It does not set how many get built.
 
-The brief labels every figure measured, estimated, or inferred. Three things a reader picking this up should know:
+If a verified figure changes one of these four lines, say so to Michael before editing the executive summary. A figure that changes a table cell without changing a line above is yours to fix directly.
 
-- **Primary hosts were blocked during research.** epoch.ai, iea.org, arxiv.org, nvidia.com, lbl.gov, bnef.com and others could not be fetched. Figures from those sources were taken from search-engine extracts of the primary page plus secondary coverage. The brief's Confidence and caveats section lists them. The posts file, section 6, lists the seven that must be checked before their post goes out.
-- **The 2030 scenario grid and the supply ceiling are inferred.** They are our arithmetic from a 15-20 GW US AI base, itself inferred from Epoch AI's ~30 GW global figure. They belong in the brief with their label. They do not belong in a LinkedIn post.
-- **Known conflicts.** Vera Rubin NVL72 rack power (130 kW vs 230 kW across sources), HBM energy per bit, and the combined hyperscaler capex tally are unresolved and flagged in the brief.
+## 3. Labels, and the rule that follows from them
 
-## 4. How to regenerate the page
+Every figure in the brief is labelled **measured** (company-reported or peer-reviewed), **estimated** (analyst projection or vendor claim), or **inferred** (our own arithmetic). Vendor performance claims are always estimated, never measured. The 2030 scenario grid and the supply ceiling in section 5 are inferred from a 15-20 GW US AI base, itself inferred from Epoch AI's ~30 GW global figure.
 
-The HTML is generated from the markdown by `build_page.py` in this folder. After editing the markdown, run `python3 research/build_page.py` (needs `pip install markdown`). The script strips the four-line document header, wraps the body in a dark palette, and splices the two inline-SVG figures after the two tables in section 5. Chart data is hard-coded in the script's two chart functions; if the section 5 tables change, change the figures with them.
+The rule: inferred figures may appear in the brief with their label. They may not appear in a LinkedIn post. If you touch the posts, keep them to measured and estimated figures only.
 
-To republish the artifact at the same URL, publish from the session that owns it or pass the URL above as `url`. The artifact copy is the same file with the `<!doctype>`, `<html>`, `<head>`, and `<body>` wrappers removed.
+## 4. The verification job
 
-## 5. Open questions for the owner
+The research session's egress proxy blocked most primary hosts (epoch.ai, iea.org, arxiv.org, nvidia.com, lbl.gov, bnef.com, rand.org, and others). Figures from those sources were taken from search-engine extracts of the primary page plus secondary coverage. They are probably right and have not been confirmed.
 
+Work through `linkedin-thesis-and-posts.md` section 6 first. It lists the seven figures that carry the posts, each with the source to open. For each one:
+
+1. Fetch the primary document named in the table. If your session can reach it, read the figure in context, including the definition and date.
+2. If it matches, leave the text and note the confirmation in the brief's Confidence and caveats section by moving the item from Medium to High confidence.
+3. If it differs, change the figure in the brief, in the posts file, and in `build_page.py` if it is one of the chart values (chart data is hard-coded in the two chart functions). Then update the brief's header `Changes:` line by section, in the form `§5 table: ERCOT queue 474 GW corrected to 461 GW per ERCOT Aug 2026 update.`
+4. If the primary is still unreachable, leave the figure and leave its label. Do not upgrade confidence on the strength of a second secondary source.
+
+After section 6, the brief's Confidence and caveats section lists the remaining items: the Vera Rubin NVL72 rack power conflict (130 kW vs 230 kW), HBM energy per bit, Microsoft's 2026 capex, and the combined hyperscaler capex tally. Resolve them the same way if you can. The Epoch training-power figure is 2.1x per year; a 2.3x figure appears in some secondary coverage and is wrong.
+
+## 5. Rebuilding the page
+
+```
+pip install --quiet markdown
+python3 research/build_page.py
+```
+
+The script strips the four-line document header at the top of the markdown, converts the body with the tables extension, wraps it in the dark palette, splices Figure 1 after the first table in section 5 and Figure 2 after the second, and writes the HTML beside the markdown. If you add or remove a table in section 5, the splice points move; check the figures land under the right tables. The page was screenshot-checked once at 1200 px wide in the light theme; the two charts are the parts worth looking at after a rebuild.
+
+To republish the artifact at the same URL, pass the URL above as `url` to the Artifact tool with the HTML file, after removing the `<!doctype>`, `<html>`, `<head>`, and `<body>` wrappers and the three `<meta>` tags. The footer line should stay as it is.
+
+## 6. Copy rules
+
+No em dashes anywhere, in prose or in table cells (use `n/a` for an empty cell). No "not X but Y" constructions. No buzzwords. Numbers as digits. One idea per sentence. Sources named in the same sentence as the figure. The posts end with the reframe, never with a question. Every post names the next post.
+
+## 7. Git
+
+- Work on the branch `claude/datacenter-efficiency-research`. Do not push to `main`; a GitHub Action commits price refreshes to `main` three times a day and the site deploys from it.
+- Commit in small steps with the section and the figure named in the message.
+- This repo is public. Anything committed here is public on push.
+
+## 8. Decisions that are Michael's, not yours
+
+- Whether to merge the branch or open a pull request for it.
 - Whether the brief gets a link from the aiCAPEX index page.
-- Whether the series runs weekly or twice weekly.
+- Posting cadence for the LinkedIn series, and when Post 0 goes out.
+- Whether the long-form article version of the brief gets drafted. If asked, it is a compression of the executive summary plus sections 5 and 8, at 800 to 1,200 words, in the posts file's voice.
 
-## 6. What was not done
+## 9. What was not done
 
+- No figure was verified against a primary document the proxy blocked. That is section 4.
 - The index page was not changed.
-- No figure was verified against a primary document that the proxy blocked; see section 3.
-- The long-form LinkedIn article version of the brief was not drafted. The six posts cover the thesis; the article is a straight compression of the brief's executive summary plus sections 5 and 8 if it is wanted.
+- Nothing was posted.
