@@ -13,7 +13,7 @@
 | `datacenter-efficiency-vs-power-demand.md` | The brief. Source of truth. Full source list at the end. | PROPOSED v1, 6 Sep 2026 |
 | `datacenter-efficiency-vs-power-demand.html` | The brief as a standalone dark-palette page with two inline-SVG charts. | Generated. Never edit by hand; rebuild it. |
 | `build_page.py` | Generates the HTML from the markdown. | Run after any edit to the brief. |
-| `linkedin-thesis-and-posts.md` | The one-line thesis, three-beat structure, voice rules, six drafted posts, and the verification list (section 6). | PROPOSED v1 |
+| `linkedin-thesis-and-posts.md` | The one-line thesis, three-beat structure, voice rules, six drafted posts, the verification list (section 6), and the channel. | PROPOSED v2 |
 | `HANDOFF.md` | This file. | n/a |
 
 Published copy of the page: https://claude.ai/code/artifact/d8cb7836-43a4-4c39-a464-f5a5a5b5edd8 (private artifact owned by Michael).
