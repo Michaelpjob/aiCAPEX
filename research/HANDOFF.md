@@ -13,7 +13,7 @@
 | `datacenter-efficiency-vs-power-demand.md` | The brief. Source of truth. Full source list at the end. | PROPOSED v1, 6 Sep 2026 |
 | `datacenter-efficiency-vs-power-demand.html` | The brief as a standalone dark-palette page with two inline-SVG charts. | Generated. Never edit by hand; rebuild it. |
 | `build_page.py` | Generates the HTML from the markdown. | Run after any edit to the brief. |
-| `linkedin-thesis-and-posts.md` | The one-line thesis, three-beat structure, voice rules, six drafted posts, the verification list (section 6), and the channel. | PROPOSED v2 |
+| `linkedin-thesis-and-posts.md` | The one-line thesis, three-beat structure, voice rules, six drafted posts, the verification list (section 6), and the channel. | PROPOSED v3 |
 | `HANDOFF.md` | This file. | n/a |
 
 Published copy of the page: https://claude.ai/code/artifact/d8cb7836-43a4-4c39-a464-f5a5a5b5edd8 (private artifact owned by Michael).
@@ -59,7 +59,7 @@ To republish the artifact at the same URL, pass the URL above as `url` to the Ar
 
 ## 6. Copy rules
 
-The posts follow the SMBai copy standard, summarized in section 3 of the posts file. The parts that matter most when editing: no em dashes anywhere, including table cells (use `n/a`); the contrast cadence ("X does this. It does not do that.") once per asset at most; no banned vocabulary (streamline, empower, unlock, leverage as a verb, seamless, robust, transform, journey, solutions, harness); no first-person plural; sentences under 25 words; numbers as digits; source in the same sentence as the figure. A LinkedIn post opens on a specific moment, carries one idea, and lands on something concrete rather than a lesson.
+The posts follow the SMBai copy standard, summarized in section 3 of the posts file. The parts that matter most when editing: no em dashes anywhere, including table cells (use `n/a`); the contrast cadence ("X does this. It does not do that.") once per asset at most; no banned vocabulary (streamline, empower, unlock, leverage as a verb, seamless, robust, transform, journey, solutions, harness); no first-person plural; sentences under 25 words; numbers as digits; source in the same sentence as the figure. A LinkedIn post opens on a specific moment written as a sentence, carries one idea, and lands on something concrete rather than a lesson. No datelines and no fragment chains; the standard's own "Tuesday, 7:04 AM. An RFP lands." example is the pattern to avoid.
 
 ## 7. Git
 
