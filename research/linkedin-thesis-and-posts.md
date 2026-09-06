@@ -1,7 +1,7 @@
 **File:** linkedin-thesis-and-posts.md
-**Supersedes:** none
+**Supersedes:** v1 (6 Sep 2026)
 **Status:** PROPOSED
-**Changes:** v1. First issue.
+**Changes:** v2. §3 voice rules replaced with the SMBai copy standard. §4 all six posts rewritten with moment openers and concrete landings. §5 hook variants replaced. §7 channel added.
 
 # LinkedIn thesis and post series: AI efficiency and the gigawatt number
 
@@ -33,109 +33,119 @@ Then the reframe: the number that caps the buildout is turbines, transformers, a
 
 ## 3. Voice rules for the series
 
-- Lead with the number. The source goes in the same sentence as the figure. Credibility on this topic comes from citing Google, the IEA, Epoch AI, and peer-reviewed papers, never from opinion.
-- One idea per sentence. No em dashes. No "not X but Y" constructions. No emoji, no hashtags in the body.
-- End each post with the reframe. Never end with a question to the audience.
-- Every post names the next post, so the series reads as a series.
+These are the SMBai copy standard applied to a post. Where an earlier draft of this file said otherwise, this section wins.
+
+- Open on a specific moment: a date, a place, a number on a screen. Never on a thesis and never on a question.
+- One idea per post.
+- Land on something concrete: an event, a number, a thing that happened. Never on a lesson.
+- The contrast cadence ("X does this. It does not do that.") gets one use per post at most, where it does the most work. The thesis line is that construction, so a post that carries the thesis line carries no other.
+- The source goes in the same sentence as the figure. Credibility on this topic comes from Google, the IEA, Epoch AI, and peer-reviewed papers, never from opinion.
+- No em dashes. No banned vocabulary (streamline, empower, unlock, leverage as a verb, seamless, robust, transform, journey, solutions, harness). No first-person plural. No emoji, no hashtags in the body.
+- Sentences under 25 words by default. Numbers as digits.
+- Every post names the next post in one short line at the end, after the concrete landing.
 - Do not post the 2030 scenario grid. It is inferred, it invites nitpicking, and it dilutes the thesis.
 
 ## 4. The series
 
-Six posts. Post 0 carries the thesis. Posts 1 to 4 each take one of the four "gigawatt" numbers from the brief and the misunderstanding attached to it. Post 5 closes with the signals that would change the conclusion. Suggested cadence: one a week, same weekday. Each is written to fit LinkedIn's 3,000-character limit with the hook inside the first two lines.
+Six posts. Post 0 carries the thesis. Posts 1 to 4 each take one of the four "gigawatt" numbers from the brief and the misunderstanding attached to it. Post 5 closes with the signals that would change the conclusion. One a week, same weekday. Each fits LinkedIn's 3,000-character limit with the moment inside the first two lines.
 
 ### Post 0. The thesis
 
-Google cut the energy per AI prompt 33x in one year. Its AI electricity use went up anyway.
+May 19, 2026. Google I/O. Sundar Pichai puts one number on the screen: 3.2 quadrillion tokens a month, up from 480 trillion a year earlier. Nine months before that, Google's own engineers had published the other number. A median Gemini prompt used 0.24 watt-hours, 33 times less than the year before.
 
-That is the whole story of AI power demand, and almost everyone tells half of it.
+Both numbers are Google's. Put them side by side and the AI power debate gets simple.
 
-The per-token numbers are real. Google measured a median Gemini text prompt at 0.24 watt-hours in 2025, a 33x drop from a year earlier. Independent estimates from Epoch AI, Microsoft Research, and the University of Michigan converge on about 0.3 watt-hours per frontier query. Chips improve about 1.4x a year in performance per watt. Algorithms improve about 3x a year for a fixed level of capability. Stack them and the energy per answer falls 3x to 6x every year.
+Per answer, the energy keeps falling. Chips gain about 1.4x a year in work per watt, per Epoch AI. Algorithms gain about 3x a year for a fixed capability, per a November 2025 MIT FutureTech paper. Serving software adds more on top of a chip over its life. Call it 3x to 6x a year, all in.
 
-The volume numbers are bigger. Google's monthly token volume rose 6.7x in the year to May 2026, to 3.2 quadrillion. Reasoning models use 10x to 100x more tokens per task than the models they replaced. Frontier training power doubles every year, per Epoch AI.
+Per company, the volume rises faster. Google's tokens went up 6.7x. Reasoning models use 10x to 100x more tokens per task than the models they replaced. Frontier training power doubles every year, per Epoch AI.
 
-Divide 7x volume by 5x efficiency and you get 1.4x. The IEA measured AI-focused datacenter electricity growing 50% in 2025. It is the same number. Nothing is mysterious about it.
+Divide 7x volume by 5x efficiency and you get about 1.4x. The IEA measured AI datacenter electricity growing 50% in 2025. Same number.
 
-So efficiency is doing exactly what it should. It decides how much intelligence a gigawatt buys. It does not decide how many gigawatts get built. Capital, demand, and the supply chain decide that.
+Efficiency decides how much intelligence a gigawatt buys. It does not decide how many gigawatts get built.
 
-Next week: there are four different "gigawatt" numbers in circulation, and most of the pipeline is phantom load.
+Microsoft added another gigawatt of capacity in the quarter ending June 2026.
+
+Next week: the four different "gigawatt" numbers in the headlines, and why most of the pipeline is not real.
 
 ### Post 1. Requested versus built
 
-Texas has 474 gigawatts of datacenter connection requests in its queue. It has approved about 9.
+August 3, 2026. The governor of Texas pauses approval of new large grid connections. Behind the pause: 474 gigawatts of datacenter requests in ERCOT's queue. Approved to energize: about 9. Peak draw from every large load actually running: 3.9.
 
-That gap is the most misread number in the AI power debate.
+Twenty months earlier the queue was 63 gigawatts.
 
-ERCOT's large-load queue went from 63 GW at the end of 2024 to 474 GW in August 2026. The observed peak from all large loads actually running is 3.9 GW. In August the governor paused new approvals pending an audit of roughly 200 GW of applications, more than twice the state's record peak demand.
+Texas is loud and typical. Utilities across the country report five to ten times more connection requests than datacenters that get built, because the same project files in several states and is counted in each. Grid Strategies, which reads utility filings for a living, puts datacenter growth through 2030 at about 65 gigawatts against the 90 the utilities forecast, and says in its own report that the forecasts double-count. A review of Southeast utility plans by London Economics found that meeting them would take about 90% of global chip supply.
 
-Texas is the loud case, and it is typical. Utilities report five to ten times more connection requests than datacenters that get built. The same project files in several jurisdictions and gets counted in each. Grid Strategies, which reads utility filings for a living, puts datacenter growth through 2030 at about 65 GW against the 90 GW utilities are forecasting, and warns in its own report about double-counting. A review of Southeast utility plans found that meeting them would require about 90% of global chip supply.
+When a gigawatt number lands in a headline, it is one of four things: requested, energized, actually drawn, or new generation the grid must build. They differ by an order of magnitude. Efficiency moves the last three. It does nothing to the first, and the first is the one in the headline.
 
-When you read a gigawatt headline, ask which of four numbers it is: requested, energized, actually drawn, or new generation needed. They differ by an order of magnitude and they respond to completely different levers. Efficiency touches the last three. It does nothing to the first, and the first is the one in the headlines.
+The 474 came with an audit attached: roughly 200 gigawatts of applications, more than twice the state's record peak.
 
-Next week: the number the grid is planning around, and why nobody draws it.
+Next week: the number the grid plans around, and why nobody draws it.
 
 ### Post 2. Nameplate versus draw
 
-Datacenters draw about 67% of the power they contract for. The grid plans for 100%.
+April 2024, the ASPLOS conference. A Microsoft team publishes what it measured across its own GPU fleet. A training cluster leaves about 3% of its power headroom unused, because tens of thousands of chips peak in lockstep. An inference cluster leaves about 21%, because requests arrive at random and average out.
 
-That 33% is the cheapest capacity in the country, and the operators who know how to use it are already doing so.
+Then they used it. Their framework put 30% more inference servers into existing clusters with no new power feed.
 
-The 67% figure comes from PG&E data analysed by E3, and facilities take years after energization to climb toward full load. Underneath it is a physics problem Microsoft described in a 2024 ASPLOS paper: a training cluster offers about 3% power headroom because tens of thousands of GPUs peak in lockstep, but an inference cluster offers about 21% because requests arrive at random and average out. Their framework put 30% more inference servers into existing clusters with no new power.
+The rest of the industry runs the same physics without using it. Datacenters draw about 67% of the power they contract for, per PG&E data analyzed by E3, and take years after energization to climb toward full load. The grid plans for 100.
 
-Google has run its fleet at 25% oversubscription for years, with priority-aware capping that trims low-priority work in the rare hours it matters. Meta's version, from 2016, added 8% and saved, in their words, hundreds of millions of dollars.
+Google has run its fleet at 25% oversubscription for years, with priority capping that trims low-priority work in the rare hours it matters. Meta's version, published in 2016, added 8% and saved what Meta described as hundreds of millions of dollars.
 
-None of this reduces the energy a token needs. It raises the useful output per energized megawatt, which for a utility is the same thing as a smaller interconnection. The largest three or four operators have taken these gains. Most of the market has not.
+None of this changes the energy a token needs. It changes how many tokens come out of each energized megawatt, which to a utility is the same thing as a smaller connection.
+
+Three or four operators have taken the gain. The other several hundred have not.
 
 Next week: how a 25x chip becomes a 35% chip once someone measures it.
 
 ### Post 3. Vendor claims versus measurement
 
-NVIDIA says its Blackwell rack uses 25x less energy per inference than the Hopper it replaced. Independent measurement says 35% to 3x.
+March 18, 2024. GTC keynote. Jensen Huang says the new Blackwell rack uses 25 times less energy per inference than the Hopper it replaces. The footnote says what was compared.
 
-Both numbers are honest. They measure different things, and the footnote is where the difference lives.
+FP4 arithmetic on a liquid-cooled 72-GPU rack, against FP8 on air-cooled 8-GPU servers over InfiniBand, at one latency target. About 2x of the 25 is the number format. Most of the rest is the rack, the cooling, and the interconnect. The silicon is a fraction.
 
-The 25x compares FP4 arithmetic on a liquid-cooled 72-GPU rack against FP8 on air-cooled 8-GPU servers over InfiniBand, at one latency target. About 2x of it is the number format. Most of the rest is the rack, the cooling, and the interconnect. The silicon itself accounts for a fraction.
+In January 2026 the University of Michigan's ML.ENERGY group measured 46 models across 1,858 configurations on the two chips at the same precision. Median energy saving per token: 35%. SemiAnalysis's InferenceMAX benchmark, using FP4 on the newer chip, found about 3x tokens per megawatt. AMD's own accounting runs the same way: a 38x gain from 2020 to 2025 measured at node level, restated as 4x against a 2024 baseline once measured at rack level.
 
-The University of Michigan's ML.ENERGY group measured 46 models across 1,858 configurations on H100 and B200 at the same precision. Median energy saving per token: 35%. SemiAnalysis's InferenceMAX benchmark, using FP4 on the newer chip, found about 3x tokens per megawatt. AMD's own accounting tells the same story: a 38x gain 2020 to 2025 at node level, restated as 4x against a 2024 baseline once measured at rack level.
+Across 170 chips, the long-run trend for work per watt is about 1.4x a year, per Epoch AI. That is the number to compound. The rest of the headline multiple is a step that gets taken once.
 
-The long-run trend for accelerator performance per watt, across 170 chips, is about 1.4x a year, per Epoch AI. That is fast. It is also the number a planner should compound, because the rest of the headline multiple is a one-time step that gets taken once.
+The 25x slide is still on NVIDIA's product page, footnote included.
 
-Next week: the largest lever on new power generation is a scheduling decision, and a chipmaker does not own it.
+Next week: the largest lever on new power generation is a scheduling decision.
 
 ### Post 4. Flexibility versus new generation
 
-If US datacenters agreed to cut power 1% of the hours in a year, the existing grid could absorb 126 gigawatts of them with no new plants.
+May 3, 2025, Phoenix. A utility calls a peak event. A 256-GPU cluster running Oracle workloads cuts its power 25% for three hours. Every job finishes inside its service level. The utilities were APS and SRP, the operator was Emerald AI, and the paper is on arXiv.
 
-That is a Duke University finding from February 2025, and the industry has spent 2025 and 2026 proving it works.
+Three months earlier, Duke University's Nicholas Institute had modeled the same idea at grid scale. Curtail datacenters 0.25% of hours a year and the existing US grid absorbs 76 gigawatts of new load with no new plants. Curtail 0.5% and it is 98. Curtail 1%, about 85 hours a year in two-hour events, and it is 126.
 
-Duke's Nicholas Institute modelled balancing areas covering 95% of US load. Curtail 0.25% of hours and the headroom is 76 GW. Curtail 0.5% and it is 98 GW. Curtail 1%, about 85 hours a year in two-hour events, and it is 126 GW. For comparison, GE Vernova's gas turbine backlog is 116 GW, with delivery slots sold through 2029.
+For scale: GE Vernova's gas turbine backlog is 116 gigawatts, with delivery slots sold through 2029.
 
-The demonstrations followed. Emerald AI and EPRI ran a 256-GPU Oracle cluster in Phoenix through utility peak events, cutting power 25% for three hours while every job finished inside its service level. Google now has one gigawatt of demand response written into power purchase agreements with five utilities.
+Chips and models decide how much energy a token needs. Flexibility decides how much new generation a datacenter needs. The second number is larger, it is available now, and it belongs to whoever schedules the workload.
 
-Chips and models decide how much energy a token needs. Flexibility decides how much new generation a datacenter needs. The second lever is larger, it is available today, and it belongs to whoever schedules the workload, which is the operator, and the operator's software.
+Google now has 1 gigawatt of demand response written into power purchase agreements with five utilities, announced March 2026.
 
-Next week: the three signals that would make me change this thesis.
+Next week: the three signals that would change this whole argument.
 
 ### Post 5. What would change the conclusion
 
-Efficiency starts cutting gigawatts, rather than multiplying output, on the day the marginal AI token stops being worth its cost. Three observable signals would tell us that day has arrived. None has fired.
+March 6, 2026. Bloomberg reports that Oracle and OpenAI have capped their Abilene site near 2 gigawatts, citing financing and shifting demand forecasts. That is the kind of event this series has been waiting for, and on its own it is not enough.
 
-First, token prices fall and volume does not respond. So far every price cut has been met with more than proportional volume. DeepSeek halved its API prices in September 2025. Google's token volume rose 6.7x over the following year.
+Efficiency starts cutting gigawatts, rather than multiplying output, on the day the marginal AI token stops being worth its cost. Three things would show that day has arrived.
 
-Second, fleet utilization drops. Goldman Sachs expects datacenter occupancy to peak above 95% in late 2026 and ease from 2027. If it eases because of oversupply rather than efficiency, that is the first real evidence of saturation. Oracle and OpenAI capping their Abilene site near 2 GW in March 2026, citing financing and shifting demand forecasts, is the kind of event to watch for.
+Token prices fall and volume does not follow. So far every price cut has pulled more than proportional volume. DeepSeek halved its API prices in September 2025. Google's token volume rose 6.7x over the following year.
 
-Third, a forecaster cuts a 2030 number. Every revision in 2026 went up. BloombergNEF's US number rose from 106 GW to 194 GW in eight months. EPRI's range rose 60%. S&P's rose from 134 GW to 183 GW. The first cut from the IEA, Lawrence Berkeley, or EPRI will be the market saying efficiency has begun to outrun volume.
+Fleet utilization drops. Goldman Sachs expects datacenter occupancy to peak above 95% in late 2026 and ease from 2027. Easing because of oversupply, rather than efficiency, would be the first real evidence of saturation. Abilene is one data point.
 
-Until then the planning assumption is simple. Energy per token falls 3x to 6x a year. Volume rises 5x to 7x. Net AI power grows about 1.5x. The supply chain, and only the supply chain, decides how far above that the buildout can run.
+A forecaster cuts a 2030 number. Every revision in 2026 went up. BloombergNEF's US figure rose from 106 gigawatts to 194 in eight months. EPRI's range rose 60%. S&P's rose from 134 to 183. The first cut from the IEA, Lawrence Berkeley, or EPRI is the market saying efficiency has begun to outrun volume.
 
-The efficiency story is the best story in the industry. It is a story about how much intelligence a gigawatt buys.
+None of the three has happened. Planning assumption until one does: energy per token falls 3x to 6x a year, volume rises 5x to 7x, net AI power grows about 1.5x, and turbines decide the rest.
 
-## 5. Hook variants for Post 0
+## 5. Opener variants for Post 0
 
-Use one. Test the others as reposts or comments.
+Use one. The others work as a repost or a comment a week later.
 
-- Google cut the energy per AI prompt 33x in one year. Its electricity use went up anyway.
-- AI energy per answer falls 5x a year. AI energy in total rises 50% a year. Both are true.
-- The IEA measured AI datacenter power growing 50% in 2025. Here is the arithmetic that produces exactly that number.
+- May 19, 2026. Google I/O. The number on the screen is 3.2 quadrillion tokens a month.
+- August 21, 2025. Google publishes the energy cost of one Gemini prompt: 0.24 watt-hours, 33 times less than a year earlier. Its electricity use rose anyway.
+- Quarter ending June 2026. Microsoft adds a gigawatt of datacenter capacity, the same quarter it reports Copilot throughput up 4x since January.
 
 ## 6. Figures that need a primary-source check before their post goes out
 
@@ -143,10 +153,16 @@ These figures came from search extracts of the primary document rather than the 
 
 | Figure | Used in | Source to check |
 |---|---|---|
-| ERCOT queue 474 GW, Aug 2026; ~9 GW approved; 3.9 GW observed peak | Post 1 | ERCOT large-load update; Utility Dive; Texas Tribune, Aug 2026 |
+| ERCOT queue 474 GW, Aug 2026; ~9 GW approved; 3.9 GW observed peak; 63 GW at end-2024; ~200 GW audit | Post 1 | ERCOT large-load update; Utility Dive; Texas Tribune, Aug 2026 |
 | E3/PG&E 67% of nameplate | Post 2 | E3 white paper, Dec 2025 |
 | Microsoft 3% training / 21% inference headroom; 30% more servers | Post 2 | Patel, Choukse et al., ASPLOS 2024 (full text was read; confirm the 30% figure) |
 | ML.ENERGY 35% median, 46 models, 1,858 configs | Post 3 | arXiv 2601.22076 |
 | Duke 76 / 98 / 126 GW at 0.25 / 0.5 / 1% | Post 4 | Nicholas Institute, Rethinking Load Growth, Feb 2025 |
 | Google 1 GW demand response, five utilities | Post 4 | Google blog, Mar 2026 |
 | BNEF 106 to 194 GW; EPRI +60%; S&P 134 to 183 GW | Post 5 | BNEF Aug 2026; EPRI Feb 2026; S&P Jun 2026 |
+
+Dates used as openers also need confirming against the primary: GTC keynote March 18, 2024; ASPLOS 2024 in April; Emerald AI Phoenix event May 3, 2025; Texas pause August 3, 2026; Bloomberg Abilene report March 6, 2026; Google I/O May 19, 2026.
+
+## 7. Channel
+
+Post from Michael's profile, not the company page, until the company page has an audience. This is the SMBai copy standard's rule and it settles the channel question in the handoff.

@@ -59,7 +59,7 @@ To republish the artifact at the same URL, pass the URL above as `url` to the Ar
 
 ## 6. Copy rules
 
-No em dashes anywhere, in prose or in table cells (use `n/a` for an empty cell). No "not X but Y" constructions. No buzzwords. Numbers as digits. One idea per sentence. Sources named in the same sentence as the figure. The posts end with the reframe, never with a question. Every post names the next post.
+The posts follow the SMBai copy standard, summarized in section 3 of the posts file. The parts that matter most when editing: no em dashes anywhere, including table cells (use `n/a`); the contrast cadence ("X does this. It does not do that.") once per asset at most; no banned vocabulary (streamline, empower, unlock, leverage as a verb, seamless, robust, transform, journey, solutions, harness); no first-person plural; sentences under 25 words; numbers as digits; source in the same sentence as the figure. A LinkedIn post opens on a specific moment, carries one idea, and lands on something concrete rather than a lesson.
 
 ## 7. Git
 
@@ -71,7 +71,7 @@ No em dashes anywhere, in prose or in table cells (use `n/a` for an empty cell).
 
 - Whether to merge the branch or open a pull request for it.
 - Whether the brief gets a link from the aiCAPEX index page.
-- Posting cadence for the LinkedIn series, and when Post 0 goes out.
+- When Post 0 goes out. Channel is settled: Michael's profile, not the company page.
 - Whether the long-form article version of the brief gets drafted. If asked, it is a compression of the executive summary plus sections 5 and 8, at 800 to 1,200 words, in the posts file's voice.
 
 ## 9. What was not done
